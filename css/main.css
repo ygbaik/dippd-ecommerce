@@ -2,8 +2,7 @@
 
 /*MAIN NAV BAR*/
 .main-nav-wrapper{
-	width:100%;
-	background-color:#6339A1;
+	width:100%;	
 	display:flex;
 	justify-content: space-between;
 	align-items:center;
@@ -14,6 +13,11 @@
 	display:flex;
 	justify-content: space-between;
 	align-items:center;
+}
+
+.main-nav-links a{
+	padding-top:0;
+	padding-bottom:0;
 }
 
 .dippd-logo{
@@ -46,7 +50,7 @@ header{
 
 nav a{
 	color:white;
-	display:inline-block;
+	/*display:inline-block;*/
 	padding:1rem;
 	text-decoration:none;
 	margin-left:2rem;

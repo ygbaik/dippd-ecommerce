@@ -2,14 +2,15 @@
 	box-sizing: border-box;
 }
 
-.main-grid{
-	background-color: white;
-	display:grid;
-	grid-template-columns:repeat(12,1fr);
-}
 
 .main-grid-container{
 	display:block;
 	width: clamp(300px,80%,1600px);
 	margin:0 auto;
+}
+
+.main-grid{
+	background-color: white;
+	display:grid;
+	grid-template-columns:repeat(12,1fr);
 }
