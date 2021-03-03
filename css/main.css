@@ -105,9 +105,8 @@ a{
 /*FOOTER*/
 .container-footer-1600{
 	display:block;
-	max-width: 1600px;
-	min-width: 300px;
 	margin:0 auto;
+	width: clamp(18.75rem,80%,100rem);
 }
 
 .footer-grid-wrapper h5{
