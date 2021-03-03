@@ -37,6 +37,22 @@
 	background-image: url('../img/shopping-cart-icon-hover.png');
 }
 
+.cart-icon-dark{
+	background-image: url('../img/shopping-cart-icon-dark.png');
+	background-repeat: no-repeat;
+	background-position:center;
+	width:60px;
+	height:60px;
+}
+
+.cart-icon-dark:hover{
+	background-image: url('../img/shopping-cart-icon-hover-dark.png');
+}
+
+.dark-mode{
+	color:black;
+}
+
 header{
 	width:100%;
 	background-color:#6339A1;	
