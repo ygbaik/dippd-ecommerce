@@ -223,6 +223,10 @@ a{
 	background-color:#FFB6D0;
 }
 
+.main-nav.burgundy-white a{ /*used in the main nav for pages with products */
+	color:black;
+}
+
 .burgundy-dark{
 	background-color:#84124F;
 	color:white;
@@ -235,6 +239,10 @@ a{
 
 .teal-light{
 	background-color:#55D1B9;
+}
+
+.main-nav.teal-light a{ /* for the main nav for information pages */
+	color:black;
 }
 
 .teal-white{
