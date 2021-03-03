@@ -1,0 +1,15 @@
+*{
+	box-sizing: border-box;
+}
+
+.grid{
+	background-color: white;
+	display:grid;
+	grid-template-columns:repeat(12,1fr);
+}
+
+.main-grid-container{
+	display:block;
+	width: 80%;
+	margin:0 auto;
+}
