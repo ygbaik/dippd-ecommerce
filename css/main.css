@@ -1,0 +1,175 @@
+/*GLOBAL ---------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+/*MAIN NAV BAR*/
+.main-nav-wrapper{
+	width:100%;
+	background-color:#6339A1;
+	display:flex;
+	justify-content: space-between;
+	align-items:center;
+	padding: 1rem 2rem;
+}
+
+.main-nav-links{
+	display:flex;
+	justify-content: space-between;
+	align-items:center;
+}
+
+.dippd-logo{
+	display:inline-block;
+	width:clamp(100px,100px,150px);
+}
+
+.cart-icon{
+	background-image: url('../img/shopping-cart-icon.png');
+	background-repeat: no-repeat;
+	background-position:center;
+	width:60px;
+	height:60px;
+}
+
+.cart-icon:hover{
+	background-image: url('../img/shopping-cart-icon-hover.png');
+}
+
+header{
+	width:100%;
+	background-color:#6339A1;	
+	display:flex;
+	justify-content: space-between;
+	align-items:center;
+	padding: 1rem 2.5rem;
+	border-bottom:.25px solid rgba(0,0,0,.3);
+	z-index: 999;
+}
+
+nav a{
+	color:white;
+	display:inline-block;
+	padding:1rem;
+	text-decoration:none;
+	margin-left:2rem;
+}
+
+
+/*TYPOGRAPHY*/
+
+body{
+	font-family:montserrat, sans-serif;
+/*	background-color: #6339A1;*/
+	margin:0;
+	padding:0;
+}
+
+h1{
+	font-size:4rem;
+	margin:0;
+}
+
+h2{
+	font-size:2rem;
+}
+
+h3{
+	font-size:1.5rem;
+	font-weight: normal;
+}
+
+h4{
+	font-size:1.25rem;
+	font-weight: normal;
+}
+
+h5{
+	/*Look for Footer CSS*/
+}
+
+p{
+	font-size:1rem;
+	font-family: "ubuntu mono", monospace;
+	font-weight: lighter;
+}
+
+a{
+	color:#001AFF;
+	display:inline-block;
+	transition: transform .2s; /* Animation */
+}
+
+
+/*FOOTER*/
+.footer-grid-wrapper{
+	color:white;
+	display:grid;
+	grid-template-rows:3fr 1fr;
+}
+
+.footer-copyright-wrapper{
+	text-align:center;
+	grid-row:2;
+	display:flex;
+	align-items: center;
+	justify-content: center;
+	width:100%;
+	background-color:#6339A1;
+}
+
+.footer-copyright-wrapper p{
+	font-size:.75rem;
+	width:clamp(45ch,50%,75ch);
+}
+
+.footer-list-wrapper{
+	grid-row:1;
+	display:flex;
+	align-items: baseline;
+	justify-content: space-between;
+	width:100%;
+	background-color:#6339A1;
+
+	padding:3rem;
+	font-family:"ubuntu mono", monospace;
+	font-weight:lighter;
+}
+
+.footer-list-wrapper a:hover{
+	text-decoration:underline;
+}
+
+.footer-icons-wrapper a:hover{
+	text-decoration:none;
+}
+
+.footer-grid-wrapper ul{
+	list-style-type:none;
+	margin:1rem 0;
+	padding:0;
+}
+
+.footer-instagram-link{
+	display:flex;
+	align-content: center;
+	align-items: center;
+}
+
+.footer-icons-wrapper p{
+	display:inline;
+	font-family:montserrat, sans-serif;
+	margin-left:10px;
+}
+
+.footer-list-wrapper a{
+	color:white;
+	text-decoration:none;
+}
+.footer-icons-wrapper, .footer-location-wrapper, .footer-hours-wrapper, .footer-contact-wrapper, .footer-help-wrapper{
+	display:flex;
+	flex-direction: column;
+}
+
+.footer-list-wrapper > .divider-line{
+	background-color: white;
+	display:none;
+	width: 100%;
+}

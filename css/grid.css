@@ -2,7 +2,7 @@
 	box-sizing: border-box;
 }
 
-.grid{
+.main-grid{
 	background-color: white;
 	display:grid;
 	grid-template-columns:repeat(12,1fr);
@@ -10,6 +10,6 @@
 
 .main-grid-container{
 	display:block;
-	width: 80%;
+	width: clamp(300px,80%,1600px);
 	margin:0 auto;
 }
