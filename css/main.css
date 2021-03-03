@@ -103,6 +103,19 @@ a{
 
 
 /*FOOTER*/
+.container-footer-1600{
+	display:block;
+	max-width: 1600px;
+	min-width: 300px;
+	margin:0 auto;
+}
+
+.footer-grid-wrapper h5{
+	font-family: 'montserrat', sans-serif;
+	margin:0;
+	font-size:1rem;
+}
+
 .footer-grid-wrapper{
 	color:white;
 	display:grid;
@@ -116,7 +129,6 @@ a{
 	align-items: center;
 	justify-content: center;
 	width:100%;
-	background-color:#6339A1;
 }
 
 .footer-copyright-wrapper p{
@@ -176,4 +188,62 @@ a{
 	background-color: white;
 	display:none;
 	width: 100%;
+}
+
+/* COLOR SWATCHES -------------------------------------------------------------------------------- */ 
+
+.gold{
+	background-color: #FED10A;
+}
+
+.violet{
+	background-color: #6339A1;
+	color: white;
+}
+
+.white{
+	background-color: white;
+	border:1px solid #CCC;
+	color: black;
+}
+
+.black{
+	background-color: black;
+	color:white;
+}
+
+.burgundy{
+	background-color:#B92575;
+	color:white;
+}
+
+.burgundy-light{
+	background-color:#E04B8A;
+}
+
+.burgundy-white{
+	background-color:#FFB6D0;
+}
+
+.burgundy-dark{
+	background-color:#84124F;
+	color:white;
+}
+
+.teal{
+	background-color:#2D6E62;
+	color:white;
+}
+
+.teal-light{
+	background-color:#55D1B9;
+}
+
+.teal-white{
+	background-color:#D5F3ED;
+}
+
+.teal-dark{
+	background-color:#194940;
+	color:white;
 }
