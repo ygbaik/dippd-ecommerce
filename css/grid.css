@@ -10,7 +10,10 @@
 }
 
 .main-grid{
-	background-color: white;
 	display:grid;
 	grid-template-columns:repeat(12,1fr);
+}
+
+.main-grid.shop-grid{
+	grid-gap:1.25rem;
 }
