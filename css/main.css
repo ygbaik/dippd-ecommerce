@@ -1,6 +1,6 @@
-/*GLOBAL ---------------------------------------------------------------------------------------------------------------------------------------------------*/
+/*GLOBAL===========================================================================================*/
 
-/*MAIN NAV BAR*/
+/*MAIN NAV BAR------------------------------------------------------------------------------------*/
 .main-nav-wrapper{
 	width:100%;	
 	display:flex;
@@ -53,6 +53,15 @@
 	color:black;
 }
 
+.divider-line{
+	display:block;
+	width:clamp(70%,75%,80%);
+	height:1px;
+	background-color: #bbb;
+	margin: 1em 0;
+	padding:0;
+}
+
 header{
 	width:100%;
 	background-color:#6339A1;	
@@ -74,7 +83,7 @@ nav a{
 }
 
 
-/*TYPOGRAPHY*/
+/*TYPOGRAPHY-----------------------------------------------------------------------*/
 
 body{
 	font-family:montserrat, sans-serif;
@@ -118,27 +127,8 @@ a{
 	transition: transform .2s; /* Animation */
 }
 
-button{
-	font-family:"ubuntu mono", monospace;
-	font-weight:bold;
-	font-size:1rem;
 
-	color:black;
-	border-radius: 0;
-	border-style:solid;
-	border-color:black;
-	border-width:3px;
-	padding:1rem 2rem;
-
-	box-shadow: .5rem .5rem black;
-	background-color:#FED10A;
-	margin-right:1rem;
-
-	transition: transform .2s; /* Animation */
-}
-
-
-/*FOOTER*/
+/*FOOTER-------------------------------------------------------------------------------*/
 .container-footer-1600{
 	display:block;
 	margin:0 auto;
@@ -224,7 +214,183 @@ button{
 	width: 100%;
 }
 
-/*SHOP*/
+
+/*BUTTONS--------------------------------------------------------------------------------------------------*/
+button{
+	font-family:"ubuntu mono", monospace;
+	font-weight:bold;
+	font-size:1rem;
+
+	color:black;
+	border-radius: 0;
+	border-style:solid;
+	border-color:black;
+	border-width:3px;
+	padding:1rem 2rem;
+
+	box-shadow: .5rem .5rem black;
+	background-color:#FED10A;
+	margin-right:1rem;
+
+	transition: transform .2s; /* Animation */
+}
+
+
+.receiving-buttons{
+	display:flex;
+	flex-direction: row;
+	align-items:center;
+	justify-content:center;
+
+	font-family:"ubuntu mono", monospace;
+	font-weight:bold;
+	color:black;
+	text-decoration:none;
+
+	border:0.125rem solid black;
+	border-radius:0.313rem;
+	background:#EEEEEE;
+	width:10rem;
+	padding:0.625rem 2.5rem 0.625rem 2.5rem;
+	margin-top:0.625rem;
+	margin-right:1.25rem;
+}
+
+.receiving-buttons img{
+	margin-left:5px;	
+}
+
+
+/*INPUT FIELDS-----------------------------------------------------------------------------------------*/
+input{
+	font-family:"ubuntu mono", monospace;
+
+	margin-top:.5rem;
+	padding:.75rem;
+	
+	border-radius:10px;
+	border-color:#CCC;
+	border-width: 1px;
+
+	box-shadow: .5rem .5rem;
+}
+
+input[type]:focus{
+	outline:0rem;
+}
+
+
+input[type="address"]::placeholder{
+	color:#ddd;
+}
+
+input[type="number"]{
+	font-family:"ubuntu mono", monospace;
+
+	margin-top:0;
+	padding:.75rem;
+	width:5rem;
+	margin:0 .5rem;
+
+	border-radius:100px;
+	border: 1px solid black;
+
+	box-shadow: none;
+}
+
+
+button[type]:hover{
+	transform:scale(1.05);
+}
+
+button[type]:focus{
+	outline:0rem;
+}
+
+button[type="reset"]{
+	background-color:#c6c6c6
+}
+
+button.cta-button:focus{
+	outline:0rem;
+}
+
+
+
+
+/* COLOR SWATCHES---------------------------------------------------------------------------- */ 
+
+.gold{
+	background-color: #FED10A;
+}
+
+.violet{
+	background-color: #6339A1;
+	color: white;
+}
+
+.white{
+	background-color: white;
+	border:1px solid #CCC;
+	color: black;
+}
+
+.black{
+	background-color: black;
+	color:white;
+}
+
+.burgundy{
+	background-color:#B92575;
+	color:white;
+}
+
+.burgundy-light{
+	background-color:#E04B8A;
+}
+
+.burgundy-white{
+	background-color:#FFB6D0;
+}
+
+.main-nav.burgundy-white a{ /*used in the main nav for pages with products */
+	color:black;
+}
+
+.burgundy-dark{
+	background-color:#84124F;
+	color:white;
+}
+
+.teal{
+	background-color:#2D6E62;
+	color:white;
+}
+
+.teal-light{
+	background-color:#55D1B9;
+}
+
+.main-nav.teal-light a{ /* for the main nav for information pages */
+	color:black;
+}
+
+.teal-white{
+	background-color:#D5F3ED;
+}
+
+.teal-dark{
+	background-color:#194940;
+	color:white;
+}
+
+.burgundy-dark-text{
+	color:#84124F;
+}
+
+/*MAIN PAGES================================================================================================*/
+
+/*SHOP-----------------------------------------------------------------------------------------------------*/
 
 .shop-heading{
 	grid-column: 1/span 12;
@@ -447,7 +613,7 @@ button[type="quantity"]:hover{
 	margin-right: 5.5rem;
 }
 
-/*CART*/
+/*CART---------------------------------------------------------------------------------------------------*/
 .product-order-box-overview-wrapper{ 
 	margin-top: 5rem;
 	margin-bottom:8rem;
@@ -608,72 +774,277 @@ button[type="quantity"]:hover{
 }
 
 
-/* COLOR SWATCHES -------------------------------------------------------------------------------- */ 
 
-.gold{
-	background-color: #FED10A;
+/*CHECKOUT PAGE----------------------------------------------------------------------------------*/
+
+/*Right side container*/
+.checkout-product-preview-menu{	
+	padding:5rem 6.25rem 2.5rem 5.625rem;
 }
 
-.violet{
-	background-color: #6339A1;
-	color: white;
+.checkout-product-preview-wrapper{
+	
+	display:grid;
+	grid-template-columns: 1fr;
 }
 
-.white{
-	background-color: white;
-	border:1px solid #CCC;
-	color: black;
+.top-checkout p{
+	font-family:montserrat, sans-serif;
+	font-weight:600;
+	font-size:1.125rem;
+	margin-left:1.25rem;
 }
 
-.black{
-	background-color: black;
+.top-checkout > .divider-line{
+	width:100%;
+}
+
+.bottom-checkout{
+	margin-top:1.5rem;
+}
+
+.bottom-checkout > .divider-line{
+	width:100%;
+}
+
+.product-name-and-value{
+	display:flex;
+	flex-direction:row;
+	justify-content:space-between;
+	margin-left:1.25rem;
+	/*width:25rem;*/
+}
+
+.subtotal-name-and-value{
+	display:flex;
+	flex-direction:row;
+	justify-content:space-between;
+	margin-left:1.25rem;
+}
+
+.shipping-name-and-value{
+	display:flex;
+	flex-direction:row;
+	justify-content:space-between;
+	margin-left:1.25rem;
+}
+
+.total-value{
+	display:flex;
+	flex-direction:row;
+	justify-content:space-between;
+	margin-left:1.25rem;
+}
+
+.top-checkout img{
+	width:clamp(10vw, 50%, 50vw);
+	max-height:100%;
+	margin:auto;
+}
+
+.product-name-and-value p, .subtotal-name-and-value p, .shipping-name-and-value p{
+	font-family:montserrat, sans-serif;
+	font-size:1.125rem;
 	color:white;
+	margin-top:0rem;
+	margin-bottom:0.625rem;
 }
 
-.burgundy{
-	background-color:#B92575;
+.total-value p{
+	font-family:montserrat, sans-serif;
+	font-size:1.125rem;
+	font-weight:bold;
 	color:white;
+	margin-top:0rem;
 }
 
-.burgundy-light{
-	background-color:#E04B8A;
+/*Left Side Container*/
+
+
+/*Checkout Header*/
+.left-side-menu h4{
+	margin-top:2.5rem;
+	margin-bottom:0.625rem;
 }
 
-.burgundy-white{
-	background-color:#FFB6D0;
+.left-side-menu input[type="text"], input[type="text-first"], input[type="text-second"], input[type="text-second-payment"], input[type="text-third"] {
+	box-shadow: .25rem .25rem;
+	width:100%;
+	margin-top:0;
+	margin-bottom:0.938rem;
 }
 
-.main-nav.burgundy-white a{ /*used in the main nav for pages with products */
+.left-side-menu input[type="text-first"], input[type="text-second"], input[type="text-second-payment"]{
+	margin-right:1.25rem;
+}
+
+.left-side-menu input[type="text-second-payment"], input[type="text-third"]{
+	width:40%;
+}
+
+.header-checkout-breadcrumbs{
+	margin:0.625rem 0 0 0;
+	padding-left:0;
+}
+
+.header-checkout-breadcrumbs a{
+	color:#FED10A;
+}
+
+.header-checkout-breadcrumbs li{
+	font-family: "ubuntu mono", monospace;
+	list-style: none;
+	display:inline-block;
+
+}
+
+.breadcrumbs-item:not(:last-of-type)::after{
+	content: '\203a';
+	margin:0 0.313rem;
 	color:black;
 }
 
-.burgundy-dark{
-	background-color:#84124F;
-	color:white;
+/*Receiving method*/
+.receiving-method-buttons{
+	display:flex;
+	flex-direction: row;
 }
 
-.teal{
-	background-color:#2D6E62;
-	color:white;
+
+/*Express Checkout*/
+.info-express-buttons{
+	display:flex;
+	flex-direction:row;
 }
 
-.teal-light{
-	background-color:#55D1B9;
+.info-express-buttons button{
+	width:100%;
+	margin-top:1.25rem;
+	margin-bottom:1.25rem;
 }
 
-.main-nav.teal-light a{ /* for the main nav for information pages */
+button[type="express-first"], button[type="express-second"]{
+	margin-right:2.5rem;
+}
+
+
+/*Info*/
+.info-express-checkout{
+	display:flex;
+	flex-direction: row;
+	justify-content: space-around;
+	align-items:center;
+}
+
+.info-express-checkout h4{
+	width:13rem;
+}
+.info-express-checkout > .divider-line.side{
+	margin-top:3rem;
+}
+
+#info > .divider-line{
+	width:100%;
+}
+
+.names-section{
+	display:flex;
+	flex-direction:row;
+	justify-content: space-between;
+}
+
+
+.address-section{
+	margin-top:1.25rem;
+}
+
+.address-info{
+	display:flex;
+	flex-direction:row;
+}
+
+.country-info{
+	display:flex;
+	flex-direction:row;
+}
+
+/*Payment*/
+.credit-card-selection{
+/*	display:flex;
+	flex-direction:row;
+	justify-content: start;*/
+	display:grid;
+	grid-template-columns: 0.25fr 4fr;
+	align-items:center;
+
+	margin-top:.5rem;
+	margin-bottom:1rem;
+	padding:.5rem;
+	
+	border-radius:10px;
+	border-color:#CCC;
+	border-width: 1px;
+	border:1px solid rgb(0, 0, 0, .5);
+
+
+	box-shadow: .25rem .25rem;
+
+}
+
+.button-info{
+	grid-column:2/4;
+	display:flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items:center;
+}
+
+.credit-card-selection label{
+	font-family: "ubuntu mono", monospace;
+	font-weight:400;
+}
+
+.credit-card-selection input{
+	box-shadow:none;
+	margin-top:2px;
+	margin-right:0.625rem;
+}
+
+.credit-card-selection img{
+	margin-right:1.25rem;
+}
+
+.credit-card-selection.paypal{
+	margin-top:0.125rem;
+}
+
+.payment-buttons{
+	display:flex;
+	flex-direction: row;
+	justify-content: space-between;
+	margin-top:3.75rem;
+	margin-bottom:10rem;
+}
+
+.payment-buttons a{
+	text-decoration: none;
+	color:#6339A1;
+	font-weight:700;
+}
+
+button[type="pay-now"]{
+	margin-right:0.313rem;
+}
+
+button[type="pay-now"] a{
 	color:black;
 }
 
-.teal-white{
-	background-color:#D5F3ED;
+.card-info{
+	display:flex;
+	flex-direction:row;
 }
 
-.teal-dark{
-	background-color:#194940;
-	color:white;
-}
 
-.burgundy-dark-text{
-	color:#84124F;
-}
+
+

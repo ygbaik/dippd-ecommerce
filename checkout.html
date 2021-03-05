@@ -13,7 +13,7 @@
 </head>
 
 <body>
-	<header class="main-nav">
+	<!-- <header class="main-nav">
 		<a href="index.html"><img class="dippd-logo" src="img/dippd-logo.png" alt="Dipped shop logo"></a>
 		<nav class="main-nav-links">
 			<a href="#0">Shop</a>
@@ -21,14 +21,157 @@
 			<a href="#0"><div class="cart-icon"></div></a>
 		</nav>
 	
-	</header>
+	</header> -->
 
-	<div class="main-grid-container">
-		<div class="main-grid">
 
+		<div class="main-grid checkout-page">
+			<div class="left-side-menu">
+				<section id="header-checkout">
+					<div class="header-checkout-logo">
+						<a href="index.html"><img class="dippd-logo" src="img/dippd-logo-checkout.png" alt="Dipped shop logo"></a>
+					</div>
+					<ul class="header-checkout-breadcrumbs">
+						<li class="breadcrumbs-item"><a href="cart.html">Box</a></li>
+						<li class="breadcrumbs-item">Receiving Method</li>
+						<li class="breadcrumbs-item">Date and Time</li>
+						<li class="breadcrumbs-item">Info</li>
+						<li class="breadcrumbs-item">Payment</li>
+					</ul>	
+				</section>
+
+				<section id="receiving-method">
+					<h4>Choose Method of Receiving</h4>
+					<div class="receiving-method-buttons">
+						<a href="#0" class="receiving-buttons">Pickup<img src="img/pickup-icon.png"></a>
+						<a href="#0" class="receiving-buttons">Delivery<img src="img/delivery-icon.png"></a>
+					</div>
+				</section>
+
+
+				<section id="date-and-time">
+					<form>
+						<h4>Choose Date and Time</h4>
+					</form>
+				</section>
+
+				<section id="info">
+					<form>
+						<div class="info-express-checkout">
+								<h4>Express Checkout</h4>
+								<div class="divider-line side"></div>
+						</div>
+
+						<div class="info-express-buttons">
+							<form>
+								<button type="express-first"><img src="img/apple-pay-icon.png"></button>
+								<button type="express-second"><img src="img/google-pay-icon.png"></button>
+								<button type="express"><img src="img/paypal-icon.png"></button>
+							</form>
+						</div>
+
+
+						<div class="divider-line"></div>
+
+						<div class="info-contact-information">
+							<h4>Contact Information</h4>
+							<input type="text" placeholder="Email">
+						</div>
+
+						<div class="info-billing-address">
+							<h4>Billing Address</h4>
+							<div class="names-section">
+								<input type="text-first" placeholder="First Name">
+								<input type="text" placeholder="Last Name">
+							</div>
+							<input type="text" placeholder="Company (Optional)">
+
+							<div class="address-section">
+								<div class="address-info">
+									<input type="text-first" placeholder="Address">
+									<input type="text" placeholder="Apt. Suite">
+								</div>
+								<input type="text" placeholder="City">
+								<div class="country-info">
+									<input type="text-first" placeholder="Country">
+									<input type="text-second" placeholder="Province">
+									<input type="text" placeholder="Postal Code">
+								</div>
+							</div>
+						</div>	
+					</form>
+				</section>
+
+
+				<section id="payment">
+					<form>
+						<div class="payment-forms">
+							<h4>Payment Information</h4>
+							<div class="credit-card-selection">
+								<input type="radio" id="credit-card" name="payment-option" value="credit-card" checked>
+								<div class="button-info">
+									<label for="credit-card">Credit Card</label>
+									<img src="img/visa-mastercard.png">
+								</div>
+							</div>
+							<input type="text" placeholder="Card Number">
+							<div class="card-info">
+								<input type="text-first" placeholder="Name on Card">
+								<input type="text-second-payment" placeholder="MM/YY">
+								<input type="text-third" placeholder="CVV">
+							</div>
+							<div class="credit-card-selection paypal">
+								<input type="radio" id="paypal" name="payment-option" value="paypal">
+								<label for="paypal"><img src="img/paypal-payment.png"></label>
+							</div>
+						</div>
+						<div class="payment-buttons">
+							<p><a href="cart.html">◂ Return to Box</a></p>
+							<button type="pay-now"><a href="confirmation.html">Pay Now ▸</a></button>
+						</div>
+					</form>
+				</section>
+
+			</div>
+
+
+			<aside class="right-side-menu violet">
+				<div class="checkout-product-preview-menu violet">
+					<div class="checkout-product-preview-wrapper violet">
+						<div class="top-checkout">
+							<p>1 BOX(ES)</p>
+							<div class="divider-line"></div>
+							<img src="img/donut-box-example.png" alt="An image of a donut box order">
+						</div>
+						<div class="bottom-checkout">
+							<div class="product-name-and-value">
+								<p>Half Dozen Donuts</p>
+								<p>$21.00</p>
+							</div>
+
+							<div class="divider-line"></div>
+
+							<div class="subtotal-name-and-value">
+								<p>Subtotal</p>
+								<p>$21.00</p>
+							</div>
+
+							<div class="shipping-name-and-value">
+								<p>Shipping</p>
+								<p>--</p>
+							</div>
+
+							<div class="divider-line"></div>
+
+							<div class="total-value">
+								<p>Total</p>
+								<p>$21.00</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</aside>
 
 		</div> <!-- end of main grid div -->
-	</div> <!-- end of main grid container div -->
-</body>
+	</body>
 
 </html>

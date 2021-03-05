@@ -9,11 +9,28 @@
 	margin:0 auto;
 }
 
+
 .main-grid{
 	display:grid;
 	grid-template-columns:repeat(12,1fr);
 }
 
-.main-grid.shop-grid{
-	grid-gap:1.25rem;
+.main-grid.checkout-page{
+	background-color: white;
+	display:grid;
+	grid-template-columns:repeat(18,1fr);
 }
+
+.right-side-menu{
+	grid-column:12/19;
+	height:auto;
+}
+
+.left-side-menu{
+	grid-column:3/10;
+	margin-top:5rem;
+}
+
+
+
+
