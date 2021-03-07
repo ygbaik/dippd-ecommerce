@@ -4,7 +4,7 @@
 
 <head>
 	<meta charset="utf-8">
-	<title>Dipp'd Shop</title>
+	<title>Thank You for Ordering!</title>
 	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;400;600&display=swap" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&family=Ubuntu+Mono:wght@400;700&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="https://use.typekit.net/oxb2eij.css">
@@ -13,7 +13,7 @@
 </head>
 
 <body>
-	<header class="main-nav">
+	<!-- <header class="main-nav">
 		<a href="index.html"><img class="dippd-logo" src="img/dippd-logo.png" alt="Dipped shop logo"></a>
 		<nav class="main-nav-links">
 			<a href="#0">Shop</a>
@@ -21,14 +21,82 @@
 			<a href="#0"><div class="cart-icon"></div></a>
 		</nav>
 	
-	</header>
+	</header> -->
 
-	<div class="main-grid-container">
-		<div class="main-grid">
-			
+		<div class="main-grid checkout-page">
+			<div class="left-side-menu">
+				<section id="header-checkout">
+					<div class="header-checkout-logo">
+						<a href="index.html"><img class="dippd-logo" src="img/dippd-logo-checkout.png" alt="Dipped shop logo"></a>
+					</div>
+				</section> <!-- end of header checkout section -->
+
+				<section id="order-info">
+					<div class="order-info-greeting">
+						<h2>Thank You!</h2>
+					</div>
+
+					<div class="order-info-number">
+						<h4>Your order has been confirmed</h4>
+						<p>Order: #776-2394</p>
+					</div>
+
+					<div class="order-info-message">
+						<p>Your Dipp’d order is being made as we speak! An email confirmation will be sent shortly.</p>
+					</div>
+
+					<div class="order-info-exit">
+						<form>
+							<button type="print-receipt">Print Receipt</button>
+						</form>
+						<p>or <a href="index.html">return home</a></p>
+					</div>
+				</section> <!-- end of order info section -->
+
+
+
+			</div> <!-- end of left side menu -->
+
+
+			<aside class="right-side-menu violet confirmation">
+				<div class="checkout-product-preview-menu violet">
+					<div class="checkout-product-preview-wrapper violet">
+						<div class="top-checkout">
+							<p>1 BOX(ES)</p>
+							<div class="divider-line"></div>
+							<img src="img/donut-box-example.png" alt="An image of a donut box order">
+						</div>
+						<div class="bottom-checkout">
+							<div class="product-name-and-value">
+								<p>Half Dozen Donuts</p>
+								<p>$21.00</p>
+							</div>
+
+							<div class="divider-line"></div>
+
+							<div class="subtotal-name-and-value">
+								<p>Subtotal</p>
+								<p>$21.00</p>
+							</div>
+
+							<div class="shipping-name-and-value">
+								<p>Shipping</p>
+								<p>--</p>
+							</div>
+
+							<div class="divider-line"></div>
+
+							<div class="total-value">
+								<p>Total</p>
+								<p>$21.00</p>
+							</div>
+						</div>
+					</div>
+				</div> <!-- end of checkout-product-preview-menu violet -->
+			</aside> <!-- end of right-side-menu violet -->
 
 		</div> <!-- end of main grid div -->
-	</div> <!-- end of main grid container div -->	
-</body>
+	</body>
+
 
 </html>
