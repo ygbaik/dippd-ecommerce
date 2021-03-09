@@ -970,6 +970,76 @@ button[type="quantity"]:hover{
 	margin-left:10px;
 }
 
+/*Date and Time*/
+.month-name, .days-title{
+	font-family:"ubuntu mono", monospace;
+	font-weight:700;
+	font-size:1.25rem;
+	color:black;
+}
+
+.days-number{
+	font-family:"ubuntu mono", monospace;
+	color:black;
+	font-size:1.25rem;
+}
+
+.month-arrows{
+	font-family:"ubuntu mono", monospace;
+	color:rgb(0, 0, 0, .5);
+} 
+
+.date-and-time-calendar{
+	width:clamp(12.5rem, 100vw, 25rem);
+	border-radius:10px;
+	border-color:#CCC;
+	border-width: 1px;
+	border:1px solid rgb(0, 0, 0, .5);
+	box-shadow: .25rem .25rem;
+	margin-top:1.25rem;
+
+	display:grid;
+}
+
+.calendar-header{
+	display:flex;
+	flex-direction: row;
+	justify-content: space-between;
+	padding:2rem 2rem 2rem 2rem;
+}
+
+.days-title{
+	padding:0.625rem;
+	display:grid;
+	grid-template-columns: repeat(7, 1fr);
+	text-align:center;
+}
+
+.days-number{
+	/*grid-row:2/3;*/
+	padding:0.625rem;
+	display:grid;
+	grid-template-columns: repeat(7, 1fr);
+	text-align:center;
+	margin-bottom:2.5rem;
+}
+
+.days-number div{
+	/*grid-row:2/3;*/
+	padding:0.625rem;
+
+}
+
+.past-day{
+	background:#EEEEEE;
+	color:rgb(0, 0, 0, .5);
+}
+
+.active-day{
+	background:#F2CA18;
+}
+
+
 
 
 /*Express Checkout*/
@@ -1228,25 +1298,15 @@ button[type="pay-now"] a{
 	padding-left:0;
 }
 
+
+/*Team Section Animations*/
 #animated-names{
 	width:100%;
 	overflow:hidden;
 	position:relative;
 }
 
-
-
 .animated-names-wrapper{
-	/*display:flex;
-	flex-direction:row;
-	justify-content:space-between;
-	color:white;*/
-
-	/*font-family: "ubuntu mono", monospace;
-	font-size:1rem; 
-	color:white;
-	white-space: nowrap;*/
-
 	width:100%;
 	display:flex;
 }
@@ -1254,6 +1314,23 @@ button[type="pay-now"] a{
 .animated-names-wrapper a{
 	color:white;
 	text-decoration: none;
+}
+
+.animated-names-wrapper.top{
+	padding-top:1.25rem;
+}
+
+.animated-names-wrapper.middle{
+	padding-top:1.25rem;
+	padding-bottom:1.25rem;
+}
+
+.animated-names-wrapper.bottom{
+	padding-bottom:1.25rem;
+}
+
+.animated-names-wrapper span{
+	margin:1.25rem;
 }
 
 .animated-names-wrapper div.animate-left{
@@ -1291,36 +1368,5 @@ button[type="pay-now"] a{
 	}
 }
 
-
-.animated-names-wrapper.top{
-	padding-top:1.25rem;
-}
-
-.animated-names-wrapper.middle{
-	padding-top:1.25rem;
-	padding-bottom:1.25rem;
-}
-
-.animated-names-wrapper.bottom{
-	padding-bottom:1.25rem;
-}
-
-
-.animated-names-wrapper.top p{
-	/*margin-top:1.25rem;*/
-}
-
-.animated-names-wrapper.middle p{
-	/*margin-top:0;
-	margin-bottom:0;*/
-}
-
-.animated-names-wrapper.bottom p{
-/*	margin-bottom:1.25rem;*/
-}
-
-.animated-names-wrapper span{
-	margin:1.25rem;
-}
 
 
