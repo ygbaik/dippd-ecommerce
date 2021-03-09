@@ -2,17 +2,18 @@
 	box-sizing: border-box;
 }
 
-
 .main-grid-container{
 	display:block;
 	width: clamp(18.75rem,80%,100rem);
 	margin:0 auto;
+	height:100%;
 }
 
 
 .main-grid{
 	display:grid;
 	grid-template-columns:repeat(12,1fr);
+	height:100%;
 }
 
 .main-grid.checkout-page{
