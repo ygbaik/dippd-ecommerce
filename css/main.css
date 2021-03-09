@@ -247,6 +247,7 @@ button:focus{
 
 button:hover{
 	background-color: #D7B20E;
+	cursor:pointer;
 }
 
 .receiving-buttons{
