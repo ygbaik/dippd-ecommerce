@@ -63,7 +63,7 @@
 }
 
 header{
-	position:fixed;
+	position:sticky;
 	top:0;
 	width:100%;
 	background-color:#6339A1;	
@@ -73,6 +73,10 @@ header{
 	padding: 1rem 2.5rem;
 	border-bottom:.25px solid rgba(0,0,0,.3);
 	z-index: 999;
+}
+
+.index-body header{
+	position:fixed;
 }
 
 nav a{
@@ -598,7 +602,7 @@ button.cta-button:focus{
 
 .slider{
 	display: flex;
-	/*overflow: auto;*/
+	overflow: hidden;
 }
 
 .social-media-section{
@@ -659,6 +663,7 @@ button.cta-button:focus{
 
 .about-us-section{
 	height:100vh;
+	overflow: hidden;
 }
 
 .about-us-section > .main-grid-container{
@@ -724,7 +729,6 @@ button.cta-button:focus{
 .six{
 	right:-5%;
 	bottom:20%;
-	overflow: hidden;
 }
 
 /*FAQ-----------------------------------------------------------------------------------------------------*/
