@@ -241,6 +241,27 @@ button{
 	transition: transform .2s; /* Animation */
 }
 
+.cta-button{
+	font-family:"ubuntu mono", monospace;
+	font-weight:bold;
+	font-size:1rem;
+
+	color:black;
+	border-radius: 0;
+	border-style:solid;
+	border-color:black;
+	border-width:3px;
+	padding:1rem 2rem;
+
+	box-shadow: .5rem .5rem black;
+	background-color:#FED10A;
+	margin-right:1rem;
+
+	text-decoration: none;
+
+	transition: transform .2s; /* Animation */
+}
+
 button:focus{
 	outline: none;
 }
@@ -1017,13 +1038,9 @@ button[type="quantity"]:hover{
 	font-size:1rem;
 }
 
-.order-tracker-bar-wrapper button{
+.order-tracker-bar-wrapper .cta-button{
 	margin-right: 5.5rem;
-}
-
-.order-tracker-bar-wrapper a{
-	color:black;
-	text-decoration: none;
+	cursor:pointer;
 }
 
 /*CART---------------------------------------------------------------------------------------------------*/
@@ -1110,13 +1127,14 @@ button[type="quantity"]:hover{
 	grid-template-columns:repeat(5,1fr);
 }
 
-.product-order-donut-counters-wrapper button{
+.product-order-donut-counters-wrapper .cta-button{
 	margin-top: 2rem;
 	grid-row:5;
+	cursor:pointer;
 }
 
 .product-order-donut-counters-grid{
-	grid-column: 1/span 5;
+	grid-column-start: 1/span 5;
 	display:grid;
 	grid-template-columns:repeat(5,1fr);
 	grid-template-rows:repeat(5, auto);
@@ -1169,12 +1187,12 @@ button[type="quantity"]:hover{
 	grid-row:4;
 }
 
-.product-order-donut-counters-grid a{
-	grid-column:1/span 2;
+/*.product-order-donut-counters-grid a{
+	grid-column-start:1;
 	grid-row:5;
 	color: black;
 	text-decoration: none;
-}
+}*/
 
 .product-name{
 	display:flex;
