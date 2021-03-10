@@ -25,12 +25,17 @@
 .right-side-menu{
 	grid-column:12/19;
 	height:auto;
+	position:sticky;
+	bottom:0;
 }
 
 .left-side-menu{
 	grid-column:3/10;
 	margin-top:5rem;
+	/*display:grid;
+	grid-template-columns:repeat(5, 1fr);*/
 }
+
 
 
 
