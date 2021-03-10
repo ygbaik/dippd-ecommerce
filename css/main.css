@@ -703,6 +703,10 @@ button.cta-button:focus{
 	width:clamp(100px,25%,250px);
 }
 
+.floating-donut-wrapper{
+	
+}
+
 .one{
 	left:-5%;
 }
