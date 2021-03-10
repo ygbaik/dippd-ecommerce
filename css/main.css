@@ -1350,6 +1350,10 @@ button[type="quantity"]:hover{
 }
 
 /*Receiving method*/
+#receiving-method h4{
+	margin-top:1.5rem;
+}
+
 .receiving-method-buttons{
 	display:flex;
 	flex-direction: row;
@@ -1416,6 +1420,11 @@ button[type="quantity"]:hover{
 }
 
 /*Date and Time*/
+#date-and-time{
+	display:grid;
+	grid-template-columns: repeat(7, 1fr);
+}
+
 #date-and-time h4{
 	grid-column:1/4;
 	align-self: center;
@@ -1423,7 +1432,7 @@ button[type="quantity"]:hover{
 
 .date-and-time-calendar{
 	grid-row:2/3;
-	grid-column:1/5;
+	grid-column:1/6;
 
 	border-radius:10px;
 	border-color:#CCC;
@@ -1432,6 +1441,26 @@ button[type="quantity"]:hover{
 	box-shadow: .25rem .25rem;
 
 	display:grid;
+}
+
+.date-and-time-input{
+	grid-column:1/6;
+	color:rgb(0, 0, 0, .2);
+}
+
+.input-bar{
+	display:flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items:center;
+	padding:0.313rem 1.25rem;
+	margin-top:1.25rem;
+	margin-bottom:1.25rem;
+
+	border-radius:10px;
+	border-color:black;
+	border-width: 1px;
+	border:1px solid black;
 }
 
 
