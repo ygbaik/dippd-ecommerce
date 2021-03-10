@@ -63,7 +63,7 @@
 }
 
 header{
-	position:sticky;
+	position:fixed;
 	top:0;
 	width:100%;
 	background-color:#6339A1;	
@@ -73,10 +73,6 @@ header{
 	padding: 1rem 2.5rem;
 	border-bottom:.25px solid rgba(0,0,0,.3);
 	z-index: 999;
-}
-
-.index-body header{
-	position:fixed;
 }
 
 nav a{
@@ -251,7 +247,6 @@ button:focus{
 
 button:hover{
 	background-color: #D7B20E;
-	cursor:pointer;
 }
 
 .receiving-buttons{
@@ -1192,6 +1187,8 @@ button[type="quantity"]:hover{
 /*Right side container*/
 .checkout-product-preview-menu{	
 	padding:5rem 6.25rem 2.5rem 5.625rem;
+	position:sticky;
+	top:0;
 }
 
 .checkout-product-preview-wrapper{
@@ -1274,6 +1271,10 @@ button[type="quantity"]:hover{
 
 
 /*Checkout Header*/
+.left-side-menu ::placeholder{ /*Not the best fix*/
+	color:rgb(0, 0, 0, .25);
+}
+
 .left-side-menu h4{
 	margin-top:2.5rem;
 	margin-bottom:0.625rem;
@@ -1415,6 +1416,25 @@ button[type="quantity"]:hover{
 }
 
 /*Date and Time*/
+#date-and-time h4{
+	grid-column:1/4;
+	align-self: center;
+}
+
+.date-and-time-calendar{
+	grid-row:2/3;
+	grid-column:1/5;
+
+	border-radius:10px;
+	border-color:#CCC;
+	border-width: 1px;
+	border:1px solid rgb(0, 0, 0, .5);
+	box-shadow: .25rem .25rem;
+
+	display:grid;
+}
+
+
 .month-name, .days-title{
 	font-family:"ubuntu mono", monospace;
 	font-weight:700;
@@ -1432,18 +1452,6 @@ button[type="quantity"]:hover{
 	font-family:"ubuntu mono", monospace;
 	color:rgb(0, 0, 0, .5);
 } 
-
-.date-and-time-calendar{
-	width:clamp(12.5rem, 100vw, 25rem);
-	border-radius:10px;
-	border-color:#CCC;
-	border-width: 1px;
-	border:1px solid rgb(0, 0, 0, .5);
-	box-shadow: .25rem .25rem;
-	margin-top:1.25rem;
-
-	display:grid;
-}
 
 .calendar-header{
 	display:flex;
@@ -1740,6 +1748,7 @@ button[type="pay-now"] a{
 	font-size:0.875rem; /*originally 1rem, but is that too big?*/
 	line-height:1.5;
 	padding-left:0;
+	/*width:20px;*/
 }
 
 
