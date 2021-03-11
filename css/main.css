@@ -130,7 +130,7 @@ p{
 a{
 	color:#001AFF;
 	display:inline-block;
-	transition: transform .2s; /* Animation */
+	/*transition: transform .2s; *//* Animation */
 }
 
 
@@ -238,7 +238,7 @@ button{
 	background-color:#FED10A;
 	margin-right:1rem;
 
-	transition: transform .2s; /* Animation */
+	/*transition: transform .2s; *//* Animation */
 }
 
 .cta-button{
@@ -251,13 +251,17 @@ button{
 	border-style:solid;
 	border-color:black;
 	border-width:3px;
-	padding:1rem 2rem;
+	padding:1rem;
 
 	box-shadow: .5rem .5rem black;
 	background-color:#FED10A;
 	margin-right:1rem;
 
+
 	text-decoration: none;
+	display:flex;
+	justify-content: center;
+	align-items:center;
 
 	transition: transform .2s; /* Animation */
 }
@@ -333,7 +337,7 @@ input[type="number"]{
 }
 
 button[type]:hover{
-	transform:scale(1.05);
+	/*transform:scale(1.05);*/
 }
 
 button[type]:focus{
@@ -1008,13 +1012,8 @@ button[type="quantity"]{
 	box-shadow:none;
 	margin-right:0;
 
-	transition: transform .2s; /* Animation */
+	/*transition: transform .2s;*/ /* Animation */
 }
-
-button[type="quantity"]:hover{
-	transform:scale(1.15);
-}
-
 
 .order-tracker-bar-wrapper{
 	grid-column: 1/span 12;
@@ -1077,7 +1076,7 @@ button[type="quantity"]:hover{
 	margin-left:3rem;
 	display:flex;
 	flex-direction:row;
-	align-items: center;
+	align-items: baseline;
 }
 
 .product-order-box-overview-donuts{
@@ -1092,8 +1091,8 @@ button[type="quantity"]:hover{
 	grid-column:1/7;
 	display:flex;
 	flex-direction:row;
-	align-items:center;
 	justify-content: center;
+	align-items:baseline;
 }
 
 .product-order-box-overview-donuts img{
