@@ -57,11 +57,11 @@
 /*Large Inbetween (1216px)----------------------------------------------------------------------------------------------*/
 @media screen and (max-width:76em){
 	h1{
-		font-size:2.5rem;
+		/*font-size:2.5rem;*/
 	}
 
 	p{
-		font-size:1rem;
+		/*font-size:1rem;*/
 	}
 
 	.date-and-time-calendar, .date-and-time-input{
@@ -77,6 +77,10 @@
 /*Small Window (1200px)------------------------------------------------------------------------------------------------*/
 @media screen and (max-width:75em){
 	/***References Page***/
+	.references-background h2{
+		font-size:1.5rem;
+	}
+
 	/*#references-images-and-copywriting{
 		grid-column:1/7;
 	}
@@ -87,6 +91,19 @@
 
 }
 
+/*Inbetween (840px)------------------------------------------------------------------------------------------------*/
+@media screen and (max-width:53em){
+	/***References Page***/
+	#references-images-and-copywriting{
+		grid-column:1/13;
+	}
+
+	#references-icons{
+		grid-column: 1/11;
+	}
+
+}
+
 
 
 
@@ -94,7 +111,7 @@
 @media screen and (max-width:48em){
 	/***Checkout Page***/
 	h1{
-		font-size:2.5rem;
+		/*font-size:2.5rem;*/
 	}
 
 	.main-grid.checkout-page h4{
@@ -107,7 +124,7 @@
 
 
 	p{
-		font-size:1rem;
+		/*font-size:1rem;*/
 	}
 
 	.right-side-menu{
@@ -263,15 +280,9 @@
 	}
 
 	/***References Page***/
-	#references-images-and-copywriting{
-		grid-column:1/13;
-	}
-
 	#references-icons{
 		grid-column: 1/13;
 	}
-
-
 
 }
 
@@ -287,11 +298,11 @@
 @media screen and (max-width:38em) {
 	/***Checkout Page***/
 	h1{
-		font-size:2.5rem;
+		/*font-size:2.5rem;*/
 	}
 
 	p{
-		font-size:1rem;
+		/*font-size:1rem;*/
 	}
 
 	.left-side-menu{
@@ -350,7 +361,7 @@
 
 	/***Checkout Page***/
 	h1{
-		font-size:2rem;
+		font-size:3rem;
 	}
 
 
@@ -363,7 +374,7 @@
 	}
 
 	p{
-		font-size:1rem;
+		/*font-size:1rem;*/
 	}
 
 	.right-side-menu{
