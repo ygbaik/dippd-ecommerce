@@ -103,7 +103,62 @@
 		margin:0.625rem 1.25rem 0.625rem 1.25rem;
 	}
 
-}
+	/***Cart Page***/
+	.product-order-box-overview-wrapper{
+		grid-column: 1/span 12;
+		margin: 0;
+	}
+
+	.product-order-donut-counters-wrapper{
+		grid-column: 1/span 12;
+		margin:0;
+	}
+
+	.product-order-donut-counters-wrapper h2{
+		visibility: hidden;
+		position:fixed;
+	}
+	.product-order-donut-counters-wrapper h3{
+		visibility: hidden;
+		position:fixed;
+	}
+	.product-order-donut-counters-wrapper h4{
+		visibility: hidden;
+		position:fixed;
+	}
+
+	.product-order-donut-counters-left{
+		grid-row:1;
+	}
+
+	.product-order-donut-counters-center{
+		grid-row:1;
+	}
+
+	.product-order-donut-counters-right{
+		grid-row:1;
+	}
+
+	.product-order-donut-counters-grid .cta-button{
+		grid-row:2;
+	}
+
+	.small-window-text{
+		visibility: visible;
+		position:relative;
+	}
+
+	.product-order-box-overview-donuts{
+		margin:0;
+	}
+
+	.product-order-box-overview-donuts img{
+		width:100%;
+	}
+
+	.product-order-box-overview-return{
+		margin:0;
+	}
 
 
 /*Inbetween (840px)------------------------------------------------------------------------------------------------*/
@@ -303,12 +358,33 @@
 		grid-column: 1/13;
 	}
 
+	/***Shop Page***/
+	.shop-info-wrapper{
+		grid-column: 1/span 12;
+	}
+
+	.product-grid-wrapper{
+		grid-column: 1/span 12;
+	}
 }
 
 /*Inbetween (688px)----------------------------------------------------------------------------------------------*/
 @media screen and (max-width: 43em){
 	.header-bar-mobile-wrapper{
 		padding-left:2rem;
+	}
+
+	/***Shop Page***/
+	.order-bill-wrapper h3{
+		padding:0;
+	}
+
+	.order-bill-wrapper h4{
+		padding:0;
+	}
+
+	.order-tracker-bar-wrapper .cta-button{
+		margin:0;
 	}
 }
 
@@ -362,6 +438,46 @@
 		grid-template-columns: 1fr 0.25fr 1fr;
 		padding-left:1.75rem;
 	}
+
+	/***Shop Page***/
+	.product-grid-wrapper{
+		display:grid;
+		grid-template-columns: 1fr;
+	}
+
+	.shop-heading{
+		text-align:center;
+	}
+
+	.shop-info-grid{
+		display:grid;
+		grid-template-columns: 2fr;
+	}
+
+	.symbol-legend-vegan{
+		grid-row: 1;
+		grid-column: 1;
+	}
+
+	.symbol-legend-gluten-free{
+		grid-row:1;
+		grid-column: 2;
+	}
+
+	.shop-info-note{
+		text-align: center;
+		padding-right:0;
+		padding-bottom: 1.5rem;
+	}
+
+	.order-bill-wrapper h3{
+		padding:0;
+	}
+
+	.order-bill-wrapper h4{
+		padding:0;
+	}
+
 }
 
 /*Mobile Devices (480px)----------------------------------------------------------------------------------------------*/
@@ -527,14 +643,68 @@
 		position:static;
 	}
 
+	/***Cart Page***/
+
+	.product-order-box-overview-wrapper{
+		padding:0;
+	}
 
 	.shop-info-wrapper{
-		grid-column: 1/span 12;
+		padding-left:2rem;
+		padding-right:2rem;
 	}
 
-	.product-grid-wrapper{
-		grid-column: 1/span 12;
+	.symbol-legend-vegan{
+		padding-right:1rem;
 	}
+
+	.legend-symbol{
+		padding-right:0.5rem;
+	}
+
+
+	.product-order-donut-counters-grid{
+		display:grid;
+		grid-template-columns: 1fr 1fr;
+		grid-template-rows:auto auto auto;
+		grid-gap:0;
+	}
+
+	.product-order-donut-counters-left{
+		grid-column:1;
+		grid-row:1;
+	}
+
+	.product-order-donut-counters-center{
+		grid-column:2;
+		grid-row:1;
+		padding-left: 1.25rem;
+	}
+
+	.product-order-donut-counters-right{
+		grid-column:1/span 2;
+		grid-row:2;
+		display:grid;
+		grid-template-columns: 2;
+	}
+
+	.small-left{
+		grid-column: 1;
+	}
+
+	.small-right{
+		grid-column: 2;
+		grid-row:1;
+		padding-left: 1.25rem;
+	}
+
+	.product-order-donut-counters-wrapper .cta-button{
+		grid-row:3;
+		grid-column: 1;
+		margin-bottom:2rem;
+	}
+
+
 }
 
 /*Smaller Inbetween (384px)----------------------------------------------------------------------------------------------*/
@@ -542,6 +712,9 @@
 	.header-bar-mobile-wrapper{
 		grid-template-columns: 1.5fr 0fr 1fr;
 	}
+
+	/***Shop Page***/
+
 
 }
 
