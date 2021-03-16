@@ -65,7 +65,7 @@
 	}
 
 	.date-and-time-calendar, .date-and-time-input{
-		grid-column:1/8;
+		grid-column:1/7;
 	}
 
 	.checkout-product-preview-menu{	
@@ -91,8 +91,21 @@
 
 }
 
+/*Inbetween(1120px)*/
+@media screen and (max-width:70em){
+	/***Checkout Page***/
+	.info-express-checkout > .divider-line{
+		width:clamp(5%, 75%, 100%);
+	}
+}
+
 /*Inbetween (920px)*/
 @media screen and (max-width:58em){
+	/***Checkout Page***/
+	.date-and-time-calendar, .date-and-time-input{
+		grid-column:1/8;
+	}
+
 	.info-express-buttons{
 		flex-direction:column;
 		align-items:center;
@@ -160,6 +173,17 @@
 		margin:0;
 	}
 
+}
+
+/*Inbetween(860px)*/
+@media screen and (max-width:54em){
+	/***Checkout Page***/
+	.info-express-checkout > .divider-line{
+		width:clamp(5%, 65%, 100%);
+	}
+}
+
+
 
 /*Inbetween (840px)------------------------------------------------------------------------------------------------*/
 @media screen and (max-width:53em){
@@ -178,12 +202,59 @@
 
 }
 
+/*Inbetween(800px)*/
+@media screen and (max-width:50em){
+	/***Checkout Page***/
+	.info-express-checkout > .divider-line{
+		width:clamp(5%, 60%, 100%);
+	}
+}
+
 
 
 
 /* #Tablet Devices (768px)----------------------------------------------------------------------------------------------*/
 @media screen and (max-width:48em){
 	/*GLOBAL===============*/
+	.main-nav{
+		padding-top:2.5rem;
+		padding-left:3rem;
+		padding-right:3rem;
+		padding-bottom:0;
+	}
+
+	/*Nav Bar*/
+	.main-nav{
+		display:grid;
+		grid-template-columns: 1fr 1fr 1fr;
+	}
+
+	.hamburger{
+		display:flex;
+		/*margin-top:1.25rem;*/
+	}
+
+	.nav-logo{
+		grid-column:2/3;
+		justify-self:center;
+	}
+
+	.nav-text{
+		display:none;
+	}
+
+	.main-nav-links{
+		justify-self:right;
+	}
+
+	.main-nav-links a{
+		margin:0;
+		padding:0;
+	}
+
+
+
+
 	.main-grid-container{
 		width: clamp(18.75rem,80%,100rem);
 		margin:auto;
@@ -396,10 +467,87 @@
 	.product-grid-wrapper{
 		grid-column: 1/span 12;
 	}
+
+	/***Footer***/
+	.footer-grid-wrapper{
+		grid-template-rows:3fr auto;
+		padding-bottom:2.5rem;
+	}
+
+	.footer-list-wrapper{
+		display:grid;
+		grid-template-columns: 2fr 1fr 1fr;
+
+		align-items: start;
+	}
+
+	.footer-icons-wrapper{
+		grid-column:1/5;
+		display:flex;
+		flex-direction: row;
+		justify-content: space-between;
+		align-items: center;
+	}
+
+	.footer-icons-wrapper p{
+		margin:0.625rem 0.313rem 0.625rem 0.313rem;
+	}
+
+	.footer-copyright-wrapper {
+		padding-left:3rem;
+		padding-right:3rem;
+		align-items:flex-start;
+	}
+
+	.footer-copyright-wrapper p{
+		width:auto;
+	}
+
+
+	.footer-location-wrapper p{
+		margin:0.313rem 0rem 1rem 0rem;
+	}
+
+	.footer-list-wrapper ul{
+		margin:0.313rem 0rem 1rem 0rem;
+	}
+
+	#hours-mobile{
+		margin-top:1.5rem;
+	}
+
+	.footer-hours-wrapper{
+	 	display:none;
+	}
+
+	.footer-list-wrapper > .divider-line{
+		display:block;
+		grid-column:1/5;
+	}
+
+	.footer-days-wrapper-mobile{
+		display:block;
+		grid-row:4/5;
+	}
+
+	.footer-hours-wrapper-mobile{
+		display:block;
+		grid-column:2/4;
+		grid-row:4/5;
+	}
+
+	.footer-location-wrapper,.footer-days-wrapper-mobile, .footer-contact-wrapper, .footer-help-wrapper{
+		grid-column:1/2;
+	}
+
+
+
 }
+
 
 /*Inbetween (688px)----------------------------------------------------------------------------------------------*/
 @media screen and (max-width: 43em){
+	/***Checkout Page***/
 	.header-bar-mobile-wrapper{
 		padding-left:2rem;
 	}
@@ -535,7 +683,7 @@
 
 	/***Checkout Page***/
 	h1{
-		font-size:3rem;
+		font-size:2rem;
 	}
 
 
@@ -754,7 +902,30 @@
 	}
 
 
+
+	/***References Page***/
+	#references-icons{
+		grid-column: 1/13;
+	}
+
+	/*Footer*/
+	.footer-list-wrapper{
+		padding-left:0;
+		padding-right:0;
+	}
+
+	.footer-copyright-wrapper {
+		padding-left:0rem;
+		padding-right:0rem;
+	}
+
+	.footer-icons-wrapper p{
+		display:none;
+	}
+
 }
+
+
 
 /*Smaller Inbetween (384px)----------------------------------------------------------------------------------------------*/
 @media screen and (max-width: 24em){
@@ -762,7 +933,6 @@
 		grid-template-columns: 1.5fr 0fr 1fr;
 	}
 
-	/***Shop Page***/
 
 
 }

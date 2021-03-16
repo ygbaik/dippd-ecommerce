@@ -17,10 +17,18 @@
 
 <body>
 	<header class="main-nav">
-		<a href="index.html"><img class="dippd-logo" src="img/dippd-logo.png" alt="Dipped shop logo"></a>
+		<input type="checkbox" class="toggler">
+		<div class="hamburger">
+			<div class="hamburger-line" id="top"></div>
+			<div class="hamburger-line" id="middle"></div>
+			<div class="hamburger-line" id="bottom"></div>
+		</div>
+		<div class="nav-logo">
+			<a href="index.html"><img class="dippd-logo" src="img/dippd-logo.png" alt="Dipped shop logo"></a>
+		</div>
 		<nav class="main-nav-links">
-			<a href="shop.html">Shop</a>
-			<a href="about.html">About Us</a>
+			<a href="shop.html" class="nav-text">Shop</a>
+			<a href="about.html" class="nav-text">About Us</a>
 			<a href= "cart.html"><div class="cart-icon"></div></a>
 		</nav>
 	
@@ -133,13 +141,15 @@
 
 					<div class="footer-icons-wrapper">
 						<img class="dippd-logo" src="img/dippd-logo.png" alt="dippd donuts branding logo">
-						<a href="http://instagram.com">
+						<a href="http://instagram.com" target="_blank">
 							<div class="footer-instagram-link">
 								<img src="img/instagram-icon.png" alt="Instagram logo that links to the dippd Instagram page">
 								<p>@dippd</p>
 							</div>
 						</a>
 					</div> 
+
+					<div class="divider-line"></div>
 
 					<div class="footer-location-wrapper">
 						<h5>Locations</h5>
@@ -149,13 +159,38 @@
 					<div class="footer-hours-wrapper">
 						<h5>Hours</h5>
 						<ul id="hours">
-							<li>Mon 10AM-5PM</li>
-							<li>Tue 10AM-5PM</li>
-							<li>Wed 10AM-5PM</li>
-							<li>Thu 10AM-5PM</li>
-							<li>Fri 10AM-5PM</li>
-							<li>Sat 10AM-5PM</li>
-							<li>Sun 10AM-5PM</li>
+							<li>Mon  10AM-5PM</li>
+							<li>Tue  10AM-5PM</li>
+							<li>Wed  10AM-5PM</li>
+							<li>Thu  10AM-5PM</li>
+							<li>Fri  10AM-5PM</li>
+							<li>Sat  10AM-5PM</li>
+							<li>Sun  10AM-5PM</li>
+						</ul>
+					</div>
+
+					<div class="footer-days-wrapper-mobile">
+						<h5>Hours</h5>
+						<ul id="days-mobile">
+							<li>Monday</li>
+							<li>Tuesday</li>
+							<li>Wednesday</li>
+							<li>Thursday</li>
+							<li>Friday</li>
+							<li>Saturday</li>
+							<li>Sunday</li>
+						</ul>
+					</div>
+
+					<div class="footer-hours-wrapper-mobile">
+						<ul id="hours-mobile">
+							<li>10AM–5PM</li>
+							<li>10AM–5PM</li>
+							<li>10AM–5PM</li>
+							<li>10AM–5PM</li>
+							<li>10AM–5PM</li>
+							<li>10AM–5PM</li>
+							<li>10AM–5PM</li>
 						</ul>
 					</div>
 

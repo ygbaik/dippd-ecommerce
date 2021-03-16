@@ -24,6 +24,10 @@
 	padding-bottom:0;
 }
 
+.toggler, .hamburger, .hamburger-line{
+	display:none;
+}
+
 .dippd-logo{
 	display:inline-block;
 	width:clamp(100px,100px,150px);
@@ -100,6 +104,124 @@ footer{
 	position: relative;
 	z-index: 3;
 }
+
+
+/* HAMBURGER MENU --------------------------------------------------------------------------------- */ 
+
+.toggler{
+	box-shadow: none;	
+}
+
+.menu-wrap{
+	visibility: hidden;
+}
+
+.hamburger-menu{
+	color:white;
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	justify-content: center;
+	align-items: center;
+	visibility: hidden;
+
+	position:fixed;
+	top: 10;
+	right: 0;
+	width:100%;
+	height: 100%;
+	overflow:hidden;
+	background-color: #6339A1;
+
+	transform: opacity 0.4s;
+	opacity: 0;
+	}
+
+.d-logo{
+	width:50px;
+	}
+
+.hamburger-menu > .divider-line{
+	width:35%;
+	margin:1rem auto;
+	background-color: white;
+	}
+
+.hamburger-menu > a{
+	margin:0;
+	}
+
+.toggler{
+	position: absolute;
+	top: 0;
+	right: 0;
+	z-index: 2;
+	cursor: pointer;
+	width:50px;
+	height:50px;
+	opacity: 0;
+}
+ 
+ .hamburger{
+	top: 0;
+	right: 0;
+	z-index: 1;
+	width:60px;
+	height:60px;
+	padding: 1rem 1rem 1rem 0;
+	display: none;
+	flex-direction: column;
+	justify-content: center;
+	align-content: center;
+}
+
+/* HAMBURGER MENU LINES*/
+.hamburger-line {
+	position: relative;
+	width: 100%;
+	height: 2px;
+	background-color:white;
+	display:flex;
+	align-items: center;
+	justify-content: center;
+}
+
+#top {
+	top:-7.5px;
+}
+
+#bottom {
+	top:7.5px;
+}
+
+/* HAMBURGER MENU TOGGLE*/
+.toggler:checked ~.hamburger-menu{
+	visibility: visible;
+	transition: opacity .4s;
+	opacity: 1;
+}
+
+/* TOGGLER ANIMATE */
+.toggler:checked + .hamburger{
+	transform: rotate(135deg);
+	transition: transform .4s;
+}
+
+/* TURN LINES INTO X */
+.toggler:checked + .hamburger > #top {
+	top: 1px;
+	transform: rotate(90deg);
+	transition: transform .4s;
+}
+
+.toggler:checked + .hamburger > #bottom {
+	top: -1px;
+	transform: rotate(90deg);
+	transition: transform .4s;
+}
+
+
+
 
 /*TYPOGRAPHY-----------------------------------------------------------------------*/
 
@@ -224,6 +346,11 @@ a{
 .footer-icons-wrapper, .footer-location-wrapper, .footer-hours-wrapper, .footer-contact-wrapper, .footer-help-wrapper{
 	display:flex;
 	flex-direction: column;
+}
+
+
+.footer-days-wrapper-mobile, .footer-hours-wrapper-mobile{
+	display:none;
 }
 
 .footer-list-wrapper > .divider-line{
@@ -435,6 +562,9 @@ button.cta-button:focus{
 .burgundy-dark-text{
 	color:#84124F;
 }
+
+
+
 
 /*MAIN PAGES================================================================================================*/
 
@@ -1650,7 +1780,7 @@ button[type="express-first"], button[type="express-second"]{
 .info-express-checkout{
 	display:flex;
 	flex-direction: row;
-	justify-content: space-around;
+	justify-content: space-between;
 	align-items:center;
 }
 
@@ -1661,6 +1791,11 @@ button[type="express-first"], button[type="express-second"]{
 	visibility: hidden;
 	position:fixed;
 }
+
+.info-express-checkout > .divider-line{
+	width:clamp(5%, 100%, 100%);
+}
+
 
 .info-express-checkout-mobile > .divider-line{
 	width:clamp(5%, 100%, 25%);
@@ -1675,8 +1810,15 @@ button[type="express-first"], button[type="express-second"]{
 }
 
 .info-express-checkout h4{
-	width:13rem;
+	width:20rem;
+	margin-right:0.625rem;
 }
+
+.info-express-checkout-mobile h4{
+	margin-left:0.625rem;
+	margin-right:0.625rem;
+}
+
 .info-express-checkout > .divider-line.side{
 	margin-top:3rem;
 }
@@ -1963,6 +2105,36 @@ button[type="pay-now"] a{
 	margin-top:2.5rem;
 	visibility: hidden;
 	position:fixed;
+}
+
+/*.box-and-value{
+	display:flex;
+	flex-direction: row;
+	justify-content: left;	
+}
+
+.box-and-value img{
+}
+
+.product-name-and-value.mobile{
+	margin-left:1.25rem;
+	margin-right:0;
+	margin-top:2px;
+	display:grid;
+	grid-template-rows: 0.25fr 0.25fr 1fr
+}
+
+.product-name-and-value.mobile p{
+	margin:0;
+	font-weight: 400;
+}*/
+
+
+
+
+.product-name-and-value.mobile, .subtotal-name-and-value.mobile, .shipping-name-and-value.mobile, .total-value.mobile{
+	margin-left:1.25rem;
+	margin-right:1.25rem;
 }
 
 
