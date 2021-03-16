@@ -218,9 +218,9 @@
 	/*GLOBAL===============*/
 	.main-nav{
 		padding-top:2.5rem;
-		padding-left:3rem;
-		padding-right:3rem;
-		padding-bottom:0;
+		/*padding-left:1rem;
+		padding-right:1rem;
+*/		padding-bottom:0;
 	}
 
 	/*Nav Bar*/
@@ -661,6 +661,10 @@
 /* #Mobile Devices (480px)----------------------------------------------------------------------------------------------*/
 @media screen and (max-width:30em){
 	/*GLOBAL===============*/
+	.main-nav{
+		padding-left:1rem;
+		padding-right:1rem;
+	}
 
 	/* #ABOUT US PAGE------------*/
 	.message{
