@@ -22,6 +22,12 @@
 	grid-template-columns:repeat(18,1fr);
 }
 
+.main-grid.confirmation-page{
+	background-color: white;
+	display:grid;
+	grid-template-columns:repeat(18,1fr);
+}
+
 .right-side-menu{
 	grid-column:12/19;
 	height:auto;
@@ -36,6 +42,474 @@
 	grid-template-columns:repeat(5, 1fr);*/
 }
 
+.top-mobile-menu{
+	grid-column:1/19;
+	margin-top:2.5rem;
+	display:grid;
+	grid-template-columns: repeat(18,1fr);
+
+	visibility: hidden;
+	position:fixed;
+}
+
+/*Media Queries=========================================================================================================*/
+
+/*Large Inbetween (1216px)----------------------------------------------------------------------------------------------*/
+@media screen and (max-width:76em){
+	h1{
+		font-size:2.5rem;
+	}
+
+	p{
+		font-size:1rem;
+	}
+
+	.date-and-time-calendar, .date-and-time-input{
+		grid-column:1/8;
+	}
+
+	.checkout-product-preview-menu{	
+		padding:5rem 2.5rem 2.5rem 2.5rem;
+	}
+}
+
+
+/*Small Window (1200px)------------------------------------------------------------------------------------------------*/
+@media screen and (max-width:75em){
+	/***References Page***/
+	/*#references-images-and-copywriting{
+		grid-column:1/7;
+	}
+
+	#references-icons{
+		grid-column: 1/7;
+	}*/
+
+}
+
+
+
+
+/*Tablet Devices (768px)----------------------------------------------------------------------------------------------*/
+@media screen and (max-width:48em){
+	/***Checkout Page***/
+	h1{
+		font-size:2.5rem;
+	}
+
+	.main-grid.checkout-page h4{
+		text-align:center;
+	}
+
+	#order-info h4{
+		text-align:left;
+	}
+
+
+	p{
+		font-size:1rem;
+	}
+
+	.right-side-menu{
+		grid-column:1/19;
+		position:fixed;
+		visibility: hidden;
+	}
+
+	.checkout-product-preview-menu{	
+		padding:2.5rem 1.25rem 2.5rem 1.25rem;
+		position:static;
+		top:0;
+	}
+
+	.product-name-and-value, .subtotal-name-and-value, .shipping-name-and-value, .total-value{
+		margin-left:2.5rem;
+		margin-right:2.5rem;
+	}
+
+	.left-side-menu{
+		grid-column:2/18;
+		margin-top:1.25rem;
+		/*display:grid;
+		grid-template-columns:repeat(5, 1fr);*/
+	}
+
+	.top-mobile-menu{
+		visibility: visible;
+		position:static;
+	}
+
+	.header-bar-mobile-wrapper{
+		grid-template-columns: 1fr 1fr 1fr;
+		padding-left:2.5rem;
+		padding-right:2.5rem;
+	}
+
+	.text-information{
+		grid-column:1/2;
+	}
+
+	.price-information{
+		grid-column:3/4;
+	}
+
+	#header-checkout{
+		visibility: hidden;
+		position:fixed;
+	}
+
+	.date-and-time-header{
+		visibility: hidden;
+		position: fixed;
+	}
+
+	.date-and-time-header-mobile{
+		visibility: visible;
+		position:static;
+		margin-top:2.5rem;
+		margin-bottom:1.25rem;
+	}
+
+	.date-and-time-header-mobile h4{
+		margin-top:0rem;
+	}
+
+
+	.receiving-method-buttons{
+		flex-direction: row;
+		justify-content: center;
+		align-items:center;
+	}
+
+	#date-and-time h4{
+		grid-column:1/9;
+	}
+
+	.date-and-time-calendar, .date-and-time-input{
+		grid-column:1/9;
+	}
+
+	/*Info section*/
+	.info-express-checkout{
+		visibility: hidden;
+		position:fixed;
+	}
+
+	.info-express-checkout-mobile{
+		visibility: visible;
+		margin-top:5rem;
+		position:static;
+	}
+
+	.info-express-checkout-mobile h4{
+		margin-top:0;
+	}
+
+	.info-express-buttons{
+		flex-direction:row;
+		align-items:center;
+	}
+
+	.info-express-buttons button{
+		width:40%;
+		margin:0.625rem 1.25rem 0.625rem 1.25rem;
+	}
+
+	.divider-line.under{
+		visibility:hidden;
+		position:fixed;
+	}
+
+	.info-express-mobile-bottom{
+		visibility: visible;
+		position:static;
+		margin-top:2.5rem;
+	}
+
+	.info-express-mobile-bottom h4{
+		margin: 0rem 1.25rem 0rem 1.25rem;	
+	}
+
+	.names-section{
+		flex-direction:column;
+	}
+
+	.address-section{
+		visibility: hidden;
+		position:fixed;
+	}
+	.address-section-mobile{
+		visibility:visible;
+		margin-top:2.5rem;
+		position:static;
+	}
+
+	/*Payment*/
+	.payment-forms{
+		visibility:hidden;
+		position:fixed;
+	}
+
+	.payment-forms-mobile{
+		visibility:visible;
+		position:static;
+	}
+
+
+	/***Confirmation Page***/
+	.checkout-product-preview-menu.mobile{
+		visibility: visible;
+		position:static;
+	}
+
+	/***References Page***/
+	#references-images-and-copywriting{
+		grid-column:1/13;
+	}
+
+	#references-icons{
+		grid-column: 1/13;
+	}
+
+
+
+}
+
+/*Inbetween (688px)----------------------------------------------------------------------------------------------*/
+@media screen and (max-width: 43em){
+	.header-bar-mobile-wrapper{
+		padding-left:2rem;
+	}
+}
+
+
+/*Inbetween (608px)----------------------------------------------------------------------------------------------*/
+@media screen and (max-width:38em) {
+	/***Checkout Page***/
+	h1{
+		font-size:2.5rem;
+	}
+
+	p{
+		font-size:1rem;
+	}
+
+	.left-side-menu{
+		grid-column:2/18;
+		margin-top:1.25rem;
+		/*display:grid;
+		grid-template-columns:repeat(5, 1fr);*/
+	}
+
+	.top-mobile-menu{
+		visibility: visible;
+		position:static;
+	}
+
+	.header-bar-mobile-wrapper{
+		grid-template-columns: 1fr 0.5fr 1fr;
+		padding-left:2rem;
+		padding-right:2.5rem;
+	}
+
+	.text-information{
+		grid-column:1/2;
+	}
+
+	.price-information{
+		grid-column:3/4;
+	}
+
+	/*Info section*/
+	.info-express-checkout-mobile h4{
+		margin-top:0;
+	}
+
+	.info-express-buttons{
+		flex-direction:column;
+		align-items:center;
+	}
+
+	.info-express-buttons button{
+		width:40%;
+		margin:0.625rem 0rem 0.625rem 0rem;
+	}
+}
+
+/*Inbetween (560px)----------------------------------------------------------------------------------------------*/
+@media screen and (max-width:35em){
+	.header-bar-mobile-wrapper{
+		grid-template-columns: 1fr 0.25fr 1fr;
+		padding-left:1.75rem;
+	}
+}
+
+/*Mobile Devices (480px)----------------------------------------------------------------------------------------------*/
+@media screen and (max-width:30em){
+	
+
+	/***Checkout Page***/
+	h1{
+		font-size:2rem;
+	}
+
+
+	h2{
+		font-size:1.5rem;
+	}
+
+	h3{
+		font-size:1.25rem;
+	}
+
+	p{
+		font-size:1rem;
+	}
+
+	.right-side-menu{
+		grid-column:1/19;
+		position:fixed;
+		visibility: hidden;
+	}
+
+	.checkout-product-preview-menu{	
+		padding:2.5rem 1.25rem 2.5rem 1.25rem;
+		position:static;
+		top:0;
+	}
+
+	.product-name-and-value, .subtotal-name-and-value, .shipping-name-and-value, .total-value{
+		margin-left:2.5rem;
+		margin-right:2.5rem;
+	}
+
+	.left-side-menu{
+		grid-column:2/18;
+		margin-top:1.25rem;
+		/*display:grid;
+		grid-template-columns:repeat(5, 1fr);*/
+	}
+
+	.header-bar-mobile-wrapper{
+		grid-template-columns: 1fr 0fr 1fr;
+		padding-left:1.25rem;
+		padding-right:1.25rem;
+	}
+
+	.top-mobile-menu{
+		visibility: visible;
+		position:static;
+	}
+
+	#header-checkout{
+		visibility: hidden;
+		position:fixed;
+	}
+
+	.date-and-time-header{
+		visibility: hidden;
+		position: fixed;
+	}
+
+	.date-and-time-header-mobile{
+		visibility: visible;
+		position:static;
+		margin-top:2.5rem;
+		margin-bottom:1.25rem;
+	}
+
+	.date-and-time-header-mobile h4{
+		margin-top:0rem;
+	}
+
+
+	.receiving-method-buttons{
+		flex-direction: column;
+		align-items:center;
+	}
+
+	#date-and-time h4{
+		grid-column:1/9;
+	}
+
+	.date-and-time-calendar, .date-and-time-input{
+		grid-column:1/9;
+	}
+
+	/*Info section*/
+	.info-express-checkout{
+		visibility: hidden;
+		position:fixed;
+	}
+
+	.info-express-checkout-mobile{
+		visibility: visible;
+		margin-top:5rem;
+		position:static;
+	}
+
+	.info-express-checkout-mobile h4{
+		margin-top:0;
+	}
+
+	.info-express-buttons{
+		flex-direction:column;
+		align-items:center;
+	}
+
+	.info-express-buttons button{
+		width:40%;
+		margin:0.625rem 0rem 0.625rem 0rem;
+	}
+
+	.divider-line.under{
+		visibility:hidden;
+		position:fixed;
+	}
+
+	.info-express-mobile-divider-line{
+		visibility: visible;
+		position:static;
+		margin-top:2.5rem;
+	}
+
+	.info-express-mobile-divider-line h4{
+		margin: 0rem 1.25rem 0rem 1.25rem;	
+	}
+
+	.names-section{
+		flex-direction:column;
+	}
+
+	.address-section{
+		visibility: hidden;
+		position:fixed;
+	}
+	.address-section-mobile{
+		visibility:visible;
+		margin-top:2.5rem;
+		position:static;
+	}
+
+	/*Payment*/
+	.payment-forms{
+		visibility:hidden;
+		position:fixed;
+	}
+
+	.payment-forms-mobile{
+		visibility:visible;
+		position:static;
+	}
+}
+
+/*Smaller Inbetween (384px)----------------------------------------------------------------------------------------------*/
+@media screen and (max-width: 24em){
+	.header-bar-mobile-wrapper{
+		grid-template-columns: 1.5fr 0fr 1fr;
+	}
+
+}
 
 
 

@@ -25,6 +25,37 @@
 
 
 		<div class="main-grid checkout-page">
+			<div class="top-mobile-menu">
+				<section id="header-checkout-mobile">
+					<div class="header-checkout-logo-mobile">
+						<a href="index.html"><img class="dippd-logo" src="img/dippd-logo-checkout.png" alt="Dipped shop logo"></a>
+					</div>
+					<!-- <ul class="header-checkout-breadcrumbs">
+						<li class="breadcrumbs-item"><a href="cart.html">Box</a></li>
+						<li class="breadcrumbs-item">Receiving Method</li>
+						<li class="breadcrumbs-item">Date and Time</li>
+						<li class="breadcrumbs-item">Info</li>
+						<li class="breadcrumbs-item">Payment</li>
+					</ul>	 -->
+				</section> <!-- end of header section -->
+
+				<!-- Checkout product preview for mobile; hidden until media query value met -->
+				<section id="header-bar-mobile">
+					<div class="header-bar-mobile-wrapper violet">
+						<div class="text-information">
+							<div class="cart-icon-open-mobile"></div>
+							<p>Open your box</p>
+							<p>▾</p>
+						</div>
+
+						<div class="price-information">
+							<h3>$21.00</h3>
+						</div>
+					</div>
+				</section>
+			</div>
+
+
 			<div class="left-side-menu">
 				<section id="header-checkout">
 					<div class="header-checkout-logo">
@@ -65,7 +96,14 @@
 
 
 				<section id="date-and-time">
-					<h4>Choose Date and Time</h4>
+					<div class="date-and-time-header">
+						<h4>Choose Date and Time</h4>
+					</div>
+					<div class="date-and-time-header-mobile">
+						<div class="divider-line"></div>
+						<h4>Date and Time</h4>
+						<div class="divider-line"></div>
+					</div>
 					<div class="date-and-time-calendar">
 						<div class="calendar-header">
 							<div class="month-arrows">
@@ -144,17 +182,30 @@
 				<section id="info">
 					<form action="confirmation.html">
 						<div class="info-express-checkout">
-								<h4>Express Checkout</h4>
-								<div class="divider-line side"></div>
+							<h4>Express Checkout</h4>
+							<div class="divider-line side"></div>
+						</div>
+
+						<!-- hidden until media query breakpoint is met -->
+						<div class="info-express-checkout-mobile">
+							<div class="divider-line"></div>
+							<h4>Express Checkout</h4>
+							<div class="divider-line"></div>
 						</div>
 
 						<div class="info-express-buttons">
-								<button type="express-first"><img src="img/apple-pay-icon.png"></button>
-								<button type="express-second"><img src="img/google-pay-icon.png"></button>
-								<button type="express"><img src="img/paypal-icon.png"></button>
+							<button type="express-first"><img src="img/apple-pay-icon.png" class="express-images" alt="An image of the apple pay logo." width="59" height="24"></button>
+							<button type="express-second"><img src="img/google-pay-icon.png" class="express-images" alt="An image of the google pay logo." width="59" height="24"></button>
+							<button type="express"><img src="img/paypal-icon2.png" class="express-images" alt="An image of the paypal logo."width="59" height="24"></button>
 						</div>
 
 						<div class="divider-line under"></div>
+
+						<div class="info-express-mobile-bottom">
+							<div class="divider-line"></div>
+							<h4>or</h4>
+							<div class="divider-line"></div>
+						</div>
 
 						<div class="info-contact-information">
 							<h4>Contact Information</h4>
@@ -177,6 +228,20 @@
 								<input type="text" placeholder="City">
 								<div class="country-info">
 									<input type="text-first" placeholder="Country">
+									<input type="text-second" placeholder="Province">
+									<input type="text" placeholder="Postal Code">
+								</div>
+							</div>
+
+							<!-- hidden until media query breakpoint is met -->
+							<div class="address-section-mobile">
+								<input type="text" placeholder="Address">
+								<div class="address-info">
+									<input type="text-first" placeholder="City">
+									<input type="text" placeholder="Apt. Suite">
+								</div>
+								<input type="text-first" placeholder="Country">
+								<div class="country-info">
 									<input type="text-second" placeholder="Province">
 									<input type="text" placeholder="Postal Code">
 								</div>
@@ -233,7 +298,10 @@
 							<div class="radio-button-selection">
 								<input type="radio" id="credit-card" name="payment-option" value="credit-card" checked>
 								<div class="button-info">
-									<label for="credit-card">Credit Card</label>
+									<label for="credit-card" class="radio">
+										<!-- <div class="custom-radio"></div> -->
+										<p>Credit Card</p>
+									</label>
 									<img src="img/visa-mastercard.png">
 								</div>
 							</div>
@@ -245,9 +313,33 @@
 							</div>
 							<div class="radio-button-selection paypal">
 								<input type="radio" id="paypal" name="payment-option" value="paypal">
+								<div class="button-info">
+									<label for="paypal"><img src="img/paypal-payment.png"></label>
+								</div>
+							</div>
+						</div>
+
+						<div class="payment-forms-mobile">
+							<h4>Payment Information</h4>
+							<div class="radio-button-selection">
+								<input type="radio" id="credit-card" name="payment-option" value="credit-card">
+								<div class="button-info">
+									<label for="credit-card">Credit Card</label>
+									<img src="img/visa-mastercard.png">
+								</div>
+							</div>
+							<input type="number" id="credit-card-input" placeholder="Card Number">
+							<input type="text-first" placeholder="Name on Card">
+							<div class="card-info">
+								<input type="text-second-payment-mobile" placeholder="MM/YY">
+								<input type="number" id="cvv-input" placeholder="CVV">
+							</div>
+							<div class="radio-button-selection paypal">
+								<input type="radio" id="paypal" name="payment-option" value="paypal">
 								<label for="paypal"><img src="img/paypal-payment.png"></label>
 							</div>
 						</div>
+
 						<div class="payment-buttons">
 							<p><a href="cart.html">◂ Return to Box</a></p>
 							<button type="pay-now">Pay Now ▸</button>
