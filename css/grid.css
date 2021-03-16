@@ -181,9 +181,39 @@
 
 
 
-/*Tablet Devices (768px)----------------------------------------------------------------------------------------------*/
+/* #Tablet Devices (768px)----------------------------------------------------------------------------------------------*/
 @media screen and (max-width:48em){
-	/***Checkout Page***/
+	/*GLOBAL===============*/
+	.main-grid-container{
+		width: clamp(18.75rem,80%,100rem);
+		margin:auto;
+	}
+
+	/*TYPOGRAPHY-----------*/
+	h1{
+		font-size:3rem;
+	}
+
+	h2{
+		font-size:1.75rem;
+	}
+
+	h3{
+		font-size:1.3rem;
+	}
+
+	/* #ABOUT US PAGE------------*/
+	.message{
+		text-align: center;
+		padding:2rem 2rem;
+		justify-content: center;
+	}
+
+	.signature{
+		margin:0 auto;
+	}
+
+	/* #CHECKOUT PAGE------------*/
 	h1{
 		/*font-size:2.5rem;*/
 	}
@@ -480,9 +510,28 @@
 
 }
 
-/*Mobile Devices (480px)----------------------------------------------------------------------------------------------*/
+/* #Mobile Devices (480px)----------------------------------------------------------------------------------------------*/
 @media screen and (max-width:30em){
-	
+	/*GLOBAL===============*/
+
+	/* #ABOUT US PAGE------------*/
+	.message{
+		text-align: center;
+		padding:2rem 1rem;
+	}	
+
+	/*TYPOGRAPHY-----------*/
+	h1{
+		font-size:2rem;
+	}
+
+	h2{
+		font-size:1.5rem;
+	}
+
+	h3{
+		font-size:1.25rem;
+	}
 
 	/***Checkout Page***/
 	h1{

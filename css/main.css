@@ -136,7 +136,7 @@ h5{
 p{
 	font-size:1rem;
 	font-family: "ubuntu mono", monospace;
-	font-weight: lighter;
+	font-weight: 400;
 }
 
 a{
@@ -472,12 +472,12 @@ button.cta-button:focus{
 	height:clamp(85vh, 100%, 93vh);
 }
 
-.floating-donut-wrapper{
+.floating-donut-gif-wrapper{
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
 	align-items: center;
-	height:clamp(450px, 50%, 500px);
+	height:clamp(350px, 15vw, 500px);
 }
 
 .hero-donut-main{
@@ -693,23 +693,28 @@ button.cta-button:focus{
 }
 
 
-/*ABOUT US-----------------------------------------------------------------------------------------------------*/
+/* #ABOUT US-----------------------------------------------------------------------------------------------------*/
 
 .about-us-section{
-	height:100vh;
 	overflow: hidden;
-}
-
-.about-us-section > .main-grid-container{
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
+	position: relative;
 	text-align: center;
 }
 
-.message img{
+.about-us-section h1{
+	position: relative;
+	z-index: 2;
+	margin-top:5rem;
+	margin-bottom: 2rem;
+}
+
+.about-us-section > .main-grid-container{
+	position: relative;
+}
+
+.signature{
 	display: block;
-	width:30%;
+	width:max(30%,150px);
 }
 
 .message{
@@ -720,11 +725,11 @@ button.cta-button:focus{
 	justify-content: center;
 	text-align: left;
 	background-color: rgba(255,255,255,.75);
-	padding:2rem 2rem;
-	width:clamp(45ch, 90%, 75ch);
+	padding:3rem 2rem;
+	width:clamp(30ch, 65%, 65ch);
 	line-height: 1.2rem;
 	height:auto;
-	margin:2rem auto 0 auto;
+	margin:2rem auto 5rem auto;
 }
 
 .message p{
@@ -734,7 +739,7 @@ button.cta-button:focus{
 .floating-donut{
 	position:absolute;
 	z-index: 1;
-	width:clamp(100px,25%,250px);
+	width:clamp(120px, 20vw, 160px);
 }
 
 .floating-donut-wrapper{
@@ -742,31 +747,33 @@ button.cta-button:focus{
 }
 
 .one{
-	left:-5%;
+	bottom:150px;
+	left:-200px;
 }
 
 .two{
 	top:0;
+	left:0;
 }
 
 .three{
-	bottom:0;
-	left:10%;
+	bottom:-110px;
+	left:200px;
 }
 
 .four{
-	right:20%;
-	top:20%;
+	right:100px;
+	top:100px;
 }
 
 .five{
-	right:20%;
-	bottom:-10%;
+	right:50px;
+	bottom:-200px;
 }
 
 .six{
-	right:-5%;
-	bottom:20%;
+	right:-220px;
+	bottom:100px;
 }
 
 /*FAQ-----------------------------------------------------------------------------------------------------*/
