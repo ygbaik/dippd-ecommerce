@@ -270,8 +270,6 @@ button{
 	text-decoration: none;
 	display:block;
 	text-align: center;
-
-	width: 200px;
 }
 
 .cta-button:hover{
@@ -903,8 +901,9 @@ ol li:first-child {
 }
 
 .product-grid-wrapper{
+	grid-column:4/span 12;
 	display:grid;
-	grid-template-columns: repeat(3, 1fr);
+	grid-template-columns: repeat(3, 33.3%);
 }
 
 .product-grid-item-wrapper{
@@ -1059,6 +1058,7 @@ button[type="quantity"]{
 	cursor:pointer;
 }
 
+
 /*CART---------------------------------------------------------------------------------------------------*/
 .product-order-box-overview-wrapper{ 
 	margin-top: 5rem;
@@ -1098,10 +1098,10 @@ button[type="quantity"]{
 
 .product-order-box-overview-donuts{
 	grid-column:1/span 6;
-	display:flex;
-	flex-direction:row;
-	justify-content:center;
-	align-content:center;
+	/*display:flex;
+	flex-direction:row;*/
+	/*justify-content:center;*/
+	/*align-content:center;*/
 }
 
 .product-order-box-overview-counter{
@@ -1139,8 +1139,6 @@ button[type="quantity"]{
 	margin-bottom:7rem;
 	grid-column: 7/span 12;
 	padding:1.5rem;
-	display:grid;
-	grid-template-columns:repeat(5,1fr);
 }
 
 .product-order-donut-counters-wrapper .cta-button{
@@ -1150,10 +1148,14 @@ button[type="quantity"]{
 }
 
 .product-order-donut-counters-grid{
-	grid-column-start: 1/span 5;
 	display:grid;
-	grid-template-columns:repeat(5,1fr);
+	grid-template-columns:repeat(3,33%);
 	grid-template-rows:repeat(5, auto);
+	grid-gap: 1.25rem;
+}
+
+.product-name input[type=number]{
+	  margin:0;
 }
 
 .product-name input[type=number]::-webkit-inner-spin-button{
@@ -1186,6 +1188,30 @@ button[type="quantity"]{
 	color:#84124F;
 	font-weight:600;
 	margin-top:0;
+	margin-bottom:1rem;
+}
+
+.small-window-text h2{
+	color:#84124F;
+	margin-bottom:0.5rem;
+	font-weight:bold;
+}
+
+.small-window-text h4{
+	margin-top:0;
+	font-weight:600;
+}
+
+.small-window-text h3{
+	color:#84124F;
+	font-weight:600;
+	margin-top:0;
+	margin-bottom:1rem;
+}
+
+.small-window-text{
+	visibility: hidden;
+	position:fixed;
 }
 
 .product-order-donut-counters-left{
@@ -1203,23 +1229,18 @@ button[type="quantity"]{
 	grid-row:4;
 }
 
-/*.product-order-donut-counters-grid a{
-	grid-column-start:1;
-	grid-row:5;
-	color: black;
-	text-decoration: none;
-}*/
-
 .product-name{
 	display:flex;
-	margin: 0.5rem;
-	justify-content: space-between;
+	flex-direction: row;
 	align-items: center;
+	justify-content: space-between;
+	margin-top: 0;
+	margin-bottom: 1rem;
 }
 
 .product-name label{
 	font-family: ubuntu mono, monospace;
-	padding-right: 2rem;
+	margin:0;
 }
 
 
