@@ -276,7 +276,33 @@
 		align-self: center;
 	}
 
+	.donut-grid-wrapper{
+		grid-column: 1/ span 12;
+	}
 
+	.value-proposition-cta-wrapper{
+		grid-column: 1/ span 12;
+	}
+
+	.value-proposition-section{
+		text-align: center;
+	}
+
+	.value-proposition-cta-wrapper a{
+		align-self: center;
+	}
+
+	.donut-grid-wrapper img{
+		margin:0 auto;
+	}
+
+	.featured-products-wrapper{
+		grid-template-columns: 1fr;
+	}
+
+	.main-cta-section > .main-grid-container{
+		flex-direction: column;
+	}
 
 	/*TYPOGRAPHY-----------*/
 	h1{

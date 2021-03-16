@@ -493,7 +493,6 @@ button.cta-button:focus{
 
 
 
-
 /* COLOR SWATCHES---------------------------------------------------------------------------- */ 
 
 .gold{
@@ -757,7 +756,7 @@ button.cta-button:focus{
 }
 
 .featured-products-wrapper img{
-	width:clamp(200px, 100% ,300px);
+	width:clamp(150px, 100vw, 230px);
 }
 
 .recommended-donut-wrapper{
