@@ -264,8 +264,8 @@ footer{
 
 .dropdown-menu{
 	background:#8E54BA;
-	padding-left:2.5rem;
-	padding-right:2.5rem;
+	padding-left:3rem;
+	padding-right:3rem;
 }
 
 .dropdown-menu .divider-line{
@@ -293,32 +293,36 @@ footer{
 	grid-gap:0.625rem;
 	grid-template-rows:1fr;
 	grid-template-columns:4% 96%;
-	padding-bottom:1.25rem;
 	align-self:center;
 }
 
-.dropdown-nav-instagram img{
+.dropdown-nav-instagram a{
+	text-decoration:none;
+	color:white;
 	grid-row:1;
+	align-self:center;
+	margin:0;
+}
+
+/*.dropdown-nav-instagram img{
+	grid-row:1;
+	align-self:center;
+	justify-self:end;
+}
+*/
+.dropdown-nav-instagram .nav-instagram-logo{
 	align-self:center;
 	justify-self:end;
 }
 
 .dropdown-nav-instagram p{
-	grid-row:1;
-	align-self:center;
-	margin:0;
+	margin-bottom:1.375rem;
 
 }
 
 
 
 
-
-/*
-.dropdown-nav-instagram .test{
-	width:auto;
-}
-*/
 
 
 
