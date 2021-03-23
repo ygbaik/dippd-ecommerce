@@ -294,7 +294,7 @@ footer{
 
 .dropdown-nav-instagram{
 	display:grid;
-	grid-gap:0.625rem;
+	grid-gap:0.4rem;
 	grid-template-rows:1fr;
 	grid-template-columns:4% 96%;
 	align-self:center;
@@ -309,12 +309,12 @@ footer{
 	margin:0;
 }
 
-.dropdown-nav-instagram h5{
+.dropdown-nav-instagram img{
 	grid-row:1;
 	align-self:center;
 	justify-self:end;
 }
-*/
+
 .dropdown-nav-instagram .nav-instagram-logo{
 	align-self:center;
 	justify-self:end;
