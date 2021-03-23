@@ -413,6 +413,10 @@
 		grid-template-columns: 1fr 1fr 1fr;
 	}
 
+	.toggler{
+		display:block;
+	}
+
 	.hamburger{
 		display:flex;
 		/*margin-top:1.25rem;*/
