@@ -5,6 +5,15 @@
 //CHECKOUT MENU ========================================================================================/
 // Variables--------------------------------------------------------------------------------------------
 
+// Dropdown
+let dropdownOpenButton = document.querySelector(".text-information");
+let dropdownArrow = document.querySelector(".dropdown-arrow");
+
+
+let dropdownMenu = document.querySelector("#header-dropdown-mobile");
+dropdownMenu.setAttribute('aria-active', 'false');
+
+
 // Receiving Buttons
 let pickupButton = document.querySelector(".receiving-buttons.pickup");
 pickupButton.setAttribute('aria-active', 'true');
@@ -35,6 +44,27 @@ let inputArrow = document.querySelector(".input-bar-arrow")
 
 
 // Functions and Interactive Script----------------------------------------------------------------------
+
+// Dropdown Menu
+function ariaDropdown(){
+	//Change aria attribute and arrow text
+	if (dropdownMenu.classList.contains("active")){
+		dropdownMenu.setAttribute('aria-active', 'true');
+		dropdownArrow.innerHTML='▴';
+	}
+	else{
+		dropdownMenu.setAttribute('aria-active', 'false');
+		dropdownArrow.innerHTML='▾';
+	}
+}
+
+
+dropdownOpenButton.addEventListener("click", () => {
+	// Activate dropdown
+	dropdownMenu.classList.toggle("active");
+	ariaDropdown();
+})
+
 
 // Receiving Buttons
 
@@ -110,4 +140,6 @@ timeList.forEach(o => {
 		// console.log(dropdown);
 		inputBarStyling();
 	})
-}
+})
+
+

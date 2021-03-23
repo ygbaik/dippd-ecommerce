@@ -33,7 +33,7 @@ html{
 }
 
 .toggler, .hamburger, .hamburger-line{
-	display:none;
+	/*display:none;*/
 }
 
 .dippd-logo{
@@ -161,13 +161,14 @@ footer{
 
 .toggler{
 	position: absolute;
-	top: 0;
-	right: 0;
+	left:0;
 	z-index: 2;
 	cursor: pointer;
 	width:50px;
 	height:50px;
 	opacity: 0;
+	margin-left:40px;
+	margin-top:50px;
 }
  
  .hamburger{
@@ -176,7 +177,7 @@ footer{
 	z-index: 1;
 	width:60px;
 	height:60px;
-	padding: 1rem 1rem 1rem 0;
+	padding: 0.5rem;
 	display: none;
 	flex-direction: column;
 	justify-content: center;
@@ -227,6 +228,95 @@ footer{
 	transform: rotate(90deg);
 	transition: transform .4s;
 }
+
+
+/*HAMBURGER NAV DROPDOWN-----------------------------------------------------------*/
+#dropdown{
+	position:sticky;
+	top:100px;
+	left:0;
+	z-index:999;
+	width:100%;
+
+	display:none;
+	/*visibility:hidden;*/
+}
+
+/*.toggler:checked ~#dropdown{
+	visibility: visible;
+	transition: opacity .4s;
+	opacity: 1;
+}
+*/
+#dropdown.active{
+	display:block;
+}
+
+#dropdown .divider-line.top{
+	margin:0;
+	width:100%;
+	height:2px;
+}
+
+.dropdown-menu{
+	background:#8E54BA;
+	padding-left:2.5rem;
+	padding-right:2.5rem;
+}
+
+.dropdown-menu .divider-line{
+	width:100%;
+}
+
+.dropdown-nav-instagram p{
+	color:white;
+}
+
+.dropdown-nav-links a{
+	margin-left:0;
+	font-weight:600;
+}
+
+.dropdown-nav-links{
+	display:flex;
+	flex-direction: column;	
+	align-items:center;
+	padding-top:1.25rem;
+}
+
+.dropdown-nav-instagram{
+	display:grid;
+	grid-gap:0.625rem;
+	grid-template-rows:1fr;
+	grid-template-columns:4% 96%;
+	padding-bottom:1.25rem;
+	align-self:center;
+}
+
+.dropdown-nav-instagram img{
+	grid-row:1;
+	align-self:center;
+	justify-self:end;
+}
+
+.dropdown-nav-instagram p{
+	grid-row:1;
+	align-self:center;
+	margin:0;
+
+}
+
+
+
+
+
+/*
+.dropdown-nav-instagram .test{
+	width:auto;
+}
+*/
+
+
 
 
 
@@ -439,6 +529,8 @@ button:hover{
 	padding:0.625rem 2.5rem 0.625rem 2.5rem;
 	margin-top:0.625rem;
 	margin-right:1.25rem;
+
+	cursor:pointer;
 }
 
 .receiving-buttons.active{
@@ -1537,6 +1629,49 @@ button[type="quantity"]{
 
 
 /*CHECKOUT PAGE----------------------------------------------------------------------------------*/
+/*Top container (mobile)*/
+#header-dropdown-mobile{
+	grid-column:1/19;
+	display:none;
+}
+
+#header-dropdown-mobile.active{
+	display:block;
+}
+
+#header-dropdown-mobile .checkout-product-preview-menu.mobile{
+	margin-top:0;
+}
+
+#header-dropdown-mobile .checkout-product-preview-menu.mobile > .product-name-and-value p{
+	margin-top:0.625rem;
+}
+
+.top-mobile-menu .divider-line{
+	margin:0;
+	width:100%;
+}
+
+#header-dropdown-mobile .top-checkout{
+	/*margin-bottom:0.625rem;*/
+}
+
+#header-dropdown-mobile .subtotal-name-and-value, .total-value{
+	margin-top:0.625rem;
+}
+
+#header-dropdown-mobile .top-checkout > .divider-line{
+	margin-top:0.625rem;
+	margin-bottom:0.625rem;
+}
+
+
+#header-dropdown-mobile .product-name-and-value p, .subtotal-name-and-value p, .total-value p, .shipping-name-and-value p{
+	margin-left:2rem;
+	margin-right:2rem;
+}
+
+
 
 /*Right side container*/
 .checkout-product-preview-menu{	
@@ -1807,7 +1942,7 @@ button[type="quantity"]{
 
 /*Date and Time*/
 #date-and-time{
-	display:grid;
+	/*display:grid;*/
 	grid-template-columns: repeat(7, 1fr);
 }
 
@@ -1825,6 +1960,7 @@ button[type="quantity"]{
 	border-width: 1px;
 	border:1px solid rgb(0, 0, 0, .5);
 	box-shadow: .25rem .25rem;
+	width:clamp(6.25rem, 100%, 25rem);
 
 	display:grid;
 }
@@ -1903,6 +2039,7 @@ button[type="quantity"]{
 	border-color:black;
 	border-width: 1px;
 	border:1px solid black;
+	width:clamp(6.25rem, 100%, 25rem);
 
 	order:0;
 	cursor:pointer;
@@ -1928,6 +2065,7 @@ button[type="quantity"]{
 	overflow:hidden;
 	padding-top:0.625rem;
 	padding-bottom:0.625rem;
+	width:clamp(6.25rem, 100%, 25rem);
 
 	order:1;
 }
@@ -1945,6 +2083,7 @@ button[type="quantity"]{
 	max-height:12.5rem;
 	display:block;
 	overflow-y:scroll;
+
 }
 
 .time-option :hover{

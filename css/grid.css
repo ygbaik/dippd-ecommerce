@@ -77,10 +77,6 @@
 		/*font-size:1rem;*/
 	}
 
-	.date-and-time-calendar, .date-and-time-input{
-		grid-column:1/7;
-	}
-
 	.checkout-product-preview-menu{	
 		padding:5rem 2.5rem 2.5rem 2.5rem;
 	}
@@ -210,6 +206,11 @@
 	}
 
 	/*CHECKOUT PAGE*/
+
+	.receiving-method-buttons{
+		flex-direction:column;
+		align-items:center;
+	}
 
 	.info-express-buttons{
 		flex-direction:column;
@@ -510,6 +511,27 @@
 		position: fixed;
 	}
 
+/*	#date-and-time{
+		display:grid;
+	}*/
+	
+	.date-and-time-calendar{
+		width:auto;
+		margin-left: 6.25rem;
+		margin-right:6.25rem;
+	}
+	.input-bar{
+		width:auto;
+		margin-left: 6.25rem;
+		margin-right:6.25rem;
+	}
+
+	.time-container{
+		width:auto;
+		margin-left: 6.25rem;
+		margin-right:6.25rem;
+	}
+
 	.date-and-time-header-mobile{
 		visibility: visible;
 		position:static;
@@ -538,9 +560,9 @@
 		grid-column:1/9;
 	}
 
-	.date-and-time-calendar, .date-and-time-input{
+	/*.date-and-time-calendar, .date-and-time-input{
 		grid-column:1/9;
-	}
+	}*/
 
 	/*Info section*/
 	.info-express-checkout{
@@ -770,6 +792,20 @@
 		padding-left:2rem;
 	}
 
+	.date-and-time-calendar{
+		margin-left: 0rem;
+		margin-right:0rem;
+	}
+	.input-bar{
+		margin-left: 0rem;
+		margin-right:0rem;
+	}
+
+	.time-container{
+		margin-left: 0rem;
+		margin-right:0rem;
+	}
+
 	/***Shop Page***/
 	.order-bill-wrapper h3{
 		padding:0;
@@ -834,6 +870,11 @@
 	/* GLOBAL-----------*/
 
 	.main-nav{
+		padding-left:1.5rem;
+		padding-right:1.5rem;
+	}
+
+	.dropdown-menu{
 		padding-left:1.5rem;
 		padding-right:1.5rem;
 	}
@@ -905,9 +946,8 @@
 		padding-right:1rem;
 	}
 
-	.main-nav{
-		padding-left:1rem;
-		padding-right:1rem;
+	.main-nav input{
+		margin-left:23px;
 	}
 
 
@@ -952,6 +992,9 @@
 	}	
 
 	/***Checkout Page***/
+	#header-dropdown-mobile .box-and-value img{
+		width:100%;
+	}
 
 	.right-side-menu{
 		grid-column:1/19;
@@ -1024,9 +1067,9 @@
 		grid-column:1/9;
 	}
 
-	.date-and-time-calendar, .date-and-time-input{
+	/*.date-and-time-calendar, .date-and-time-input{
 		grid-column:1/9;
-	}
+	}*/
 
 	.info-express-buttons{
 		flex-direction:column;
@@ -1184,6 +1227,14 @@
 
 }
 
+/*Smaller Inbetween (448px)*/
+@media screen and (max-width: 28em){
+	#header-dropdown-mobile .product-name-and-value p, .subtotal-name-and-value p, .total-value p, .shipping-name-and-value p{
+	margin-left:0;
+	margin-right:0;
+}
+}
+
 /*Smaller Inbetween (416px)--------------------------------------------------------------------------------------*/
 @media screen and (max-width: 26em){
 
@@ -1249,6 +1300,25 @@
 	.recommendation-section h4{
 		margin:1rem 0 2rem 0;
 	}
+
+}
+
+/*Mobile Inbetween (350px)*/
+@media screen and (max-width:21.875em){
+	/*CHECKOUT PAGE*/
+	.main-grid.checkout-page button{
+		padding:1rem;
+	}
+}
+
+
+/*Mobile Inbetween (340 px)*/
+@media screen and (max-width:21.25em) {
+	/*CHECKOUT PAGE*/
+	.date-and-time-calendar div{
+		font-size:1rem;
+
+	}
 }
 
 /*iPhone SE (320px)--------------------------------------------------------------------------------------*/
@@ -1282,8 +1352,26 @@
 	.featured-products-wrapper img{
 		width:clamp(150px, 50vw, 230px);
 	}
+
+	/*CHECKOUT PAGE*/
+	.header-bar-mobile-wrapper{
+		grid-template-columns: 2fr 0fr 1fr;
+	}
 }
 
+
+/*Galaxy Fold Early Breakpoint (304 px)*/
+@media screen and (max-width:19em) {
+	/*CHECKOUT PAGE*/
+	.header-bar-mobile-wrapper{
+		grid-template-columns: 3fr 0fr 1fr;
+	}
+
+	.date-and-time-calendar div{
+		font-size:0.75rem;
+
+	}
+}
 
 
 
