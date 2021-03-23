@@ -1,4 +1,6 @@
 //PRODUCT INPUT ========================================================================================/
+//https://www.youtube.com/watch?v=wF2gOkBMmsk&ab_channel=KodeBase
+
 // Petals Donut
 let petalsAdd = document.querySelector('.add-button.petals');
 let petalsSub = document.querySelector('.removeButton.petals');

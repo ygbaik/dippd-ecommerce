@@ -1,6 +1,13 @@
+//https://www.youtube.com/watch?v=tEAl7L62GEw&ab_channel=TelmoSampaio
+
 //SHOP BAR ========================================================================================/
 let addButton = document.querySelectorAll('.add-button');
 let removeButton = document.querySelectorAll('.removeButton');
+
+let productNumbers = localStorage.getItem('boxNumbers');
+document.querySelector('.box-total span').textContent = productNumbers;
+let productPrices = localStorage.getItem('boxPrices');
+document.querySelector('.box-total-price span').textContent = productPrices;
 
 for (let i=0; i < addButton.length; i++){
 	addButton[i].addEventListener('click', () => {
