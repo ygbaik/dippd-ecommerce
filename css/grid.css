@@ -483,6 +483,10 @@
 		left:calc(50% - 2rem);
 		padding:1.5rem;
 	}
+
+	.carousel-container{
+		margin-top: 3rem;
+	}
 	
 
 	/* #ABOUT US PAGE------------*/
