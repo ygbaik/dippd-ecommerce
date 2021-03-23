@@ -6,8 +6,8 @@
 	<meta charset="utf-8">
 	<title>Checkout</title>
 	<link rel="icon" type="image/png" href="img/favicon.png">
-	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;400;600&display=swap" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&family=Ubuntu+Mono:wght@400;700&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Ubuntu+Mono:wght@400;700&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="https://use.typekit.net/oxb2eij.css">
 	<link rel="stylesheet" href="css/main.css">
 	<link rel="stylesheet" href="css/grid.css">
@@ -76,8 +76,8 @@
 				<section id="receiving-method">
 					<h4>Choose Method of Receiving</h4>
 					<div class="receiving-method-buttons">
-						<a href="#0" class="receiving-buttons">Pickup<img src="img/pickup-icon.png"></a>
-						<a href="#0" class="receiving-buttons">Delivery<img src="img/delivery-icon.png"></a>
+						<a href="#0" class="receiving-buttons pickup active">Pickup<img src="img/pickup-icon.png"></a>
+						<a href="#0" class="receiving-buttons delivery">Delivery<img src="img/delivery-icon.png"></a>
 					</div>
 					<!-- <div class="receiving-method-buttons-radio">
 						<div class="pickup-method-selection">
@@ -169,15 +169,161 @@
 					</div>
 
 					<div class="date-and-time-input">
-						<div class="input-bar">
-							<div class="input-bar-text">
-								<p>Find your time of delivery</p>
+						<div class="select-wrapper">
+							<div class="time-container">
+								<div class="time-option">
+									<input type="radio" class="drop-down-input" id="10:00AM" name="pickup-time">
+									<label for="10:00AM">10:00 AM</label> 
+								</div>
+
+								<div class="time-option">
+									<input type="radio" class="drop-down-input" id="10:15AM" name="pickup-time">
+									<label for="10:15AM">10:15 AM</label> 
+								</div>
+
+								<div class="time-option">
+									<input type="radio" class="drop-down-input" id="10:30AM" name="pickup-time">
+									<label for="10:30AM">10:30 AM</label> 
+								</div>
+
+								<div class="time-option">
+									<input type="radio" class="drop-down-input" id="10:45AM" name="pickup-time">
+									<label for="10:45AM">10:45 AM</label> 
+								</div>
+
+								<div class="time-option">
+									<input type="radio" class="drop-down-input" id="11:00AM" name="pickup-time">
+									<label for="11:00AM">11:00 AM</label> 
+								</div>
+
+								<div class="time-option">
+									<input type="radio" class="drop-down-input" id="11:15AM" name="pickup-time">
+									<label for="11:15AM">11:15 AM</label> 
+								</div>
+
+								<div class="time-option">
+									<input type="radio" class="drop-down-input" id="11:30AM" name="pickup-time">
+									<label for="11:30AM">11:30 AM</label> 
+								</div>
+
+								<div class="time-option">
+									<input type="radio" class="drop-down-input" id="11:45AM" name="pickup-time">
+									<label for="11:45AM">11:45 AM</label> 
+								</div>
+
+								<div class="time-option">
+									<input type="radio" class="drop-down-input" id="12:00PM" name="pickup-time">
+									<label for="12:00PM">12:00 PM</label> 
+								</div>
+
+								<div class="time-option">
+									<input type="radio" class="drop-down-input" id="12:15PM" name="pickup-time">
+									<label for="12:15PM">12:15 PM</label> 
+								</div>
+
+								<div class="time-option">
+									<input type="radio" class="drop-down-input" id="12:30PM" name="pickup-time">
+									<label for="12:30PM">12:30 PM</label> 
+								</div>
+
+								<div class="time-option">
+									<input type="radio" class="drop-down-input" id="12:45PM" name="pickup-time">
+									<label for="12:45PM">12:45 PM</label> 
+								</div>
+
+								<div class="time-option">
+									<input type="radio" class="drop-down-input" id="1:00PM" name="pickup-time">
+									<label for="1:00PM">1:00 PM</label> 
+								</div>
+
+								<div class="time-option">
+									<input type="radio" class="drop-down-input" id="1:15PM" name="pickup-time">
+									<label for="1:15PM">1:15 PM</label> 
+								</div>
+
+								<div class="time-option">
+									<input type="radio" class="drop-down-input" id="1:30PM" name="pickup-time">
+									<label for="1:30PM">1:30 PM</label> 
+								</div>
+
+								<div class="time-option">
+									<input type="radio" class="drop-down-input" id="1:45PM" name="pickup-time">
+									<label for="1:45PM">1:45 PM</label> 
+								</div>
+
+								<div class="time-option">
+									<input type="radio" class="drop-down-input" id="2:00PM" name="pickup-time">
+									<label for="2:00PM">2:00 PM</label> 
+								</div>
+
+								<div class="time-option">
+									<input type="radio" class="drop-down-input" id="2:15PM" name="pickup-time">
+									<label for="2:15PM">2:15 PM</label> 
+								</div>
+
+								<div class="time-option">
+									<input type="radio" class="drop-down-input" id="2:30PM" name="pickup-time">
+									<label for="2:30PM">2:30 PM</label> 
+								</div>
+
+								<div class="time-option">
+									<input type="radio" class="drop-down-input" id="2:45PM" name="pickup-time">
+									<label for="2:45PM">2:45 PM</label> 
+								</div>
+
+								<div class="time-option">
+									<input type="radio" class="drop-down-input" id="3:00PM" name="pickup-time">
+									<label for="3:00PM">3:00 PM</label> 
+								</div>
+
+								<div class="time-option">
+									<input type="radio" class="drop-down-input" id="3:15PM" name="pickup-time">
+									<label for="3:15PM">3:15 PM</label> 
+								</div>
+
+								<div class="time-option">
+									<input type="radio" class="drop-down-input" id="3:30PM" name="pickup-time">
+									<label for="3:30PM">3:30 PM</label> 
+								</div>
+
+								<div class="time-option">
+									<input type="radio" class="drop-down-input" id="3:45PM" name="pickup-time">
+									<label for="3:45PM">3:45 PM</label> 
+								</div>
+
+								<div class="time-option">
+									<input type="radio" class="drop-down-input" id="4:00PM" name="pickup-time">
+									<label for="4:00PM">4:00 PM</label> 
+								</div>
+
+								<div class="time-option">
+									<input type="radio" class="drop-down-input" id="4:15PM" name="pickup-time">
+									<label for="4:15PM">4:15 PM</label> 
+								</div>
+
+								<div class="time-option">
+									<input type="radio" class="drop-down-input" id="4:30PM" name="pickup-time">
+									<label for="4:30PM">4:30 PM</label> 
+								</div>
+
+								<div class="time-option">
+									<input type="radio" class="drop-down-input" id="4:45PM" name="pickup-time">
+									<label for="4:45PM">4:45 PM</label> 
+								</div>
+
 							</div>
 
-							<div class="input-bar-arrow">
-								<p>▾</p>
+							<div class="input-bar">
+								<div class="input-bar-text">
+									<p>Find your time of delivery</p>
+								</div>
+
+								<div class="input-bar-arrow">
+									<p>▾</p>
+								</div>
 							</div>
 						</div>
+
 					</div>
 					
 				</section> <!-- end of date and time section -->
@@ -215,7 +361,7 @@
 							<input type="text" placeholder="Email">
 						</div>
 
-						<div class="info-billing-address pickup">
+						<div class="info-billing-address-pickup active">
 							<h4>Billing Address</h4>
 							<div class="names-section">
 								<input type="text-first" placeholder="First Name">
@@ -252,7 +398,7 @@
 						</div> 
 
 						<!-- Delivery section that is hidden by default; turned on when users select delivery option -->
-						<div class="info-address delivery">
+						<div class="info-address-delivery">
 							<h4>Address</h4>
 							<div class="names-section">
 								<input type="text-first" placeholder="First Name">
@@ -274,18 +420,18 @@
 							</div>
 						</div>	
 
-						<div class="info-billing-address delivery">
+						<div class="info-billing-address-delivery">
 							<h4>Billing Address</h4>
 							<div class="radio-button-selection">
 								<input type="radio" id="same-as-address" name="billing-option" value="same-as-address" checked>
 								<div class="button-info">
-									<label for="credit-card">Same as Address</label>
+									<label for="same-as-address">Same as Address</label>
 								</div>
 							</div>
 							<div class="radio-button-selection">
 								<input type="radio" id="use-a-different-billing-address" name="billing-option" value="use-a-different-billing-address">
 								<div class="button-info">
-									<label for="credit-card">Use a different billing address</label>
+									<label for="use-a-different-billing-address">Use a Different Billing Address</label>
 								</div>
 							</div>
 						</div>
@@ -391,6 +537,7 @@
 			</aside> <!-- end of right-side-menu violet -->
 
 		</div> <!-- end of main grid div -->
+		<script src="js/index.js"></script>
 	</body>
 
 </html>

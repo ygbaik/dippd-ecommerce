@@ -433,6 +433,10 @@ button:hover{
 	margin-right:1.25rem;
 }
 
+.receiving-buttons.active{
+	background: #55D1B9;
+}
+
 .receiving-buttons img{
 	margin-left:5px;	
 }
@@ -1614,6 +1618,10 @@ button[type="quantity"]{
 	flex-direction:row;
 }
 
+.receiving-method-buttons-radio label{
+	cursor:pointer;
+}
+
 .pickup-method-selection{
 	font-family:"ubuntu mono", monospace;
 	font-weight:bold;
@@ -1696,22 +1704,6 @@ button[type="quantity"]{
 	color:rgb(0, 0, 0, .2);
 }
 
-.input-bar{
-	display:flex;
-	flex-direction: row;
-	justify-content: space-between;
-	align-items:center;
-	padding:0.313rem 1.25rem;
-	margin-top:1.25rem;
-	margin-bottom:1.25rem;
-
-	border-radius:10px;
-	border-color:black;
-	border-width: 1px;
-	border:1px solid black;
-}
-
-
 .month-name, .days-title{
 	font-family:"ubuntu mono", monospace;
 	font-weight:700;
@@ -1766,6 +1758,71 @@ button[type="quantity"]{
 
 .active-day{
 	background:#F2CA18;
+}
+
+.input-bar{
+	display:flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items:center;
+	padding:0.313rem 1.25rem;
+	margin-top:1.25rem;
+	margin-bottom:0;
+
+	border-radius:10px;
+	border-color:black;
+	border-width: 1px;
+	border:1px solid black;
+
+	order:0;
+	cursor:pointer;
+}
+
+.opened{
+	border-radius:10px 10px 0px 0px;
+}
+
+.select-wrapper{
+	display:flex;
+	flex-direction: column;
+}
+
+.time-container{
+	font-family: "ubuntu mono", monospace;
+	font-weight:400;
+	color:black;
+
+	border:1px solid black;
+	max-height:0;
+	display:none;
+	overflow:hidden;
+	padding-top:0.625rem;
+	padding-bottom:0.625rem;
+
+	order:1;
+}
+
+.select-wrapper label{
+	cursor:pointer;
+}
+
+.time-option{
+	padding:0.313rem 1.25rem;
+	cursor:pointer; 
+}
+
+.select-wrapper .time-container.active{
+	max-height:12.5rem;
+	display:block;
+	overflow-y:scroll;
+}
+
+.time-option :hover{
+	background:rgb(242, 202, 24, 0.5);
+}
+
+.time-option .drop-down-input{
+	display:none;
 }
 
 
@@ -1881,14 +1938,28 @@ button[type="express-first"], button[type="express-second"]{
 
 
 /*Depending on what option is selected, pickup forms or delivery forms can be hidden*/
-.pickup{
-	/*visibility: hidden;
-	position:fixed;*/
+.info-billing-address-pickup{
+	display:none;
 }
 
-.delivery{
-	visibility: hidden;
-	position:fixed;
+.info-billing-address-pickup.active{
+	display:block;
+}
+
+.info-address-delivery{
+	display:none;
+}
+
+.info-billing-address-delivery{
+	display:none;
+}
+
+.info-address-delivery.active{
+	display:block;
+}
+
+.info-billing-address-delivery.active{
+	display:block;
 }
 
 
