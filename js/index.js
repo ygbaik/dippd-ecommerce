@@ -110,6 +110,4 @@ timeList.forEach(o => {
 		// console.log(dropdown);
 		inputBarStyling();
 	})
-})
-
-
+}

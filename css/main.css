@@ -12,14 +12,14 @@ html{
 .main-nav-wrapper{
 	width:100%;	
 	display:flex;
-	justify-content: space-between;
+	/*justify-content: space-between;*/
 	align-items:center;
 	padding: 1rem 2rem;
 }
 
 .main-nav-links{
 	display:flex;
-	justify-content: space-between;
+	/*justify-content: space-between;*/
 	align-items:center;
 }
 
@@ -1319,6 +1319,14 @@ button[type="quantity"]{
 .order-tracker-bar-wrapper h4{
 	margin:0;
 	padding-left:5.5rem;
+}
+
+.order-tracker-bar-wrapper h3{
+	font-weight:600;
+}
+
+.order-tracker-bar-wrapper h4{
+	font-weight:500;
 }
 
 .order-tracker-bar-wrapper h4{
