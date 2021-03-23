@@ -8,6 +8,7 @@ html{
 	scroll-behavior: smooth;
 }
 
+
 /*MAIN NAV BAR------------------------------------------------------------------------------------*/
 .main-nav-wrapper{
 	width:100%;	
@@ -246,6 +247,13 @@ footer{
 	/*visibility:hidden;*/
 }
 
+#dropdown h5{
+	font-weight: 400;
+	color:white;
+}
+
+
+
 /*.toggler:checked ~#dropdown{
 	visibility: visible;
 	transition: opacity .4s;
@@ -272,10 +280,6 @@ footer{
 	width:100%;
 }
 
-.dropdown-nav-instagram p{
-	color:white;
-}
-
 .dropdown-nav-links a{
 	margin-left:0;
 	font-weight:600;
@@ -294,6 +298,7 @@ footer{
 	grid-template-rows:1fr;
 	grid-template-columns:4% 96%;
 	align-self:center;
+	text-decoration: none;
 }
 
 .dropdown-nav-instagram a{
@@ -304,7 +309,7 @@ footer{
 	margin:0;
 }
 
-/*.dropdown-nav-instagram img{
+.dropdown-nav-instagram h5{
 	grid-row:1;
 	align-self:center;
 	justify-self:end;
