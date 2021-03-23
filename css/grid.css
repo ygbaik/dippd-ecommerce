@@ -58,8 +58,17 @@
 
 /*Media Queries=========================================================================================================*/
 
-/*Large Inbetween (1216px)----------------------------------------------------------------------------------------------*/
-@media screen and (max-width:76em){
+/*Large Inbetween (1232px)----------------------------------------------------------------------------------------------*/
+@media screen and (max-width:77em){
+	
+	/* #HOME PAGE*/
+
+	.hero-section h1,
+	.recommendation-section h2 {
+		font-size:3.5rem;
+	}
+
+
 	h1{
 		font-size:3rem;
 	}
@@ -97,17 +106,123 @@
 
 /*Inbetween(1120px)*/
 @media screen and (max-width:70em){
+	.footer-list-wrapper{
+		padding-left:0;
+		padding-right:0;
+	}
+
 	/***Checkout Page***/
 	.info-express-checkout > .divider-line{
 		width:clamp(5%, 75%, 100%);
 	}
+
+
+	/* #HOME PAGE*/
+
+	.hero-section h1,
+	.recommendation-section h2 {
+		font-size:3rem;
+	}
+
+	.floating-donut-gif-wrapper{
+		height:clamp(375px, 15vh, 500px);
+	}
 }
 
-/*Inbetween (920px)*/
-@media screen and (max-width:58em){
-	h1{
-		font-size:2.5rem;
+/*Inbetween (1000px)*/
+@media screen and (max-width:63em){
+
+	/*HOME PAGE*/
+
+	.value-proposition-section .main-grid{
+		place-self:center;
 	}
+
+	.donut-grid-wrapper{
+		grid-column: 1/ span 12;
+		align-items: center;
+	}
+
+	.value-proposition-cta-wrapper{
+		grid-column: 1/ span 12;
+		align-items: center;
+	}
+
+	.value-proposition-section {
+		text-align: center;
+	}
+
+	.value-proposition-cta-wrapper a{
+		align-self: center;
+	}
+
+	.featured-products-wrapper{
+		grid-template-columns: 1fr;
+	}
+
+	.recommended-donut-wrapper{
+		margin:0;
+	}
+
+	.recommendation-section{
+		padding:8rem 0;
+	}
+
+	.recommendation-section h2 {
+		font-size:3.5rem;
+	}
+
+}
+
+/*Inbetween (936px)*/
+@media screen and (max-width:59em){
+	h1{
+		font-size:4rem;
+	}
+
+	/* #HOME PAGE*/
+
+	.hero-section h1,
+	.recommendation-section h2 {
+		font-size:4.5rem;
+	}
+
+	.hero-section{
+		height:90vh;
+	}
+
+	.hero-image-wrapper{
+		grid-column:1/span 12;
+
+	}
+
+	.hero-cta-wrapper{
+		grid-column:1/span 12;
+		justify-content: start;
+		text-align: center;
+		align-items: start;
+
+	}
+
+	.hero-cta-wrapper a{
+		align-self: center;
+	}
+
+	.donut-grid-wrapper img{
+		margin:0 auto;
+	}
+
+	.main-cta-section .main-grid-container{
+		flex-direction: column;
+		padding:2.5rem 0;
+	}
+
+	.main-cta-section h2{
+		margin-top:0;
+		margin-bottom: 1rem;
+	}
+
+	/*CHECKOUT PAGE*/
 
 	.info-express-buttons{
 		flex-direction:column;
@@ -255,58 +370,14 @@
 		padding:0;
 	}
 
-
-
-
 	.main-grid-container{
 		width: clamp(18.75rem,80%,100rem);
 		margin:auto;
 	}
 
-	.hero-image-wrapper{
-		grid-column:1/span 12;
-	}
-
-	.hero-cta-wrapper{
-		grid-column:1/span 12;
-		text-align: center;
-	}
-
-	.hero-cta-wrapper a{
-		align-self: center;
-	}
-
-	.donut-grid-wrapper{
-		grid-column: 1/ span 12;
-	}
-
-	.value-proposition-cta-wrapper{
-		grid-column: 1/ span 12;
-	}
-
-	.value-proposition-section{
-		text-align: center;
-	}
-
-	.value-proposition-cta-wrapper a{
-		align-self: center;
-	}
-
-	.donut-grid-wrapper img{
-		margin:0 auto;
-	}
-
-	.featured-products-wrapper{
-		grid-template-columns: 1fr;
-	}
-
-	.main-cta-section > .main-grid-container{
-		flex-direction: column;
-	}
-
 	/*TYPOGRAPHY-----------*/
 	h1{
-		font-size:3rem;
+		font-size:4rem;
 	}
 
 	h2{
@@ -316,6 +387,25 @@
 	h3{
 		font-size:1.3rem;
 	}
+
+	/* #HOME PAGE*/
+
+	.value-proposition-section{
+		padding: 8rem 0;
+	}
+
+	.value-proposition-cta-wrapper,
+	.donut-grid-wrapper{
+		padding:0;]
+	}
+
+	.scroll-arrow{
+		font-size:1rem;
+;
+		left:calc(50% - 2rem);
+		padding:1.5rem;
+	}
+	
 
 	/* #ABOUT US PAGE------------*/
 	.message{
@@ -519,6 +609,7 @@
 	}
 
 	/***Footer***/
+
 	.footer-grid-wrapper{
 		grid-template-rows:3fr auto;
 		padding-bottom:2.5rem;
@@ -526,7 +617,7 @@
 
 	.footer-list-wrapper{
 		display:grid;
-		grid-template-columns: 2fr 1fr 1fr;
+		grid-template-columns: 1fr 1fr 1fr;
 
 		align-items: start;
 	}
@@ -567,7 +658,7 @@
 	}
 
 	.footer-hours-wrapper{
-	 	display:none;
+	 	display:none;;
 	}
 
 	.footer-list-wrapper > .divider-line{
@@ -582,7 +673,7 @@
 
 	.footer-hours-wrapper-mobile{
 		display:block;
-		grid-column:2/4;
+		grid-column:3/4;
 		grid-row:4/5;
 	}
 
@@ -597,6 +688,18 @@
 
 /*Inbetween (688px)----------------------------------------------------------------------------------------------*/
 @media screen and (max-width: 43em){
+	/*TYPOGRAPHY-----------*/
+	.hero-section h1,
+	.recommendation-section h2 {
+		font-size:3.5rem;
+	}
+
+	/* #HOME PAGE*/
+
+	.value-proposition-cta-wrapper p{
+		width:clamp(20ch, 100%, 75ch);
+	}
+
 	/***Checkout Page***/
 	.header-bar-mobile-wrapper{
 		padding-left:2rem;
@@ -619,6 +722,7 @@
 
 /*Inbetween (608px)----------------------------------------------------------------------------------------------*/
 @media screen and (max-width:38em) {
+
 	/***Checkout Page***/
 	h1{
 		/*font-size:2.5rem;*/
@@ -662,9 +766,33 @@
 
 /*Inbetween (560px)----------------------------------------------------------------------------------------------*/
 @media screen and (max-width:35em){
+	/* GLOBAL-----------*/
+
+	.main-nav{
+		padding-left:1.5rem;
+		padding-right:1.5rem;
+	}
+
+
 	.header-bar-mobile-wrapper{
 		grid-template-columns: 1fr 0.25fr 1fr;
 		padding-left:1.75rem;
+	}
+
+	/* #HOME PAGE*/
+
+	.floating-donut-gif-wrapper{
+		height:clamp(325px, 15vh, 375px);
+	}
+
+	.hero-section h1,
+	.recommendation-section h2,
+	.main-cta-section h2 {
+		font-size:3rem;
+	}
+
+	.recommendation-section{
+		padding:6rem 0;
 	}
 
 	/***Shop Page***/
@@ -716,11 +844,11 @@
 		padding-right:1rem;
 	}
 
-	/* #ABOUT US PAGE------------*/
-	.message{
-		text-align: center;
-		padding:2rem 1rem;
-	}	
+	.main-nav{
+		padding-left:1rem;
+		padding-right:1rem;
+	}
+
 
 	/*TYPOGRAPHY-----------*/
 	h1{
@@ -735,23 +863,45 @@
 		font-size:1.25rem;
 	}
 
+	/* #HOME PAGE*/
+
+	.hero-section h1,
+	.recommendation-section h2,
+	.main-cta-section h2 {
+		font-size:2.5rem;
+	}
+
+	.hero-section h1{
+		margin-bottom: 0;
+	}
+
+	.hero-image-wrapper,
+	.hero-cta-wrapper{
+		padding:0;
+	}
+
+	.floating-donut-gif-wrapper{
+		height:clamp(275px, 10vh, 300px);
+	}
+
+	.hero-donut-small{
+		top:3rem;
+	}
+
+
+	.scroll-arrow{
+		bottom:-1rem;
+	}
+	
+
+
+	/* #ABOUT US PAGE------------*/
+	.message{
+		text-align: center;
+		padding:2rem 1rem;
+	}	
+
 	/***Checkout Page***/
-	h1{
-		font-size:2rem;
-	}
-
-
-	h2{
-		font-size:1.5rem;
-	}
-
-	h3{
-		font-size:1.25rem;
-	}
-
-	p{
-		/*font-size:1rem;*/
-	}
 
 	.right-side-menu{
 		grid-column:1/19;
@@ -984,6 +1134,26 @@
 
 }
 
+/*Smaller Inbetween (416px)--------------------------------------------------------------------------------------*/
+@media screen and (max-width: 26em){
+
+	/* #HOME PAGE*/
+
+	.hero-section h1,
+	.recommendation-section h2,
+	.main-cta-section h2 {
+		font-size:2.15rem;
+	}
+
+	.featured-products-wrapper img{
+		width:clamp(120px, 70vw, 200px);
+	}
+
+	.scroll-indicator-wrapper{
+		height:50px;
+	}
+
+}
 
 
 /*Smaller Inbetween (384px)----------------------------------------------------------------------------------------------*/
@@ -992,8 +1162,76 @@
 		grid-template-columns: 1.5fr 0fr 1fr;
 	}
 
+	.container-footer-1600{
+		padding:0 1rem;
+	}
+
+	/* #HOME PAGE*/ 
+
+	.hero-section{
+		height:80vh;
+	}
+
+	.floating-donut-gif-wrapper{
+		height:auto;
+	}
+
+	.donut-shadow{
+		visibility: hidden;
+	}
+
+	.hero-donut-main{
+		bottom:0;
+		left:5%;
+		z-index: 2;
+	}
+
+	.hero-donut-small{
+		bottom:0;
+		right:5%;
+		z-index: 1;
+	}
+
+	.value-proposition-section{
+		padding:5rem 0;
+	}
+
+	.recommendation-section h4{
+		margin:1rem 0 2rem 0;
+	}
+}
+
+/*iPhone SE (320px)--------------------------------------------------------------------------------------*/
+@media screen and (max-width: 20em){
+
+	/* #HOME PAGE*/ 
+
+	.hero-section{
+		height:75vh;
+	}
+
+	.hero-section h1,
+	.recommendation-section h2,
+	.main-cta-section h2 {
+		font-size:2rem;
+	}
+
+	.scroll-indicator-wrapper{
+		height:40px;
+	}
+
+	.value-proposition-section{
+		padding:5rem 0;
+	}
+
+	.recommendation-section{
+		padding:5rem 0;
+	}
 
 
+	.featured-products-wrapper img{
+		width:clamp(150px, 50vw, 230px);
+	}
 }
 
 

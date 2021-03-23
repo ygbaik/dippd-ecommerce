@@ -4,6 +4,10 @@
 	box-sizing: border-box;
 }
 
+html{
+	scroll-behavior: smooth;
+}
+
 /*MAIN NAV BAR------------------------------------------------------------------------------------*/
 .main-nav-wrapper{
 	width:100%;	
@@ -22,6 +26,10 @@
 .main-nav-links a{
 	padding-top:0;
 	padding-bottom:0;
+}
+
+.main-nav-links a:hover{
+	text-decoration: underline;
 }
 
 .toggler, .hamburger, .hamburger-line{
@@ -585,7 +593,6 @@ button.cta-button:focus{
 }
 
 .hero-section{
-	grid-column:1/span 12;
 	height:100vh;
 	position: relative;
 }
@@ -605,7 +612,6 @@ button.cta-button:focus{
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	/*height:clamp(85vh, 100%, 93vh);*/
 	height:100%;
 }
 
@@ -661,6 +667,11 @@ button.cta-button:focus{
 	display: block;
 }
 
+.scroll-indicator-container a{
+	position: relative;
+	z-index: 20;
+}
+
 .scroll-indicator-wrapper{
 	display: grid;
 	grid-template-rows:2fr 1.5fr 1fr;
@@ -673,13 +684,26 @@ button.cta-button:focus{
 
 .scroll-indicator{
 	width:100%;
-	/*height:25%;*/
 }
 
 .scroll-arrow{
+	font-size:1.5rem;
+	text-align: center;
+
+
 	color:black;
 	position:absolute;
-	left:50%;
+	left:calc(50% - 2rem);
+	padding:1.5rem;
+
+	text-decoration: none;
+ 
+	transition: all .2s ease-out;
+}
+
+.scroll-arrow:hover{
+	color: white;
+	transform: scale(1.2);
 }
 
 /*VALUE PROPOSITION*/
@@ -757,6 +781,7 @@ button.cta-button:focus{
 	grid-template-columns: repeat(3, 1fr);
 	grid-template-rows: 1;
 	width:100%;
+	margin:0 auto;
 }
 
 .featured-products-wrapper img{
@@ -765,7 +790,7 @@ button.cta-button:focus{
 
 .recommended-donut-wrapper{
 	text-align: center;
-	margin:0 1rem;
+	margin:0 1.25rem;
 }
 
 .recommendation-section button, a{
@@ -775,9 +800,91 @@ button.cta-button:focus{
 
 /*SOCIAL MEDIA*/
 
+.social-media-section{
+	padding:4rem 0;
+}
+
+.social-media-section h2{
+	margin:0;
+}
+
+.social-media-section h3{
+	margin-top:1rem;
+}
+
+.carousel-container{
+	position: relative;
+	min-height: 200px;
+	width: clamp(18.75rem,80%,100rem);
+	margin:4rem auto 0 auto;
+}
+
+.carousel-container .carousel-inner{
+	overflow:hidden;
+}
+
+.slider{
+	display: flex;
+	padding-bottom: 2rem;
+}
+
+.social-media-card-wrapper{
+	width: 240px;
+	border: 1px solid #ccc;
+	flex-shrink: 0;
+	margin:0 2rem;
+	display: grid;
+
+	/*height:100%;*/
+
+	box-shadow: 1rem 1rem black;
+}
+
+.social-media-card-image{
+	width:100%;
+	height:100%;
+}
+
+.social-media-card-text{
+	padding:.5rem 1rem;
+}
+
+.social-media-card-footer{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding:0 1rem;
+}
+
+.carousel-nav .button{
+	border:1px solid #aaa;
+	border-radius: 50%;
+	padding:1rem;
+	width: 5rem;
+
+	cursor: pointer;	
+
+	position:absolute;
+	top:50%;
+	transform:translateY(-50%);
+}
+
+.carousel-nav .prev{
+	left:-30px;
+}
+
+.carousel-nav .next{
+	right:-30px;
+}
+
+/*.slider{
+	display: flex;
+}
+
 .slider{
 	display: flex;
 	overflow: hidden;
+	padding-bottom:2rem;
 }
 
 .social-media-section{
@@ -794,15 +901,13 @@ button.cta-button:focus{
 }
 
 .social-media-card-wrapper{
-	display:grid;
-	grid-template-rows: ;
-	
+	flex-shrink: 0;
+
+	display: grid;
+
 	margin:0 3rem;
-/*	width:clamp(200px, 20vw, 600px);
-	height:clamp(400px, 20vh ,800px);*/
 	width:100%;
-	/*height:minmax(100px,100%);;*/
-	/*height: 100%;*/
+	height:100%;
 	box-shadow: 1rem 1rem black;
 }
 
@@ -810,14 +915,19 @@ button.cta-button:focus{
 	align-self: center;
 }
 
-.social-media-card-image img{
+.social-media-card-image{
 	align-self: center;
+	min-width: 250px;
 	width:100%;
-	height:100%;
+	height: 100%;
 }
 
-.social-media-card-text{
+.social-media-card-wrapper .social-media-card-text {
+	display: flex;
 	padding:.5rem 1rem;
+	justify-content: stretch;
+	height:100%;
+	border:1px solid blue;
 }
 
 .hashtag{
@@ -825,10 +935,11 @@ button.cta-button:focus{
 }
 
 .social-media-card-footer{
-	padding:.5rem 1rem;
+	padding:.25rem 1rem;
 	display: flex;
+	align-items: center;
 	justify-content: space-between;
-}
+}*/
 
 /*MAIN CTA*/
 
