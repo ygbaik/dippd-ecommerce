@@ -1,8 +1,6 @@
 //SHOP BAR ========================================================================================/
 let addButton = document.querySelectorAll('.add-button');
 let removeButton = document.querySelectorAll('.removeButton');
-let productPrices = localStorage.getItem('removeBoxNumbers');
-
 
 for (let i=0; i < addButton.length; i++){
 	addButton[i].addEventListener('click', () => {
