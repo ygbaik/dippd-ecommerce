@@ -25,9 +25,12 @@ function boxNumbers(){
 	if(productNumbers > 0 && productNumbers < 6){
 		localStorage.setItem('boxNumbers', productNumbers + 1);
 		document.querySelector('.box-total span').textContent = productNumbers + 1;
-	} else{
+	} else if(productNumbers == 0){
 		localStorage.setItem('boxNumbers', 1);
 		document.querySelector('.box-total span').textContent = 1;
+	} else{
+		localStorage.setItem('boxNumbers', productNumbers);
+		document.querySelector('.box-total span').textContent = productNumbers;
 	}
 }
 
@@ -38,9 +41,12 @@ function boxPrices(){
 	if(productPrices > 0 && productPrices < 21){
 		localStorage.setItem('boxPrices', productPrices + 3.50);
 		document.querySelector('.box-total-price span').textContent = productPrices + 3.50;
-	} else{
+	} else if (productPrices == 0){
 		localStorage.setItem('boxPrices', 3.50);
 		document.querySelector('.box-total-price span').textContent = 3.50;
+	} else{
+		localStorage.setItem('boxPrices', productPrices);
+		document.querySelector('.box-total-price span').textContent = productPrices;
 	}
 }
 
