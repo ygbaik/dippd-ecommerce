@@ -80,6 +80,11 @@
 	.checkout-product-preview-menu{	
 		padding:5rem 2.5rem 2.5rem 2.5rem;
 	}
+
+	/* #ABOUT US PAGE------------*/
+	.about-us-section h1{
+		font-size:4rem;
+	}
 }
 
 
@@ -168,6 +173,39 @@
 		font-size:3.5rem;
 	}
 
+	/* #ABOUT US PAGE*/
+
+
+	.one{
+		bottom:150px;
+		left:-200px;
+	}
+
+	.two{
+		top:0;
+		left:0;
+	}
+
+	.three{
+		bottom:-110px;
+		left:100px;
+	}
+
+	.four{
+		right:0px;
+		top:100px;
+	}
+
+	.five{
+		right:50px;
+		bottom:-200px;
+	}
+
+	.six{
+		right:-180px;
+		bottom:100px;
+	}
+
 }
 
 /*Inbetween (936px)*/
@@ -203,6 +241,11 @@
 	.main-cta-section h2{
 		margin-top:0;
 		margin-bottom: 1rem;
+	}
+
+	/* #ABOUT US PAGE*/
+	.message{
+		width:clamp(30ch, 85%, 65ch);
 	}
 
 	/*CHECKOUT PAGE*/
@@ -293,6 +336,11 @@
 		font-size:2.5rem;
 	}
 
+	/* #FAQ PAGE*/
+
+	.faq-section h3{
+		font-size:1.25rem;
+	}
 }
 
 
@@ -312,11 +360,15 @@
 		grid-column:1/13;
 	}
 
+	/*#FAQ PAGE*/
+	.faq-accordion-wrapper{
+		width:clamp(300px, 80%, 1000px);
+	}
 }
 
 /*Inbetween(800px)*/
 @media screen and (max-width:50em){
-	/***Checkout Page***/
+	/*** Checkout Page***/
 	.info-express-checkout > .divider-line{
 		width:clamp(5%, 60%, 100%);
 	}
@@ -438,6 +490,65 @@
 
 	.signature{
 		margin:0 auto;
+	}
+
+
+	.one{
+		bottom:150px;
+		left:-200px;
+	}
+
+	.two{
+		top:0;
+		left:-50px;
+	}
+
+	.three{
+		bottom:-110px;
+		left:0;
+	}
+
+	.four{
+		right:-50px;
+		top:100px;
+	}
+
+	.five{
+		right:50px;
+		bottom:-200px;
+	}
+
+	.six{
+		right:-150px;
+		bottom:100px;
+	}
+
+
+	/* #FAQ PAGE*/
+	.faq-section .main-grid-container{
+		align-items: center;
+	}
+
+	.faq-section ol{
+		display: flex;
+		flex-direction: column;
+		align-items:center;
+		padding:0;
+	}
+
+	.faq-section li{
+		text-align: center;
+	}
+
+	.faq-section span {
+	  position: relative;
+	  left: -1rem;
+	  width:100%;
+	}
+
+	.faq-section li{
+		position: relative;
+		left:-1rem;
 	}
 
 	/* #CHECKOUT PAGE------------*/
@@ -863,6 +974,21 @@
 	.info-express-checkout-mobile h4{
 		margin-top:0;
 	}
+
+	/* #FAQ PAGE*/
+
+	.faq-section h3{
+		font-size:1rem;
+	}
+
+	.faq-section p{
+		font-size:.75rem;
+	}
+
+	/* #ABOUT US PAGE------------*/
+	.about-us-section h1{
+		font-size:3.5rem;
+	}
 }
 
 /*Inbetween (560px)----------------------------------------------------------------------------------------------*/
@@ -895,6 +1021,12 @@
 
 	.recommendation-section{
 		padding:6rem 0;
+	}
+
+	/* #FAQ PAGE*/
+
+	.faq-accordion-wrapper{
+		width:clamp(300px, 90%, 1000px);
 	}
 
 	/***Shop Page***/
@@ -986,10 +1118,52 @@
 	}
 
 	/* #ABOUT US PAGE------------*/
+	.about-us-section h1{
+		font-size:3rem;
+	}
+
 	.message{
 		text-align: center;
 		padding:2rem 1rem;
+		width:clamp(28ch, 70%, 50ch);
+
 	}	
+
+	.one{
+		bottom:250px;
+		left:-120px;
+	}
+
+	.two{
+		top:15px;
+		left:-50px;
+	}
+
+	.three{
+		bottom:-110px;
+		left:-20px;
+	}
+
+	.four{
+		right:-50px;
+		top:100px;
+	}
+
+	.five{
+		right:0px;
+		bottom:-150px;
+	}
+
+	.six{
+		right:-150px;
+		bottom:100px;
+	}
+
+	/* #FAQ PAGE*/
+
+	.faq-section h1{
+		font-size: 3.5rem;
+	}
 
 	/***Checkout Page***/
 	#header-dropdown-mobile .box-and-value img{
@@ -1254,6 +1428,10 @@
 		height:50px;
 	}
 
+	/* #FAQ PAGE*/
+	.faq-question{
+		margin-left:1rem;
+	}
 }
 
 
@@ -1281,18 +1459,6 @@
 		visibility: hidden;
 	}
 
-/*	.hero-donut-main{
-		bottom:0;
-		left:5%;
-		z-index: 2;
-	}
-
-	.hero-donut-small{
-		bottom:0;
-		right:5%;
-		z-index: 1;
-	}*/
-
 	.value-proposition-section{
 		padding:5rem 0;
 	}
@@ -1300,6 +1466,19 @@
 	.recommendation-section h4{
 		margin:1rem 0 2rem 0;
 	}
+
+	/* #ABOUT US PAGE------------*/
+	.about-us-section h1{
+		font-size:2.5rem;
+	}
+
+	.message{
+		text-align: center;
+		padding:2rem 1rem;
+		width:clamp(28ch, 70%, 50ch);
+
+	}	
+
 
 }
 
@@ -1352,6 +1531,61 @@
 	.featured-products-wrapper img{
 		width:clamp(150px, 50vw, 230px);
 	}
+
+	/* #FAQ PAGE*/ 
+	.faq-section h3{
+		font-size:.75rem;
+	}
+
+	.faq-section p{
+		font-size:.7rem;
+	}
+
+	.faq-accordion-wrapper{
+		width:clamp(250px,80%,1000px);
+	}
+
+	/* #ABOUT US PAGE------------*/
+	.about-us-section h1{
+		font-size:2.25ßrem;
+	}
+
+	.message{
+		text-align: center;
+		padding:2rem 1rem;
+		width:clamp(25ch, 70%, 50ch);
+	}	
+
+	.one{
+		bottom:250px;
+		left:-85px;
+	}
+
+	.two{
+		top:30px;
+		left:-60px;
+	}
+
+	.three{
+		bottom:-70px;
+		left:-20px;
+	}
+
+	.four{
+		right:-100px;
+		top:100px;
+	}
+
+	.five{
+		right:0px;
+		bottom:-150px;
+	}
+
+	.six{
+		right:-115px;
+		bottom:100px;
+	}
+
 
 	/*CHECKOUT PAGE*/
 	.header-bar-mobile-wrapper{

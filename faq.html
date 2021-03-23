@@ -4,7 +4,7 @@
 
 <head>
 	<meta charset="utf-8">
-	<title>Frequently Asked Questions</title>
+	<title>FAQs</title>
 	<link rel="icon" type="image/png" href="img/favicon.png">
 	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css2?family=Ubuntu+Mono:wght@400;700&display=swap" rel="stylesheet">
@@ -17,10 +17,18 @@
 
 <body>
 	<header class="main-nav teal-light">
-		<a href="index.html"><img class="dippd-logo" src="img/dippd-logo.png" alt="Dipped shop logo"></a>
+		<input type="checkbox" class="toggler">
+		<div class="hamburger">
+			<div class="hamburger-line dark" id="top"></div>
+			<div class="hamburger-line dark" id="middle"></div>
+			<div class="hamburger-line dark" id="bottom"></div>
+		</div>
+		<div class="nav-logo">
+			<a href="index.html"><img class="dippd-logo" src="img/dippd-logo.png" alt="Dipped shop logo"></a>
+		</div>
 		<nav class="main-nav-links">
-			<a href="shop.html">Shop</a>
-			<a href="about.html">About Us</a>
+			<a href="shop.html" class="nav-text">Shop</a>
+			<a href="about.html" class="nav-text">About Us</a>
 			<a href= "cart.html"><div class="cart-icon-dark"></div></a>
 		</nav>
 	</header>
@@ -48,34 +56,60 @@
 				<h1>FAQs</h1>
 				<ol>
 					<li class="faq-accordion-wrapper">
-						<div class="faq-question teal">
-							<h3>Do you offer gluten-free and vegan options?</h3>
-							<p class="down-arrow">▼</p>
-						</div>
+						<!-- <span> -->
+							<div class="faq-question teal">
+								<h3>Do you offer gluten-free and vegan options?</h3>
+								<p class="arrow">▼</p>
 
-						<div class="faq-answer gold">
-							<p>Yes, you can find which donuts fit your dietary needs through the vegan and gluten-free icons in the menu</p>
-
-							<p class="up-arrow">▲</p>
-						</div></li>
-
-					<li class="faq-accordion-wrapper">
-						<div class="faq-question teal">
-							<h3>Do you offer catering services?</h3>
-							<p class="down-arrow">▼</p>
-						</div></li>
+								<div class="faq-answer gold">
+									<p>Yes, you can find which donuts fit your dietary needs through the vegan and gluten-free icons in the menu.</p>
+									<p class="arrow">▼</p>
+								</div>
+							</div>
+						<!-- </span> -->
+					</li>
 
 					<li class="faq-accordion-wrapper">
+						<!-- <span> -->
+							<div class="faq-question teal">
+								<h3>Do you offer catering services?</h3>
+								<p class="arrow">▼</p>
+
+								<div class="faq-answer gold">
+									<p>Yes, please contact us directly for more information.</p>
+									<p class="arrow">▼</p>
+								</div>
+							</div>
+						<!-- </span> -->
+					</li>
+
+					<li class="faq-accordion-wrapper">
+						<!-- <span> -->
 							<div class="faq-question teal">
 								<h3>I live in Vancouver, can I order Dipp'd donuts online?</h3>
-								<p class="down-arrow">▼</p>
-							</div></li>
+								<p class="arrow">▼</p>
+
+								<div class="faq-answer gold">
+									<p>Currently we are only servicing locationgs within Ontario.</p>
+									<p class="arrow">▼</p>
+								</div>
+							</div>
+						<!-- </span> -->
+						</li>
 							
 					<li class="faq-accordion-wrapper">
+						<!-- <span> -->
 							<div class="faq-question teal">
-								<h3>Who are you?</h3>
-								<p class="down-arrow">▼</p>
-							</div></li>
+								<h3>Who are you? What do you do?</h3>
+								<p class="arrow">▼</p>
+
+								<div class="faq-answer gold">
+									<p>We are the pioneering Dippers from Toronto. Fancy meeting you!</p>
+									<p class="arrow">▼</p>
+								</div>
+							</div>
+						<!-- </span> -->
+						</li>
 				</ol>
 				
 		</div> <!-- end of main grid container div -->
@@ -83,66 +117,92 @@
 
 
 	<footer class="teal">
-		<div class="container-footer-1600 teal">
-			<div class="footer-grid-wrapper">
-				<div class="footer-list-wrapper">
+			<div class="container-footer-1600 teal">
+				<div class="footer-grid-wrapper">
+					<div class="footer-list-wrapper">
 
-					<div class="footer-icons-wrapper">
-						<img class="dippd-logo" src="img/dippd-logo.png" alt="dippd donuts branding logo">
-						<a href="http://instagram.com" target="_blank">
-							<div class="footer-instagram-link">
-								<img src="img/instagram-icon.png" alt="Instagram logo that links to the dippd Instagram page">
-								<p>@dippd</p>
-							</div>
-						</a>
-					</div> 
+						<div class="footer-icons-wrapper">
+							<img class="dippd-logo" src="img/dippd-logo.png" alt="dippd donuts branding logo">
+							<a href="http://instagram.com" target="_blank">
+								<div class="footer-instagram-link">
+									<img src="img/instagram-icon.png" alt="Instagram logo that links to the dippd Instagram page">
+									<p>@dippd</p>
+								</div>
+							</a>
+						</div> 
 
-					<div class="footer-location-wrapper">
-						<h5>Locations</h5>
-						<p>Toronto, ON</p>
-					</div>
+						<div class="divider-line"></div>
 
-					<div class="footer-hours-wrapper">
-						<h5>Hours</h5>
-						<ul id="hours">
-							<li>Mon 10AM-5PM</li>
-							<li>Tue 10AM-5PM</li>
-							<li>Wed 10AM-5PM</li>
-							<li>Thu 10AM-5PM</li>
-							<li>Fri 10AM-5PM</li>
-							<li>Sat 10AM-5PM</li>
-							<li>Sun 10AM-5PM</li>
-						</ul>
-					</div>
-
-					<div class="footer-contact-wrapper">
-						<h5 id="contact">Contacts</h5>
-						<ul>
-							<li><a href="about.html">About Us</a></li>
-							<li><a href="mailto:hello@dippddonuts.com">Email</a></li>
-							<li><a href="http://instagram.com" target="_blank">Instagram</a></li>
-						</ul>
-					</div>
-
-					<div class="footer-help-wrapper">
-						<h5 id="help">Help</h5>
-						<ul>
-							<li><a href="faq.html">FAQ</a></li>
-							<li><a href="#0">Privacy</a></li>
-							<li><a href="#0">TOS</a></li>
-							<li><a href="references.html">References</a></li>
-							<li><a href="http://www.sfu.ca/~ybaik/iat339/Dippd-Pattern-Library" target="_blank">Pattern Library</a></li>
-						</ul>
+						<div class="footer-location-wrapper">
+							<h5>Locations</h5>
+							<p>Toronto, ON</p>
 						</div>
-					</div><!-- end of footer-list-wrapper div -->
 
-				<div class="footer-copyright-wrapper">
-				<p>© Copyright 2021 Dipp’d Donuts. All rights reserved. Website proudly created by E-Donuts Team</p>
-				</div>
-			</div><!-- end of footer-grid-wrapper div -->
-		</div><!-- end of container-footer-1600 div -->
+						<div class="footer-hours-wrapper">
+							<h5>Hours</h5>
+							<ul id="hours">
+								<li>Mon  10AM-5PM</li>
+								<li>Tue  10AM-5PM</li>
+								<li>Wed  10AM-5PM</li>
+								<li>Thu  10AM-5PM</li>
+								<li>Fri  10AM-5PM</li>
+								<li>Sat  10AM-5PM</li>
+								<li>Sun  10AM-5PM</li>
+							</ul>
+						</div>
 
-	</footer>
+						<div class="footer-days-wrapper-mobile">
+							<h5>Hours</h5>
+							<ul id="days-mobile">
+								<li>Monday</li>
+								<li>Tuesday</li>
+								<li>Wednesday</li>
+								<li>Thursday</li>
+								<li>Friday</li>
+								<li>Saturday</li>
+								<li>Sunday</li>
+							</ul>
+						</div>
+
+						<div class="footer-hours-wrapper-mobile">
+							<ul id="hours-mobile">
+								<li>10AM–5PM</li>
+								<li>10AM–5PM</li>
+								<li>10AM–5PM</li>
+								<li>10AM–5PM</li>
+								<li>10AM–5PM</li>
+								<li>10AM–5PM</li>
+								<li>10AM–5PM</li>
+							</ul>
+						</div>
+
+						<div class="footer-contact-wrapper">
+							<h5 id="contact">Contacts</h5>
+							<ul>
+								<li><a href="about.html">About Us</a></li>
+								<li><a href="mailto:hello@dippddonuts.com">Email</a></li>
+								<li><a href="http://instagram.com" target="_blank">Instagram</a></li>
+							</ul>
+						</div>
+
+						<div class="footer-help-wrapper">
+							<h5 id="help">Help</h5>
+							<ul>
+								<li><a href="faq.html">FAQ</a></li>
+								<li><a href="references.html">References</a></li>
+								<li><a href="http://www.sfu.ca/~ybaik/iat339/Dippd-Pattern-Library" target="_blank">Pattern Library</a></li>
+							</ul>
+							</div>
+						</div><!-- end of footer-list-wrapper div -->
+
+					<div class="footer-copyright-wrapper">
+					<p>© Copyright 2021 Dipp’d Donuts. All rights reserved. Website proudly created by E-Donuts Team</p>
+					</div>
+				</div><!-- end of footer-grid-wrapper div -->
+			</div><!-- end of container-footer-1600 div -->
+
+		</footer>
+	
 	<script src="js/hamburgerDropdown.js"></script>
 </body>
 
