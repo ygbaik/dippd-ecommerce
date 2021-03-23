@@ -1101,7 +1101,18 @@ ol li:first-child {
 	display: inline;
 }
 
+.faq-answer{
+	box-shadow: .5rem .5rem #11362F;
+	padding:0 1rem;
+	margin-left:2rem;
+	
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
 .down-arrow{
+	font-family: 'montserrat', 'sans-serif';
 	margin: 0 1rem;
 	position: relative;
 	right:0;
