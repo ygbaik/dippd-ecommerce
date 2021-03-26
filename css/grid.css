@@ -128,6 +128,12 @@
 	.floating-donut-gif-wrapper{
 		height:clamp(375px, 15vh, 500px);
 	}
+
+	
+	/* #SHOP PAGE*/
+	.product-grid-item-info img{
+		width:2rem;
+	}
 }
 
 /*Inbetween (1000px)*/
@@ -162,7 +168,13 @@
 	}
 
 	.recommended-donut-wrapper{
-		margin:0;
+		margin-bottom: 2.5rem;
+		margin-top: 2rem;
+	}
+
+	.recommended-donut-wrapper h4{
+		margin-top:1rem;
+		margin-bottom: 0rem;
 	}
 
 	.recommendation-section{
@@ -265,6 +277,11 @@
 		margin:0.625rem 1.25rem 0.625rem 1.25rem;
 	}
 
+	/* #SHOP PAGE*/
+	.product-grid-item-info img{
+		width:1.9rem;
+	}
+
 	/***Cart Page***/
 	.product-order-box-overview-wrapper{
 		grid-column: 1/span 12;
@@ -364,6 +381,11 @@
 	.faq-accordion-wrapper{
 		width:clamp(300px, 80%, 1000px);
 	}
+
+	/* #SHOP PAGE*/
+	.product-grid-item-info{
+		padding:.75rem;
+	}
 }
 
 /*Inbetween(800px)*/
@@ -391,6 +413,11 @@
 
 	.hero-donut-small{
 		bottom:0;
+	}
+	
+	/* #SHOP PAGE*/
+	.product-grid-item-info img{
+		width:1.8rem;
 	}
 }
 

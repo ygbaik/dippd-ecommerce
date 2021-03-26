@@ -1332,7 +1332,8 @@ ol li:first-child {
 	flex-direction: column;
 	justify-content: center;
 	align-self: center;
-	padding-bottom: 1rem;
+	/*padding-bottom: 1rem;*/
+	margin-bottom: 3rem;
 }
 
 .product-grid-item{
@@ -1402,7 +1403,14 @@ ol li:first-child {
 	display:flex;
 	justify-content: center;
 	align-content: center;
+	align-items: center;
+	padding:1rem 0;
 }
+
+.product-grid-item-info h4{
+	margin: 0;
+}
+
 .product-grid-item-info img{
 	align-self: center;
 	margin-left:.5rem;
