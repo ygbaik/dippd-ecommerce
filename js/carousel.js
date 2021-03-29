@@ -1,7 +1,11 @@
 'use stict';
 
-// CREDIT to https://codepen.io/carlosalvarez91/pen/Mowdyv
-// Copyright (c) 2021 by Carlos Álvarez (https://codepen.io/carlosalvarez91/pen/Mowdyv)
+// https://codepen.io/carlosalvarez91/pen/Mowdyv
+// Copyright (c) 2021 by Carlos Álvarez
+
+
+// https://flickity.metafizzy.co
+// Copyright 2015-2021 Metafizzy
 
 //CAROUSEL SETTINGS
 var $imagesCarousel = jQuery('.carousel-items').flickity({
@@ -77,6 +81,8 @@ var $imagesCarousel = jQuery('.carousel-items').flickity({
     /* at end of cells, wraps-around to first for infinite scrolling */
 });
 
+// END OF FLICKITY CODE
+
 function resizeCells() {
   var flkty = $imagesCarousel.data('flickity');
   var $current = flkty.selectedIndex;
@@ -97,13 +103,14 @@ function resizeCells() {
   } else {
     $endCell = $current + 1;
   }
-  jQuery('..carousel-items .carousel-post').eq($endCell).addClass("nextToSelectedRight");
+  jQuery('.carousel-items .carousel-post').eq($endCell).addClass("nextToSelectedRight");
   if($endCell + 1 < $imageNumLimit){
     jQuery('.carousel-items .carousel-post').eq($endCell + 1).addClass("nextToSelectedRight2"); 
   } else {
     jQuery('.carousel-items .carousel-post').eq(0).addClass("nextToSelectedRight2");
   }
 }
+
 resizeCells();
 
 $imagesCarousel.on('scroll.flickity', function() {
@@ -112,7 +119,7 @@ $imagesCarousel.on('scroll.flickity', function() {
 
 
 //HOVER FUNCTIONS
-$('.carousel-post').bind("mouseover", function(){
+$('.carouselImage').bind("mouseover", function(){
   if (this.className === 'carousel-post nextToSelectedLeft') {
     $imagesCarousel.flickity('playLeftSlowPlayer');
   } else if (this.className === 'carousel-post nextToSelectedLeft2') {
@@ -127,3 +134,5 @@ $('.carousel-post').bind("mouseover", function(){
 $('.carousel-post').bind("mouseout", function(){
   $imagesCarousel.flickity('pausePlayer');
 });
+
+// END OF CARLOS ALVAREZ CODE
