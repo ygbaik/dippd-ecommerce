@@ -4,7 +4,9 @@
 - Dropdown menu animation source: https://codinhood.com/micro/10-dropdown-menu-animations-css-transform
 - General CSS Animation source: https://developer.mozilla.org/en-US/docs/Web/CSS/animation
 - Animated scrolling source: https://www.youtube.com/watch?v=3T4rD_P2nc8&t=183s&ab_channel=OnlineTutorials, 
-https://www.youtube.com/watch?v=ezunNVYPJDs&ab_channel=LearnDesign*/
+https://www.youtube.com/watch?v=ezunNVYPJDs&ab_channel=LearnDesign
+- Animated input fields source: - https://www.youtube.com/watch?v=IxRJ8vplzAo&t=563s*/
+
 
 
 /*GLOBAL===========================================================================================*/
@@ -1924,6 +1926,7 @@ button[type="quantity"]{
 }
 
 /*input field label animations*/
+/*Animated input fields source: - https://www.youtube.com/watch?v=IxRJ8vplzAo&t=563s*/
 .input-animation {
 	position:relative;
 }
@@ -2019,25 +2022,17 @@ button[type="quantity"]{
 	margin-bottom:0.625rem;
 }
 
-.left-side-menu input[type="text"], input[type="text-first"], input[type="text-second"], input[type="text-second-payment"], input[type="text-second-payment-mobile"], input[type="text-third"],  
-#credit-card-input,#cvv-input, #cvv-input-mobile, #credit-card-input-mobile{
+.left-side-menu input[type="text"], #credit-card-input,#cvv-input, #cvv-input-mobile, #credit-card-input-mobile{
 	box-shadow: .25rem .25rem;
 	width:100%;
 	margin-top:0;
 	margin-bottom:0.938rem;
 }
 
-.left-side-menu input[type="text-first"], input[type="text-second"], input[type="text-second-payment"], input[type="text-second-payment-mobile"]{
+.left-side-menu .text-first, .text-second{
 	margin-right:1.25rem;
 }
 
-.left-side-menu input[type="text-second-payment"], input[type="text-third"], input[type="cvv-input"]{
-	width:50%;
-}
-
-.left-side-menu input[type="text-second-payment-mobile"]{
-	width:50%;
-}
 
 .header-checkout-breadcrumbs{
 	margin:0.625rem 0 0 0;
@@ -2314,7 +2309,7 @@ button[type="quantity"]{
 	padding-left:clamp(0.063rem, 75%, 1rem);
 }
 
-button[type="express-first"], button[type="express-second"]{
+.express-first, .express-second{
 	margin-right:2.5rem
 }
 
@@ -2612,12 +2607,12 @@ button[type="express-first"], button[type="express-second"]{
 	font-weight:700;
 }
 
-button[type="pay-now"]{
+.pay-now{
 	margin-right:0.313rem;
 	cursor:pointer;
 }
 
-button[type="pay-now"] a{
+.pay-now a{
 	color:black;
 }
 
