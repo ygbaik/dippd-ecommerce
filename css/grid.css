@@ -429,7 +429,7 @@
 @media screen and (max-width:48em){
 	/*GLOBAL===============*/
 	header{
-		height:auto;
+		height:3.125rem;
 	}
 
 	.main-grid-container{
@@ -904,6 +904,11 @@
 
 /*Inbetween (688px)----------------------------------------------------------------------------------------------*/
 @media screen and (max-width: 43em){
+	/*GLOBAL------------------*/
+	header{
+		height:auto;
+	}
+
 	/*TYPOGRAPHY-----------*/
 	.hero-section h1,
 	.recommendation-section h2 {
