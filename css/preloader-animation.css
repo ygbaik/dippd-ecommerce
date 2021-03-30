@@ -24,6 +24,16 @@
 }
 
 @keyframes reposition{
-	0%{transform:translateY(50px);}
-	100%{transform:translateY(0px);}
+	0%{
+		transform:translateY(50px);
+		z-index: 1000;
+	}
+	99%{
+		z-index: 1000;
+	}
+	100%{
+		transform:translateY(0px);
+		z-index: 2;
+	}
 }
+

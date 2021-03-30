@@ -887,12 +887,12 @@ button.cta-button:focus{
 
 .scroll-indicator-container a{
 	position: relative;
-	z-index: 1001;
+	z-index: 3;
 }
 
 .scroll-indicator-wrapper{
 	/*position: relative;*/
-	z-index: 1000;
+	z-index: 2;
 
 	display: grid;
 	grid-template-rows:2fr 1.5fr 1fr;
