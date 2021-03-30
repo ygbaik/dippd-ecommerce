@@ -1,5 +1,7 @@
+// References (also found inline):
+// - https://www.youtube.com/watch?v=wF2gOkBMmsk&ab_channel=KodeBase
+
 //PRODUCT INPUT ========================================================================================/
-//https://www.youtube.com/watch?v=wF2gOkBMmsk&ab_channel=KodeBase
 
 // Petals Donut
 let petalsAdd = document.querySelector('.add-button.petals');

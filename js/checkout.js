@@ -1,11 +1,14 @@
 'use strict'; 
-
+// References (also found inline):
+// - Selectbox dropdown source: https://www.youtube.com/watch?v=k4gzE80FKb0
+// - JavaScript "class contains" source: https://stackoverflow.com/questions/5085567/what-is-the-hasclass-function-with-plain-javascript
 
 
 //CHECKOUT MENU ========================================================================================/
 // Variables--------------------------------------------------------------------------------------------
 
 // Dropdown
+// Selectbox dropdown source: https://www.youtube.com/watch?v=k4gzE80FKb0
 let dropdownOpenButton = document.querySelector(".text-information");
 let dropdownArrow = document.querySelector(".dropdown-arrow");
 
@@ -48,7 +51,7 @@ let inputArrow = document.querySelector(".input-bar-arrow")
 // Dropdown Menu
 function ariaDropdown(){
 	//Change aria attribute and arrow text
-	if (dropdownMenu.classList.contains("active")){
+	if (dropdownMenu.classList.contains("active")){ //JavaScript "class contains" source: https://stackoverflow.com/questions/5085567/what-is-the-hasclass-function-with-plain-javascript
 		dropdownMenu.setAttribute('aria-active', 'true');
 		dropdownArrow.innerHTML='▴';
 	}
