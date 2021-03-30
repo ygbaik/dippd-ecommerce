@@ -1503,7 +1503,7 @@ input[type="number"]::placeholder{
 	color:#ddd;
 }
 
-button[type="quantity"]{
+.product-grid-item-quantity button{
 	font-family:"ubuntu mono", monospace;
 	font-weight:bold;
 	font-size:1rem;
