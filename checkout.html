@@ -1,5 +1,10 @@
 <!doctype html>
 
+<!-- References (also found inline): -->
+<!-- - Radio button source 1: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/radio -->
+<!-- - Radio button source 2: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/radio#selecting_a_radio_button_by_default -->
+
+
 <html lang="en">
 
 <head>
@@ -213,6 +218,8 @@
 						<div class="select-wrapper">
 							<div class="time-container">
 								<div class="time-option">
+									<!-- Radio button source 1: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/radio -->
+									<!-- Radio button source 2: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/radio#selecting_a_radio_button_by_default -->
 									<input type="radio" class="drop-down-input" id="10:00AM" name="pickup-time">
 									<label for="10:00AM">10:00 AM</label> 
 								</div>
@@ -369,7 +376,7 @@
 					
 				</section> <!-- end of date and time section -->
 
-				<section id="info">
+				<section id="info-express-checkouto">
 					<form action="confirmation.html">
 						<div class="info-express-checkout">
 							<h4>Express Checkout</h4>
@@ -397,43 +404,126 @@
 							<div class="divider-line"></div>
 						</div>
 
-						<div class="info-contact-information">
+						<div class="info-contact-information input-animation">
 							<h4>Contact Information</h4>
-							<input type="text" placeholder="Email">
+							<input type="text" placeholder=" ">
+							<label for="email" class="placeholder-text">
+								<span class="placeholder-name">Email</span>
+							</label>
 						</div>
 
 						<div class="info-billing-address-pickup active">
 							<h4>Billing Address</h4>
 							<div class="names-section">
-								<input type="text-first" placeholder="First Name">
-								<input type="text" placeholder="Last Name">
+								<div class="input-animation">
+									<input type="text-first" placeholder=" ">
+									<label for="first-name" class="placeholder-text">
+										<span class="placeholder-name">First Name</span>
+									</label>
+								</div>
+								<div class="input-animation">
+									<input type="text" placeholder=" ">
+									<label for="last-name" class="placeholder-text">
+										<span class="placeholder-name">Last Name</span>
+									</label>
+								</div>
 							</div>
-							<input type="text" placeholder="Company (Optional)">
+
+							<div class="input-animation">
+								<input type="text" placeholder=" ">
+								<label for="company" class="placeholder-text">
+									<span class="placeholder-name">Company (Optional)</span>
+								</label>
+							</div>
 
 							<div class="address-section">
 								<div class="address-info">
-									<input type="text-first" placeholder="Address">
-									<input type="text" placeholder="Apt. Suite">
+									<div class="input-animation">
+										<input type="text-first" placeholder=" ">
+										<label for="address" class="placeholder-text">
+											<span class="placeholder-name">Address</span>
+										</label>
+									</div>
+									<div class="input-animation">
+										<input type="text" placeholder=" ">
+										<label for="apt-suite" class="placeholder-text">
+											<span class="placeholder-name">Apt. Suite</span>
+										</label>
+									</div>
 								</div>
-								<input type="text" placeholder="City">
+
+								<div class="input-animation">
+									<input type="text" placeholder=" ">
+									<label for="city" class="placeholder-text">
+										<span class="placeholder-name">City</span>
+									</label>
+								</div>
+
 								<div class="country-info">
-									<input type="text-first" placeholder="Country">
-									<input type="text-second" placeholder="Province">
-									<input type="text" placeholder="Postal Code">
+									<div class="input-animation">
+										<input type="text-first" placeholder=" ">
+										<label for="country" class="placeholder-text">
+											<span class="placeholder-name">Country</span>
+										</label>
+									</div>
+									<div class="input-animation">
+										<input type="text-second" placeholder=" ">
+										<label for="province" class="placeholder-text">
+											<span class="placeholder-name">Province</span>
+										</label>
+									</div>
+									<div class="input-animation">
+										<input type="text" placeholder=" ">
+										<label for="postal-code" class="placeholder-text">
+											<span class="placeholder-name">Postal Code</span>
+										</label>
+									</div>
 								</div>
 							</div>
 
 							<!-- hidden until media query breakpoint is met -->
 							<div class="address-section-mobile">
-								<input type="text" placeholder="Address">
-								<div class="address-info">
-									<input type="text-first" placeholder="City">
-									<input type="text" placeholder="Apt. Suite">
+								<div class="input-animation">
+									<input type="text" placeholder=" ">
+									<label for="address" class="placeholder-text">
+										<span class="placeholder-name">Address</span>
+									</label>
 								</div>
-								<input type="text-first" placeholder="Country">
+								<div class="address-info">
+									<div class="input-animation">
+										<input type="text-first" placeholder=" ">
+										<label for="city" class="placeholder-text">
+											<span class="placeholder-name">City</span>
+										</label>
+									</div>
+									<div class="input-animation">
+										<input type="text" placeholder=" ">
+										<label for="apt-suite" class="placeholder-text">
+											<span class="placeholder-name">Apt. Suite</span>
+										</label>
+									</div>
+								</div>
+
+								<div class="input-animation">
+									<input type="text-first" placeholder=" ">
+									<label for="apt-suite" class="placeholder-text">
+										<span class="placeholder-name">Country</span>
+									</label>
+								</div>
+
 								<div class="country-info">
-									<input type="text-second" placeholder="Province">
-									<input type="text" placeholder="Postal Code">
+									<div class="input-animation">
+										<input type="text-second" placeholder=" ">
+										<label for="province" class="placeholder-text">
+											<span class="placeholder-name">Province</span>
+										</label>
+									</div>
+									<div class="input-animation">
+										<input type="text" placeholder=" ">
+										<label for="postal-code" class="placeholder-text">
+											<span class="placeholder-name">Postal Code</span>
+										</label>
+									</div>
 								</div>
 							</div>
 						</div> 
@@ -442,21 +532,69 @@
 						<div class="info-address-delivery">
 							<h4>Address</h4>
 							<div class="names-section">
-								<input type="text-first" placeholder="First Name">
-								<input type="text" placeholder="Last Name">
+								<div class="input-animation">	
+									<input type="text-first" placeholder=" ">
+									<label for="first-name" class="placeholder-text">
+										<span class="placeholder-name">First Name</span>
+									</label>
+								</div>
+								<div class="input-animation">
+									<input type="text" placeholder=" ">
+									<label for="last-name" class="placeholder-text">
+										<span class="placeholder-name">Last Name</span>
+									</label>
+								</div>
 							</div>
-							<input type="text" placeholder="Company (Optional)">
 
+							<div class="input-animation">
+								<input type="text" placeholder="Company (Optional)">
+								<label for="company" class="placeholder-text">
+									<span class="placeholder-name">Company (Optional)</span>
+								</label>
+							</div>
+							
 							<div class="address-section">
 								<div class="address-info">
-									<input type="text-first" placeholder="Address">
-									<input type="text" placeholder="Apt. Suite">
+									<div class="input-animation">
+										<input type="text-first" placeholder=" ">
+										<label for="address" class="placeholder-text">
+											<span class="placeholder-name">Address</span>
+										</label>
+									</div>
+									<div class="input-animation">
+										<input type="text" placeholder=" ">
+										<label for="apt-suite" class="placeholder-text">
+											<span class="placeholder-name">Apt. Suite</span>
+										</label>
+									</div>		
 								</div>
-								<input type="text" placeholder="City">
+
+								<div class="input-animation">
+									<input type="text" placeholder=" ">
+									<label for="city" class="placeholder-text">
+										<span class="placeholder-name">City</span>
+									</label>
+								</div>	
+
 								<div class="country-info">
-									<input type="text-first" placeholder="Country">
-									<input type="text-second" placeholder="Province">
-									<input type="text" placeholder="Postal Code">
+									<div class="input-animation">
+										<input type="text-first" placeholder=" ">
+										<label for="country" class="placeholder-text">
+											<span class="placeholder-name">Country</span>
+										</label>
+									</div>
+									<div class="input-animation">
+										<input type="text-second" placeholder=" ">
+										<label for="province" class="placeholder-text">
+											<span class="placeholder-name">Province</span>
+										</label>
+									</div>
+									<div class="input-animation">
+										<input type="text" placeholder=" ">
+										<label for="postal-code" class="placeholder-text">
+											<span class="placeholder-name">Postal Code</span>
+										</label>
+									</div>
 								</div>
 							</div>
 						</div>	
@@ -495,38 +633,71 @@
 									<img src="img/visa-mastercard.png">
 								</div>
 							</div>
-							<input type="number" id="credit-card-input" placeholder="Card Number">
-							<div class="card-info">
-								<input type="text-first" placeholder="Name on Card">
-								<input type="text-second-payment" placeholder="MM/YY">
-								<input type="number" id="cvv-input" placeholder="CVV">
+
+							<div class="credit-card-info">
+								<div class="input-animation">
+									<input type="number" id="credit-card-input" placeholder=" ">
+									<label for="card-number" class="placeholder-text">
+										<span class="placeholder-name">Card Number</span>
+									</label>
+								</div>
+								<div class="card-info">
+									<div class="input-animation">
+										<input type="text-first" placeholder=" ">
+										<label for="name-on-card" class="placeholder-text">
+											<span class="placeholder-name">Name on Card</span>
+										</label>
+									</div>
+									<div class="input-animation">
+										<input type="text-first" placeholder=" ">
+										<label for="mmyy" class="placeholder-text">
+											<span class="placeholder-name">MM/YY</span>
+										</label>
+									</div>			
+									<div class="input-animation">
+										<input type="number" id="cvv-input" placeholder=" ">
+										<label for="cvv" class="placeholder-text">
+											<span class="placeholder-name">CVV</span>
+										</label>
+									</div>
+								</div>
 							</div>
+
+							<!-- Mobile version of credit card info that is hidden until media query is met -->
+							<div class="credit-card-info-mobile">
+								<div class="input-animation">
+									<input type="number" id="credit-card-input-mobile" placeholder=" ">
+									<label for="credit-card-number" class="placeholder-text">
+										<span class="placeholder-name">Credit Card Number</span>
+									</label>
+								</div>
+								<div class="input-animation">
+									<input type="text-first" placeholder=" ">
+									<label for="mane-on-card" class="placeholder-text">
+										<span class="placeholder-name">Name on Card</span>
+									</label>
+								</div>
+								<div class="card-info">
+									<div class="input-animation">
+										<input type="text-first" placeholder=" ">
+										<label for="mmyy" class="placeholder-text">
+											<span class="placeholder-name">MM/YY</span>
+										</label>
+									</div>
+									<div class="input-animation">		
+										<input type="number" id="cvv-input-mobile" placeholder=" " maxlength="4">
+										<label for="cvv" class="placeholder-text">
+											<span class="placeholder-name">CVV</span>
+										</label>
+									</div>
+								</div>
+							</div>
+
 							<div class="radio-button-selection paypal">
 								<input type="radio" id="paypal" name="payment-option" value="paypal">
 								<div class="button-info">
 									<label for="paypal"><img src="img/paypal-payment.png"></label>
 								</div>
-							</div>
-						</div>
-
-						<div class="payment-forms-mobile">
-							<h4>Payment Information</h4>
-							<div class="radio-button-selection">
-								<input type="radio" id="credit-card" name="payment-option" value="credit-card">
-								<div class="button-info">
-									<label for="credit-card">Credit Card</label>
-									<img src="img/visa-mastercard.png">
-								</div>
-							</div>
-							<input type="number" id="credit-card-input" placeholder="Card Number">
-							<input type="text-first" placeholder="Name on Card">
-							<div class="card-info">
-								<input type="text-second-payment-mobile" placeholder="MM/YY">
-								<input type="number" id="cvv-input" placeholder="CVV">
-							</div>
-							<div class="radio-button-selection paypal">
-								<input type="radio" id="paypal" name="payment-option" value="paypal">
-								<label for="paypal"><img src="img/paypal-payment.png"></label>
 							</div>
 						</div>
 

@@ -766,14 +766,22 @@
 	}
 
 	/*Payment*/
-	.payment-forms{
+	.credit-card-info{
 		visibility:hidden;
 		position:fixed;
 	}
 
-	.payment-forms-mobile{
+	.credit-card-info-mobile{
 		visibility:visible;
 		position:static;
+	}
+
+	.country-info{
+		grid-template-columns: 1fr 1fr;
+	}
+
+	.card-info{
+		grid-template-columns: 1fr 1fr;
 	}
 
 
