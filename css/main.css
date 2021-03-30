@@ -1,3 +1,14 @@
+/*References (also found inline):
+- Calendar grid source: https://zellwk.com/blog/calendar-with-css-grid/
+- Hamburger menu positioning source: https://stackoverflow.com/questions/54613785/how-to-stop-dropdown-menu-from-pushing-content-down
+- Dropdown menu animation source: https://codinhood.com/micro/10-dropdown-menu-animations-css-transform
+- General CSS Animation source: https://developer.mozilla.org/en-US/docs/Web/CSS/animation
+- Animated scrolling source: https://www.youtube.com/watch?v=3T4rD_P2nc8&t=183s&ab_channel=OnlineTutorials, 
+https://www.youtube.com/watch?v=ezunNVYPJDs&ab_channel=LearnDesign
+- Animated input fields source: - https://www.youtube.com/watch?v=IxRJ8vplzAo&t=563s*/
+
+
+
 /*GLOBAL===========================================================================================*/
 
 *{
@@ -258,6 +269,62 @@ footer{
 	position:fixed;
 	width:100%;
 	z-index:999;
+
+	/*animation:dropdownWrapper 300ms ease-in-out alternate;*/
+	transform-origin:top center;
+}
+
+/*Dropdown menu animation source: https://codinhood.com/micro/10-dropdown-menu-animations-css-transform*/
+/*General CSS Animation source: https://developer.mozilla.org/en-US/docs/Web/CSS/animation*/
+.dropdown-wrapper.open{
+	animation:dropdownOpen 300ms ease-in forwards;
+}
+
+.dropdown-wrapper.close{
+	animation:dropdownClose 300ms ease-out forwards;
+}
+
+@keyframes dropdownWrapper{
+	0%{
+		/*transform:scale(0);*/
+		transform:translateY(-600px);
+	}
+	80%{
+		/*transform:scale(1.1);*/
+	}
+	100%{
+		/*transform:scale(1);*/
+		transform:translateY(0);
+	}
+}
+
+
+@keyframes dropdownOpen{
+	0%{
+		/*transform:scale(0);*/
+		transform:translateY(-600px);
+	}
+	80%{
+		/*transform:scale(1.1);*/
+	}
+	100%{
+		/*transform:scale(1);*/
+		transform:translateY(0);
+	}
+}
+
+@keyframes dropdownClose{
+	0%{
+		/*transform:scale(0);*/
+		transform:translateY(0px);
+	}
+	80%{
+		/*transform:scale(1.1);*/
+	}
+	100%{
+		/*transform:scale(1);*/
+		transform:translateY(-600px);
+	}
 }
 
 .dark-opacity{
@@ -266,7 +333,38 @@ footer{
 	position:fixed;
 	background:rgb(0,0,0,.5);
 	height:100%;
+
+	animation:fadeIn 500ms ease-in;
 }
+
+.dark-opacity.open{
+	animation:fadeIn 500ms ease-in;
+	opacity:1;
+}
+
+.dark-opacity.close{
+	animation:fadeOut 500ms ease-in;
+	opacity:0;
+}
+
+@keyframes fadeIn{
+	0%{
+		opacity:0%;
+	}
+	100%{
+		opacity:100%;
+	}
+}
+
+@keyframes fadeOut{
+	0%{
+		opacity:100%;
+	}
+	100%{
+		opacity:0%;
+	}
+}
+
 
 
 /*.toggler:checked ~#dropdown{
@@ -293,6 +391,7 @@ footer{
 
 .dropdown-menu .divider-line{
 	width:100%;
+	background-color:white;
 }
 
 .dropdown-nav-links a{
@@ -306,6 +405,8 @@ footer{
 	align-items:center;
 	padding-top:1.25rem;
 }
+
+
 
 .dropdown-nav-instagram{
 	display:grid;
@@ -1710,6 +1811,8 @@ button[type="quantity"]{
 .top-mobile-menu .divider-line{
 	margin:0;
 	width:100%;
+	grid-column:1/19;
+	background:white;
 }
 
 #header-dropdown-mobile .top-checkout{
@@ -1726,10 +1829,10 @@ button[type="quantity"]{
 }
 
 
-#header-dropdown-mobile .product-name-and-value p, .subtotal-name-and-value p, .total-value p, .shipping-name-and-value p{
+/*#header-dropdown-mobile .product-name-and-value p, .subtotal-name-and-value p, .total-value p, .shipping-name-and-value p{
 	margin-left:2rem;
 	margin-right:2rem;
-}
+}*/
 
 
 
@@ -1818,6 +1921,40 @@ button[type="quantity"]{
 
 /*Left Side Container*/
 
+.left-side-menu input{
+	padding:1.25rem 0.75rem 0.438rem 0.75rem;
+}
+
+/*input field label animations*/
+/*Animated input fields source: - https://www.youtube.com/watch?v=IxRJ8vplzAo&t=563s*/
+.input-animation {
+	position:relative;
+}
+
+.input-animation label{
+	font-size:0.75rem;
+	color: rgb(0,0,0, 0.75);
+	position:absolute;
+	bottom:-1%;
+	left:12px;
+	width:100%;
+	height:50%;
+	pointer-events: none;
+}
+
+.placeholder-name{
+	font-size: 0.75rem;
+	position:absolute;
+	bottom:30px;
+	transition: all 0.3s ease;
+}
+
+.input-animation input:focus + .placeholder-text .placeholder-name,
+.input-animation input:not(:placeholder-shown) + .placeholder-text .placeholder-name{
+	transform:translateY(-100%);
+	font-size:0.625rem;
+}
+
 
 /*Checkout Header*/
 #header-checkout-mobile{
@@ -1847,6 +1984,7 @@ button[type="quantity"]{
 	justify-content: space-between;
 	align-items:center;
 	text-align:left;
+	cursor:pointer;
 }
 
 .text-information p{
@@ -1884,25 +2022,17 @@ button[type="quantity"]{
 	margin-bottom:0.625rem;
 }
 
-.left-side-menu input[type="text"], input[type="text-first"], input[type="text-second"], input[type="text-second-payment"], input[type="text-second-payment-mobile"], input[type="text-third"],  
-#credit-card-input,#cvv-input {
+.left-side-menu input[type="text"], #credit-card-input,#cvv-input, #cvv-input-mobile, #credit-card-input-mobile{
 	box-shadow: .25rem .25rem;
 	width:100%;
 	margin-top:0;
 	margin-bottom:0.938rem;
 }
 
-.left-side-menu input[type="text-first"], input[type="text-second"], input[type="text-second-payment"], input[type="text-second-payment-mobile"]{
+.left-side-menu .text-first, .text-second{
 	margin-right:1.25rem;
 }
 
-.left-side-menu input[type="text-second-payment"], input[type="text-third"], #cvv-input{
-	width:50%;
-}
-
-.left-side-menu input[type="text-second-payment-mobile"]{
-	width:50%;
-}
 
 .header-checkout-breadcrumbs{
 	margin:0.625rem 0 0 0;
@@ -2001,6 +2131,8 @@ button[type="quantity"]{
 }
 
 /*Date and Time*/
+/*Calendar grid source: https://zellwk.com/blog/calendar-with-css-grid/*/
+
 #date-and-time{
 	/*display:grid;*/
 	grid-template-columns: repeat(7, 1fr);
@@ -2177,7 +2309,7 @@ button[type="quantity"]{
 	padding-left:clamp(0.063rem, 75%, 1rem);
 }
 
-button[type="express-first"], button[type="express-second"]{
+.express-first, .express-second{
 	margin-right:2.5rem
 }
 
@@ -2238,9 +2370,13 @@ button[type="express-first"], button[type="express-second"]{
 }
 
 .names-section{
-	display:flex;
+	/*display:flex;
 	flex-direction:row;
-	justify-content: space-between;
+	justify-content: space-between;*/
+
+	display:grid;
+	grid-template-columns:1fr 1fr;
+	grid-gap: 1.25rem;
 }
 
 
@@ -2249,13 +2385,21 @@ button[type="express-first"], button[type="express-second"]{
 }
 
 .address-info{
-	display:flex;
-	flex-direction:row;
+	/*display:flex;
+	flex-direction:row;*/
+
+	display:grid;
+	grid-template-columns:1fr 1fr;
+	grid-gap:1.25rem;
 }
 
 .country-info{
-	display:flex;
-	flex-direction:row;
+	/*display:flex;
+	flex-direction:row;*/
+
+	display:grid;
+	grid-template-columns:1fr 1fr 1fr;
+	grid-gap:1.25rem;
 }
 
 .address-section-mobile{
@@ -2293,11 +2437,11 @@ button[type="express-first"], button[type="express-second"]{
 
 
 /*Payment*/
-.payment-forms{
+.credit-card-info{
 	visibility:visible;
 }
 
-.payment-forms-mobile{
+.credit-card-info-mobile{
 	visibility:hidden;
 	position:fixed;
 }
@@ -2412,18 +2556,19 @@ button[type="express-first"], button[type="express-second"]{
 	margin-top:0.125rem;
 }
 
-#credit-card-input{
+#credit-card-input, #credit-card-input-mobile{
 	margin-left:0;
 	padding:.75rem;
 	text-align:left;
 	border-radius:10px;
 	border-color:rgb(0, 0, 0, .5);
 	border-width: 1px;
+	padding:1.25rem 0.75rem 0.438rem 0.75rem;
 
 	box-shadow: .25rem .25rem;
 }
 
-#cvv-input{
+#cvv-input, #cvv-input-mobile{
 	font-family:"ubuntu mono", monospace;
 	padding:.75rem;
 	text-align:left;
@@ -2433,6 +2578,7 @@ button[type="express-first"], button[type="express-second"]{
 	border-radius:10px;
 	border-color:rgb(0, 0, 0, .5);
 	border-width: 1px;
+	padding:1.25rem 0.75rem 0.438rem 0.75rem;
 
 	box-shadow: .25rem .25rem;
 }
@@ -2461,18 +2607,22 @@ button[type="express-first"], button[type="express-second"]{
 	font-weight:700;
 }
 
-button[type="pay-now"]{
+.pay-now{
 	margin-right:0.313rem;
 	cursor:pointer;
 }
 
-button[type="pay-now"] a{
+.pay-now a{
 	color:black;
 }
 
 .card-info{
-	display:flex;
-	flex-direction:row;
+	/*display:flex;
+	flex-direction:row;*/
+
+	display:grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-gap:1.25rem;
 }
 
 /*CONFIRMATION PAGE ----------------------------------------------------------------------------------*/
