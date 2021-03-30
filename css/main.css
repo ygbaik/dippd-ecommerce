@@ -152,27 +152,6 @@ footer{
 	visibility: hidden;
 }
 
-.hamburger-menu{
-	color:white;
-	display: flex;
-	flex-direction: column;
-	text-align: center;
-	justify-content: center;
-	align-items: center;
-	visibility: hidden;
-
-	position:fixed;
-	top: 10;
-	right: 0;
-	width:100%;
-	height: 100%;
-	overflow:hidden;
-	background-color: #6339A1;
-
-	transform: opacity 0.4s;
-	opacity: 0;
-	}
-
 .d-logo{
 	width:50px;
 	}
@@ -1018,7 +997,6 @@ button.cta-button:focus{
 .featured-products-wrapper{
 	display: grid;
 	grid-template-columns: repeat(3, 1fr);
-	grid-template-rows: 1;
 	width:100%;
 	margin:0 auto;
 }
@@ -1069,10 +1047,6 @@ button.cta-button:focus{
 	height: 100%;
 }
 
-./*flickity-viewport {
-	flex: 1;
-}*/
-
 .carousel-items{
 	display: flex;
 }
@@ -1088,13 +1062,19 @@ button.cta-button:focus{
 	box-shadow: 1rem 1rem black;
 	border: 1px solid #ccc;
 
-	display: grid;
-	/*grid-template-rows: 60% 30% 10%;*/
+	/*display: flex;*/
+	/*flex-direction: column;*/
 
-	/*grid-template-rows: auto;*/
+	display: grid;
+	/*grid-template-rows: 50% 40% 10%;*/
+	grid-template-rows: auto;
 
 	transition: transform 0.5s;
   }
+
+.carousel-post img{
+	align-self: center;
+}
 
 .social-media-card-image{
 	width:100%;
@@ -1102,6 +1082,7 @@ button.cta-button:focus{
 }
 
 .social-media-card-text{
+	height:120px;
 	padding:.5rem 1rem;
 }
 
@@ -1112,6 +1093,10 @@ button.cta-button:focus{
 	padding:0 1rem;
 }
 
+.hashtag{
+	color:blue;
+}
+
 /*
 https://codepen.io/carlosalvarez91/pen/Mowdyv
 Copyright (c) 2021 by Carlos Álvarez
@@ -1119,12 +1104,12 @@ Copyright (c) 2021 by Carlos Álvarez
 
 .carousel-post.is-selected {
   	z-index:10;
-  	transform: scale(1.1);
+  	transform: scale(1);
 }
 
 .carousel-post.nextToSelectedLeft, .carousel-post.nextToSelectedRight {
-  transform: scale(1);
-  z-index:5;
+ 	transform: scale(1);
+  	z-index:5;
 }
 
 /*END OF CARLOS ALVAREZ CODE*/
@@ -1603,7 +1588,6 @@ button[type="quantity"]{
 
 .product-order-box-overview-return{
 	grid-column:1/span 6;
-	margin-left:3rem;
 	display:flex;
 	flex-direction:row;
 	align-items: baseline;
@@ -1635,7 +1619,6 @@ button[type="quantity"]{
 	margin-top:0rem;
 	margin-bottom:0rem;
 	font-weight:bold;
-	font-scale:1.5rem;
 }
 
 .product-order-box-overview-counter p{
@@ -1978,7 +1961,6 @@ button[type="quantity"]{
 	display:flex;
 	flex-direction:row;
 	justify-content: space-between;
-	align-items:space-between;
 	visibility:hidden;
 	position:fixed;
 }

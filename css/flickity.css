@@ -12,9 +12,8 @@ Copyright 2015-2021 Metafizzy
 .flickity-viewport {
   overflow: hidden;
   position: relative;
-  height: 500px;
+  height: 800px;
   width:100%;
-
 }
 
 .flickity-slider {
