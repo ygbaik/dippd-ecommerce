@@ -512,7 +512,7 @@
 
 	.value-proposition-cta-wrapper,
 	.donut-grid-wrapper{
-		padding:0;]
+		padding:0;
 	}
 
 	.scroll-arrow{
@@ -1498,7 +1498,6 @@
 		padding-right:0.5rem;
 	}
 
-
 	.product-order-donut-counters-grid{
 		display:grid;
 		grid-template-columns: 1fr 1fr;
@@ -1521,7 +1520,7 @@
 		grid-column:1/span 2;
 		grid-row:2;
 		display:grid;
-		grid-template-columns: 2;
+		grid-template-columns: repeat(2, 1fr);
 	}
 
 	.small-left{
@@ -1710,7 +1709,7 @@
 
 	/* #ABOUT US PAGE------------*/
 	.about-us-section h1{
-		font-size:2.25ßrem;
+		font-size:2.25rem;
 	}
 
 	.message{
@@ -1756,7 +1755,6 @@
 	}
 }
 
-
 /*Galaxy Fold Early Breakpoint (304 px)*/
 @media screen and (max-width:19em) {
 	/*CHECKOUT PAGE*/
@@ -1766,9 +1764,7 @@
 
 	.date-and-time-calendar div{
 		font-size:0.75rem;
-
 	}
 }
-
 
 
