@@ -5,7 +5,8 @@
 - General CSS Animation source: https://developer.mozilla.org/en-US/docs/Web/CSS/animation
 - Animated scrolling source: https://www.youtube.com/watch?v=3T4rD_P2nc8&t=183s&ab_channel=OnlineTutorials, 
 https://www.youtube.com/watch?v=ezunNVYPJDs&ab_channel=LearnDesign
-- Animated input fields source: - https://www.youtube.com/watch?v=IxRJ8vplzAo&t=563s*/
+- Animated input fields source: - https://www.youtube.com/watch?v=IxRJ8vplzAo&t=563s
+- Sticky bouncing bug fix source: https://stackoverflow.com/questions/44567125/position-sticky-scroll-bouncing-when-combined-with-javascript-height-adjustme*/
 
 
 
@@ -21,12 +22,21 @@ html{
 
 
 /*MAIN NAV BAR------------------------------------------------------------------------------------*/
-.main-nav-wrapper{
-	width:100%;	
+.main-nav{
+	width:100%;
+	background-color:#6339A1;	
 	display:flex;
-	/*justify-content: space-between;*/
+	justify-content: space-between;
 	align-items:center;
-	padding: 1rem 2rem;
+	padding: 1rem 2.5rem;
+	border-bottom:.25px solid rgba(0,0,0,.3);
+	z-index: 999;
+
+	transition: all 0.4s ease-in-out;
+}
+
+.main-nav.active{
+	padding:0rem 2rem;
 }
 
 .main-nav-links{
@@ -98,8 +108,14 @@ html{
 	padding:0;
 }
 
+/*Sticky bouncing bug fix source: https://stackoverflow.com/questions/44567125/position-sticky-scroll-bouncing-when-combined-with-javascript-height-adjustme*/
 header{
 	position:sticky;
+	top:0;
+	height:0;
+	z-index: 1000;
+
+	/*position:sticky;
 	top:0;
 	width:100%;
 	background-color:#6339A1;	
@@ -108,7 +124,7 @@ header{
 	align-items:center;
 	padding: 1rem 2.5rem;
 	border-bottom:.25px solid rgba(0,0,0,.3);
-	z-index: 999;
+	z-index: 999;*/
 }
 
 nav a{
@@ -179,8 +195,10 @@ footer{
 	width:50px;
 	height:50px;
 	opacity: 0;
-	margin-left:40px;
-	margin-top:50px;
+	/*margin-left:40px;
+	margin-top:50px;*/
+	margin-left:45px;
+	margin-top:10px;
 }
  
  .hamburger{
@@ -1922,6 +1940,7 @@ button[type="quantity"]{
 	margin-top:1.25rem;
 	padding-left:1.25rem;
 	padding-right:1.25rem;
+	transition: all 0.4s ease-in-out;
 }
 
 .header-bar-mobile-wrapper h3{

@@ -7,7 +7,9 @@
 	width: clamp(18.75rem,80%,100rem);
 	margin:0 auto;
 	height:100%;
+	padding-top:6.25rem;
 }
+
 
 .main-grid{
 	display:grid;
@@ -427,6 +429,15 @@
 /* #Tablet Devices (768px)----------------------------------------------------------------------------------------------*/
 @media screen and (max-width:48em){
 	/*GLOBAL===============*/
+	header{
+		height:auto;
+	}
+
+	.main-grid-container{
+		padding-top:0;
+	}
+
+
 	.main-nav{
 		padding-top:2.5rem;
 		/*padding-left:1rem;
