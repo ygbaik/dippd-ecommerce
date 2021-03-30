@@ -30,7 +30,7 @@ html{
 	align-items:center;
 	padding: 1rem 2.5rem;
 	border-bottom:.25px solid rgba(0,0,0,.3);
-	z-index: 999;
+	z-index: 998;
 
 	transition: all 0.4s ease-in-out;
 }
@@ -113,7 +113,7 @@ header{
 	position:sticky;
 	top:0;
 	height:0;
-	z-index: 1000;
+	z-index: 999;
 
 	/*position:sticky;
 	top:0;
@@ -887,10 +887,13 @@ button.cta-button:focus{
 
 .scroll-indicator-container a{
 	position: relative;
-	z-index: 20;
+	z-index: 1001;
 }
 
 .scroll-indicator-wrapper{
+	/*position: relative;*/
+	z-index: 1000;
+
 	display: grid;
 	grid-template-rows:2fr 1.5fr 1fr;
 
@@ -925,6 +928,10 @@ button.cta-button:focus{
 }
 
 /*VALUE PROPOSITION*/
+
+.value-proposition-section .main-grid-container{
+	padding-top: 0;
+}
 
 .value-proposition-section h2{
 	font-size:2rem;
@@ -972,6 +979,10 @@ button.cta-button:focus{
 
 /*RECOMMENDATION*/
 
+.recommendation-section .main-grid-container{
+	padding-top: 0;
+}
+
 .recommendation-section{
 	grid-column:1/span 12;
 	padding: 10rem 0;
@@ -1016,6 +1027,10 @@ button.cta-button:focus{
 
 
 /*SOCIAL MEDIA*/
+
+.social-media-section .main-grid-container{
+	padding-top: 0;
+}
 
 .social-media-section{
 	padding:4rem 0;

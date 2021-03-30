@@ -1,0 +1,29 @@
+.scroll-indicator{
+	animation-name: wash;
+	animation-duration: 1.5s;
+	animation-timing-function: ease-in-out;
+	animation-delay: 0s;
+	animation-iteration-count: 1;
+	animation-direction: normal;
+
+	transform-origin:bottom;
+}
+
+.scroll-indicator-wrapper{
+	animation-name:reposition;
+	animation-duration: 1.5s;
+	animation-timing-function: ease-in-out;
+	animation-delay: 0s;
+	animation-iteration-count: 1;
+	animation-direction: normal;
+}
+
+@keyframes wash{
+	0%{transform: scaleY(50);}
+	100%{transform: scaleY(1);}
+}
+
+@keyframes reposition{
+	0%{transform:translateY(50px);}
+	100%{transform:translateY(0px);}
+}
