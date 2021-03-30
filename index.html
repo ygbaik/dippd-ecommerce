@@ -11,15 +11,11 @@
 	<link rel="stylesheet" href="https://use.typekit.net/oxb2eij.css">
 	<link rel="stylesheet" href="css/main.css">
 	<link rel="stylesheet" href="css/grid.css">
+	<link rel="stylesheet" href="/path/to/flickity.css" media="screen">
 
 	<link rel="stylesheet" href="css/flickity.css" media="screen">
 
-	<script src="js/jquery-3.6.0.min.js"></script>
-
-	<!-- CREDIT: https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js -->
-	<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script> -->
-	<!-- CREDIT: https://codepen.io/selif/pen/ggawbo -->
-	<!-- <script src="https://codepen.io/selif/pen/ggawbo"></script> -->
+	<link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
 
 	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1" />
 
@@ -80,7 +76,7 @@
 						<img class="hero-donut-main" src="img/hero-donut-main.gif" alt="Floating dipp'd donut">
 						<div class="donut-shadow black"></div>
 					</div>
-					
+
 					<div class="floating-donut-gif-wrapper">
 						<img class="hero-donut-small" src="img/hero-donut-small.gif" alt="Small floating dipp'd donut">
 						<div class="donut-shadow small black"></div>
@@ -89,7 +85,7 @@
 				<div class="hero-cta-wrapper">
 					<h1>Dipp into the sweet world of donut love.</h1>
 					<!-- <p>Test</p> -->
-					<a href="shop.html"><button>Order Now</button></a>	
+					<a href="shop.html"><button>Order Now</button></a>
 				</div>
 			</div> <!-- end of main grid div -->
 		</div> <!-- end of main grid container div -->
@@ -138,7 +134,7 @@
 						<img src="img/donut-berry-alpha.png">
 						<h4>Berry</h4>
 					</div>
-					
+
 					<div class="recommended-donut-wrapper">
 						<img src="img/donut-avocado-alpha.png">
 						<h4>Avocado</h4>
@@ -147,123 +143,126 @@
 
 				<a href="shop.html"><button>Shop All</button></a>
 		</div> <!-- end of main grid container div -->
-			
+
 	</section> <!-- end of the recommendations section-->
 
 	<!--SOCIAL MEDIA -->
 
 	<section id= "social-media" class="social-media-section white">
-		
+
 		<div class="main-grid-container">
 				<h2>#Dippers</h2>
 				<h3>What dippers are saying ...</h3>
 		</div> <!-- end of main grid container div -->
 
-		<div id="slider" class="carousel-container">
-		  <div class="carousel-of-posts">
-		    <div id="items" class="carousel-items">
-		     	<span class="carousel-post">
-						<div class="social-media-card-image">
-							<img src="img/instagram-post1.png" alt="instagram post from dippd customer" class="social-media-card-image">
-						</div>
+		<div
+		class="main-carousel"
+		data-flickity='{
+			"cellAlign": "center",
+			"wrapAround": true,
+			"prevNextButtons": false,
+			"pageDots": false
+		}'
+		>
+			<span class="carousel-post carousel-cell">
+				<div class="social-media-card-image">
+					<img src="img/instagram-post1.png" alt="instagram post from dippd customer" class="social-media-card-image">
+				</div>
 
-						<div class="social-media-card-text white">
-							<p>London fogs & vegan donuts season is upon us 😇</p>
-						</div>
+				<div class="social-media-card-text white">
+					<p>London fogs & vegan donuts season is upon us 😇</p>
+				</div>
 
-						<div class="social-media-card-footer teal-light">
-							<p>@vegbasedlife</p>
-							<img src="img/instagram-icon-social-media.png" alt="instagram logo for footer of social media card">
-						</div>
-				</span>
+				<div class="social-media-card-footer teal-light">
+					<p>@vegbasedlife</p>
+					<img src="img/instagram-icon-social-media.png" alt="instagram logo for footer of social media card">
+				</div>
+			</span>
+			<span class="carousel-post carousel-cell">
+				<div class="social-media-card-image">
+					<img src="img/instagram-post2.png" alt="instagram post from dippd customer" class="social-media-card-image">
+				</div>
 
-				<span class="carousel-post">
-					<div class="social-media-card-image">
-						<img src="img/instagram-post2.png" alt="instagram post from dippd customer" class="social-media-card-image">
-					</div>
+				<div class="social-media-card-text white">
+					<p>YVR eats <p class="hashtag">#food #foodies #yvr #vegan #vegetarian #tacos #plantbased #donuts</p></p>
+				</div>
 
-					<div class="social-media-card-text white">
-						<p>YVR eats <p class="hashtag">#food #foodies #yvr #vegan #vegetarian #tacos #plantbased #donuts</p></p>
-					</div>
+				<div class="social-media-card-footer teal-light">
+					<p>@moeliseismail</p>
+					<img src="img/instagram-icon-social-media.png" alt="instagram logo for footer of social media card">
+				</div>
+			</span>
 
-					<div class="social-media-card-footer teal-light">
-						<p>@moeliseismail</p>
-						<img src="img/instagram-icon-social-media.png" alt="instagram logo for footer of social media card">
-					</div>
-				</span>
+			<span class="carousel-post carousel-cell">
+				<div class="social-media-card-image">
+					<img src="img/instagram-post3.png" alt="instagram post from dippd customer" class="social-media-card-image">
+				</div>
 
-				<span class="carousel-post">
-					<div class="social-media-card-image">
-						<img src="img/instagram-post3.png" alt="instagram post from dippd customer" class="social-media-card-image">
-					</div>
+				<div class="social-media-card-text white">
+					<p>Okaaaayy fine, but just one.... until Lucy wakes up from her nap then it's fair game. #dippd #earlgrey #perfection</p>
+				</div>
 
-					<div class="social-media-card-text white">
-						<p>Okaaaayy fine, but just one.... until Lucy wakes up from her nap then it's fair game. #dippd #earlgrey #perfection</p>
-					</div>
+				<div class="social-media-card-footer teal-light">
+					<p>@alannah.marie.smith</p>
+					<img src="img/instagram-icon-social-media.png" alt="instagram logo for footer of social media card">
+				</div>
+			</span>
 
-					<div class="social-media-card-footer teal-light">
-						<p>@alannah.marie.smith</p>
-						<img src="img/instagram-icon-social-media.png" alt="instagram logo for footer of social media card">
-					</div>
-				</span>
+			<span class="carousel-post carousel-cell">
+				<div class="social-media-card-image">
+					<img src="img/instagram-post4.png" alt="instagram post from dippd customer" class="social-media-card-image">
+				</div>
 
-				<span class="carousel-post">
-					<div class="social-media-card-image">
-						<img src="img/instagram-post4.png" alt="instagram post from dippd customer" class="social-media-card-image">
-					</div>
+				<div class="social-media-card-text white">
+					<p>Donuts in the sunshine 🍩☀️</p>
+				</div>
 
-					<div class="social-media-card-text white">
-						<p>Donuts in the sunshine 🍩☀️</p>
-					</div>
+				<div class="social-media-card-footer teal-light">
+					<p>@krizzoskitchen</p>
+					<img src="img/instagram-icon-social-media.png" alt="instagram logo for footer of social media card">
+				</div>
+			</span>
 
-					<div class="social-media-card-footer teal-light">
-						<p>@krizzoskitchen</p>
-						<img src="img/instagram-icon-social-media.png" alt="instagram logo for footer of social media card">
-					</div>
-				</span>
+			<span class="carousel-post carousel-cell">
+				<div class="social-media-card-image">
+					<img src="img/instagram-post5.png" alt="instagram post from dippd customer" class="social-media-card-image">
+				</div>
 
-				<span class="carousel-post">
-					<div class="social-media-card-image">
-						<img src="img/instagram-post5.png" alt="instagram post from dippd customer" class="social-media-card-image">
-					</div>
+				<div class="social-media-card-text white">
+					<p>🍩 Donuts!️</p>
+				</div>
 
-					<div class="social-media-card-text white">
-						<p>🍩 Donuts!️</p>
-					</div>
+				<div class="social-media-card-footer teal-light">
+					<p>bellawatson</p>
+					<img src="img/instagram-icon-social-media.png" alt="instagram logo for footer of social media card">
+				</div>
+			</span>
 
-					<div class="social-media-card-footer teal-light">
-						<p>bellawatson</p>
-						<img src="img/instagram-icon-social-media.png" alt="instagram logo for footer of social media card">
-					</div>
-				</span>
+			<span class="carousel-post carousel-cell">
+				<div class="social-media-card-image">
+					<img src="img/instagram-post6.png" alt="instagram post from dippd customer" class="social-media-card-image">
+				</div>
 
-				<span class="carousel-post">
-					<div class="social-media-card-image">
-						<img src="img/instagram-post6.png" alt="instagram post from dippd customer" class="social-media-card-image">
-					</div>
+				<div class="social-media-card-text white">
+					<p>Dippin’ my days away 🍩🍩️</p>
+				</div>
 
-					<div class="social-media-card-text white">
-						<p>Dippin’ my days away 🍩🍩️</p>
-					</div>
-
-					<div class="social-media-card-footer teal-light">
-						<p>@dipper</p>
-						<img src="img/instagram-icon-social-media.png" alt="instagram logo for footer of social media card">
-					</div>
-				</span>
-		    </div>
-		  </div>
+				<div class="social-media-card-footer teal-light">
+					<p>@dipper</p>
+					<img src="img/instagram-icon-social-media.png" alt="instagram logo for footer of social media card">
+				</div>
+			</span>
+		</div>
 
 		<!--   <a id="prev" class="control prev"></a>
 		  <a id="next" class="control next"></a> -->
-		</div>
 
 	</section> <!-- end of the social media section -->
 
 	<!--MAIN CTA -->
 
 	<section id= "main-cta" class="main-cta-section teal-light">
-		
+
 		<div class="main-grid-container">
 				<h2>Get Dipp'd!</h2>
 				<a href="shop.html"><button>Order Now</button></a>
@@ -285,7 +284,7 @@
 								<p>@dippd</p>
 							</div>
 						</a>
-					</div> 
+					</div>
 
 					<div class="divider-line"></div>
 
@@ -357,7 +356,7 @@
 				</div>
 			</div><!-- end of footer-grid-wrapper div -->
 		</div><!-- end of container-footer-1600 div -->
-
+		
 	</footer>
 	
 	<!--
@@ -365,12 +364,13 @@
 	https://flickity.metafizzy.co/
 	Copyright 2015-2021 Metafizzy
 	-->
-	<script src="js/flickity.pkgd.min.js"></script>
+	<!-- <script src="js/flickity.pkgd.min.js"></script> -->
 	<!-- End of Flickity code -->
 	
 	<script src="js/carousel.js"></script>
-
+	
 	<!-- <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script -->
+	<script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
 	
 	<script src="js/hamburgerDropdown.js"></script>
 
