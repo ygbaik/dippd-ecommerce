@@ -525,6 +525,14 @@
 	.carousel-container{
 		margin-top: 3rem;
 	}
+
+	.social-media-section .main-grid-container{
+		text-align: center;
+	}
+
+	.social-media-section h3 {
+		margin-top:.25rem;
+	}
 	
 
 	/* #ABOUT US PAGE------------*/
@@ -859,7 +867,7 @@
 	}
 
 	.footer-list-wrapper ul{
-		margin:0.313rem 0rem 1rem 0rem;
+		margin:0.313rem 0rem 2rem 0rem;
 	}
 
 	#hours-mobile{
@@ -1273,12 +1281,13 @@
 
 	.hero-section h1,
 	.recommendation-section h2,
-	.main-cta-section h2 {
+	.main-cta-section h2,
+	.social-media-section h2{
 		font-size:2.5rem;
 	}
 
 	.hero-section h1{
-		margin-bottom: 0;
+		margin-bottom: 0.5rem;
 	}
 
 	.hero-image-wrapper,
