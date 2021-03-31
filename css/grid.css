@@ -785,6 +785,16 @@
 		position:static;
 	}
 
+	.address-section-delivery{
+		visibility: hidden;
+		position:fixed;
+	}
+
+	.address-section-delivery-mobile{
+		visibility:visible;
+		position:static;
+	}
+
 	/*Payment*/
 	.credit-card-info{
 		visibility:hidden;

@@ -2374,6 +2374,17 @@ input[type="number"]::placeholder{
 	grid-gap:1.25rem;
 }
 
+.address-section-delivery{
+	margin-top:1.5rem;
+}
+
+.address-section-delivery-mobile{
+	margin-top:1.5rem;
+	visibility:hidden;
+	position:fixed;
+}
+
+
 .address-section-mobile{
 	margin-top:1.25rem;
 	visibility:hidden;
