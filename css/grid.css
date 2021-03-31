@@ -1487,6 +1487,16 @@
 		flex-direction:column;
 	}
 
+	.names-section{
+		visibility: hidden;
+		position:fixed;
+	}
+
+	.names-section-mobile{
+		visibility: visible;
+		position:static;
+	}
+
 	.address-section{
 		visibility: hidden;
 		position:fixed;

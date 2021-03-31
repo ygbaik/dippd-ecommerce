@@ -2351,6 +2351,10 @@ input[type="number"]::placeholder{
 	grid-gap: 1.25rem;
 }
 
+.names-section-mobile{
+	visibility: hidden;
+	position:fixed;
+}
 
 .address-section{
 	margin-top:1.25rem;
